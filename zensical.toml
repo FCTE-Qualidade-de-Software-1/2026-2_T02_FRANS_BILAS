@@ -16,7 +16,7 @@ nav = [
   { "Artigo Científico" = "article/index.md" }
 ]
 
-# extra_css = ["stylesheets/extra.css"]
+extra_css = ["stylesheet/ui.css"]
 # extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]

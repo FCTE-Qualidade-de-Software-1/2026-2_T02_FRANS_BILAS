@@ -1,0 +1,24 @@
+:root {
+	--md-text-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--md-typeset-font-size: 14px;
+	--md-typeset-line-height: 1.7;
+}
+
+body,
+.md-typeset {
+	text-rendering: optimizeLegibility;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	line-height: 1.7;
+}
+
+.md-typeset p,
+.md-typeset li,
+.md-typeset td,
+.md-typeset th,
+.md-typeset blockquote {
+	font-size: 14px;
+	letter-spacing: 0.2px;
+	line-height: 1.7;
+}
