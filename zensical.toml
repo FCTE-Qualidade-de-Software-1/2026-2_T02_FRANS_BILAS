@@ -23,7 +23,7 @@ nav = [
 # variant = "classic"
 # custom_dir = "overrides"
 # favicon = "images/favicon.png"
-language = "en"
+language = "pt"
 features = [
   "announce.dismiss",
   # "content.action.edit",
