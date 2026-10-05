@@ -13,6 +13,7 @@ site_name = "Frans Bias - Brasil Participativo"
 nav = [
   { "Get started" = "index.md" },
   { "Markdown in 5min" = "markdown.md" },
+  { "Artigo Científico" = "article/index.md" }
 ]
 
 # extra_css = ["stylesheets/extra.css"]
