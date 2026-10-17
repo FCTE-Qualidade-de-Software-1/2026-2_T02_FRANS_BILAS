@@ -2,7 +2,19 @@
 
 Este repositório pertence à equipe **Frans Bilas (Turma 02)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)** da Universidade de Brasília (UnB - FGA), ministrada pela **Profa. Dra. Cristiane Soares Ramos**.
 
-O usuário principal que lidera esta frente técnica é **João Victor da Silva Batista de Farias (João V. Farias — @beyondmagic)**, integrante da **Dupla 1 (Qualidade e GQM)**.
+O usuário principal que lidera esta frente técnica é **João Victor da Silva Batista de Farias (João V. Farias — @beyondmagic)**, integrante da **Dupla 1 (Qualidade e GQM)** em conjunto com **Mateus Vinícius Vieira (@matix0)**.
+
+### Divisão de Responsabilidades da Dupla 1 (Fase 1 / Entrega 1):
+- **João V. Farias (Atividades Iniciais)**:
+  - Visão geral e contextualização da avaliação (Critério AG-C1)
+  - Propósito da avaliação e uso pretendido (Critério 1)
+  - Requisitante e partes interessadas / stakeholders (Critério 2)
+  - Tipo de produto e descrição estruturada do software / arquitetura (Critério 3)
+- **Mateus Vinícius Vieira (Atividades Subsequentes da Dupla 1)**:
+  - Modelo de qualidade SQuaRE e diagrama adaptado (Critério 4)
+  - Seleção e priorização das características (Critério 5)
+  - Escopo, profundidade e objetos de avaliação (Critério 6)
+  - Alinhamento aos ODS, metas e indicadores (Critério 7)
 
 ---
 
