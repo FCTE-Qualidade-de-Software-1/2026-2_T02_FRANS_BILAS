@@ -21,9 +21,11 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install zensical
-      - run: zensical build --clean
+      - name: Build documentation
+        working-directory: documentation
+        run: zensical build --clean
       - uses: actions/upload-pages-artifact@v5
         with:
-          path: site
+          path: documentation/site
       - uses: actions/deploy-pages@v5
         id: deployment
