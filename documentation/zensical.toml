@@ -1,27 +1,29 @@
 [project]
-extra_javascript = [
-	"assets/plugin/zensical-slides/logic.mjs",
-]
-
-site_url = "https://www.example.com/"
+site_url = "https://fcte-qualidade-de-software-1.github.io/2026-2_T02_FRANS_BILAS/"
 site_name = "Frans Bias - Brasil Participativo"
-docs_dir = "docs"
+docs_dir = "content"
 # site_description = "Your project description"
 # site_author = "Your name"
 
 # copyright = "Copyright &copy; 2026 Your name"
 
-# repo_url = "https://github.com/user/repo"
-# repo_name = "user/repo"
-# edit_uri = "edit/main/docs/"
+repo_url = "https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANS_BILAS"
+repo_name = "FCTE-Qualidade-de-Software-1/2026-2_T02_FRANS_BILAS"
+edit_uri = "edit/main/documentation/"
 
 nav = [
   { "Get started" = "index.md" },
   { "Markdown in 5min" = "markdown.md" },
-  { "Artigo Científico" = "article/index.md" }
+  { "Artigo Científico" = "article/index.md" },
+  { "Entregas" = [
+    { "Entrega 1" = "entregas/1.md" },
+  ] }
 ]
 
 extra_css = ["stylesheet/ui.css", "assets/plugin/zensical-slides/ui.css"]
+extra_javascript = [
+	"assets/plugin/zensical-slides/logic.mjs",
+]
 # extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]

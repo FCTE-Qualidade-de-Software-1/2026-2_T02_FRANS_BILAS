@@ -1,6 +1,5 @@
-# zensical build
-/.cache
-/site
+# python virtual environment
+.venv
 
 # project tha we're going to analyse
 brasil-participativo
