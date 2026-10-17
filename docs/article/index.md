@@ -2,7 +2,7 @@
 
 Um artigo será desenvolvido para de forma concisa e precisa abordar o que foi planejado, trabalhado, e atingido no projeto.
 
-Restrições:
+## Restrições
 
 - Entre 15 e 20 páginas;
 - Auto-contido: deve possuir informação necessária para entender o artigo por si só;

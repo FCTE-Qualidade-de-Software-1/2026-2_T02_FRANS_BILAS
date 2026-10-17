@@ -1,0 +1,89 @@
+/* ── Slide Content & Typography ── */
+
+body.presentation-mode .md-typeset {
+	font-family: var(--md-text-font, inherit);
+
+	h1 {
+		font-size: 1.75rem !important;
+		font-weight: 700 !important;
+		line-height: 1.25 !important;
+		color: var(--md-default-fg-color, #0f172a) !important;
+		margin-top: 0 !important;
+		margin-bottom: 1rem !important;
+		border-bottom: 2px solid var(--md-default-fg-color--lightest, #e2e8f0) !important;
+		padding-bottom: 0.5rem !important;
+	}
+
+	h2 {
+		font-size: 1.375rem !important;
+		font-weight: 600 !important;
+		line-height: 1.35 !important;
+		color: var(--md-default-fg-color, #0f172a) !important;
+		margin-top: 0 !important;
+		margin-bottom: 0.875rem !important;
+		border-bottom: 1px solid var(--md-default-fg-color--lightest, #e2e8f0) !important;
+		padding-bottom: 0.375rem !important;
+	}
+
+	h3 {
+		font-size: 1.125rem !important;
+		font-weight: 600 !important;
+		line-height: 1.45 !important;
+		color: var(--md-default-fg-color, #1e293b) !important;
+		margin-top: 1rem !important;
+		margin-bottom: 0.5rem !important;
+	}
+
+	p,
+	li {
+		font-size: 0.9375rem !important;
+		line-height: var(--md-typeset-line-height, 1.7) !important;
+		color: var(--md-default-fg-color, #1e293b) !important;
+	}
+
+	.apresentador,
+	p.apresentador {
+		color: var(--md-default-fg-color--lighter, #b9b9ba) !important;
+	}
+
+	table:not([class]) {
+		font-size: 0.875rem !important;
+		margin: 1rem 0 !important;
+		width: 100% !important;
+
+		th {
+			background: var(--md-default-bg-color--light, #f8fafc) !important;
+			color: var(--md-default-fg-color, #0f172a) !important;
+			font-weight: 600 !important;
+			padding: 0.5rem 0.75rem !important;
+			border-bottom: 2px solid var(--md-default-fg-color--lighter, #cbd5e1) !important;
+		}
+
+		td {
+			padding: 0.5rem 0.75rem !important;
+			border-bottom: 1px solid var(--md-default-fg-color--lightest, #e2e8f0) !important;
+			vertical-align: top !important;
+		}
+	}
+
+	pre {
+		font-family: var(--md-code-font, monospace) !important;
+		font-size: 0.8125rem !important;
+		line-height: 1.5 !important;
+		margin: 1rem 0 !important;
+	}
+
+	blockquote {
+		font-size: 0.9375rem !important;
+		line-height: var(--md-typeset-line-height, 1.7) !important;
+		border-left: 0.25rem solid var(--md-primary-fg-color, #3b82f6) !important;
+		background: var(--md-default-bg-color--light, #f8fafc) !important;
+		padding: 0.75rem 1rem !important;
+		margin: 1rem 0 !important;
+		color: var(--md-default-fg-color, #1e293b) !important;
+	}
+}
+
+.apresentador {
+	color: var(--md-default-fg-color--lighter, #b9b9ba);
+}

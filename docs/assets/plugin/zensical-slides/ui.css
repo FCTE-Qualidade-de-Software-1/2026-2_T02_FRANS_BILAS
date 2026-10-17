@@ -1,0 +1,7 @@
+/* ── Zensical Slides - Master Stylesheet ── */
+
+@import url("./trigger.css");
+@import url("./presentation.css");
+@import url("./content.css");
+@import url("./navigation.css");
+@import url("./controls.css");

@@ -1,0 +1,53 @@
+/* ── Presentation Mode Container & Layout ── */
+
+body.presentation-mode {
+	overflow-x: hidden;
+	background: var(--md-default-bg-color, #ffffff) !important;
+	color: var(--md-default-fg-color, #111827) !important;
+	font-family: var(--md-text-font, inherit);
+	line-height: var(--md-typeset-line-height, 1.7) !important;
+
+	/* Hide standard theme elements during presentation */
+	.md-header,
+	.md-tabs,
+	.md-sidebar,
+	.md-footer,
+	.md-top,
+	#pres-toggle-btn {
+		display: none !important;
+	}
+
+	.md-container,
+	.md-main,
+	.md-main__inner {
+		margin: 0 !important;
+		padding: 0 !important;
+		max-width: 100% !important;
+		background: var(--md-default-bg-color, #ffffff) !important;
+	}
+
+	.md-content {
+		max-width: 56rem !important;
+		margin: 0 auto !important;
+		padding: 2.5rem 2rem 5rem !important;
+		min-height: 100vh !important;
+		box-sizing: border-box !important;
+		background: var(--md-default-bg-color, #ffffff) !important;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.875rem;
+		justify-content: center;
+
+		&__inner {
+			margin: 0 !important;
+			padding: 0 !important;
+			font-size: 0.9375rem !important;
+			line-height: var(--md-typeset-line-height, 1.7) !important;
+			color: var(--md-default-fg-color, #111827) !important;
+		}
+	}
+
+	.headerlink {
+		display: none !important;
+	}
+}
