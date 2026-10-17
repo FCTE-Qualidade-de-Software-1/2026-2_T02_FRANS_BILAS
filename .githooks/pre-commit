@@ -1,0 +1,22 @@
+#!/bin/sh
+# Pre-commit hook: Executa a validação de escrita humana nos arquivos .md e .tex staged
+
+echo "🔍 Executando Humanizer Check nos arquivos staged..."
+
+# Obter lista de arquivos Markdown e LaTeX staged (apenas adicionados, copiados ou modificados)
+STAGED_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.(md|tex)$')
+
+if [ -z "$STAGED_FILES" ]; then
+    exit 0
+fi
+
+python3 scripts/check_humanizer.py $STAGED_FILES
+
+STATUS=$?
+if [ $STATUS -ne 0 ]; then
+    echo "❌ Commit abortado: Corrija os vícios de IA apontados acima antes de commitar."
+    exit $STATUS
+fi
+
+exit 0
+

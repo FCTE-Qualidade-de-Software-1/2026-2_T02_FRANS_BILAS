@@ -1,0 +1,31 @@
+name: Humanizer & Anti-Meat-Proxy Check
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - '**.md'
+      - '**.tex'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - '**.md'
+      - '**.tex'
+
+jobs:
+  audit-writing:
+    name: Audit Humanizer Compliance
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run Humanizer Validation
+        run: |
+          python3 scripts/check_humanizer.py
+
