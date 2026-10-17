@@ -1,0 +1,13 @@
+{
+	"github.copilot.chat.commitMessageGeneration.instructions": [
+    	{
+    	    "text": "Use the Conventional Commits format (e.g., feat(scope): description, fix: description)."
+    	},
+    	{
+    	    "text": "Use lowercase for the type and scope. Keep the header under 50 characters."
+    	},
+    	{
+    	    "text": "Write in the imperative mood (e.g., 'add', 'fix' instead of 'added', 'fixes')."
+    	}
+	]
+}
