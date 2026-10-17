@@ -1,3 +1,6 @@
 # zensical build
 /.cache
 /site
+
+# project tha we're going to analyse
+brasil-participativo
