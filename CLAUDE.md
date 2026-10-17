@@ -1,6 +1,6 @@
 # CLAUDE.md — Instruções para Claude Code
 
-Este arquivo orienta o Claude Code ao operar no repositório da equipe **Frans Bilas (Turma 02)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)** da UnB FGA.
+Este arquivo orienta o Claude Code ao operar no repositório da equipe **Frans Bilas (Turma 02)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)** da UnB (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília — FCTE).
 
 O usuário que está interagindo é **João Victor da Silva Batista de Farias (João V. Farias — @beyondmagic)**, integrante da **Dupla 1 (Qualidade e GQM)** junto com **Mateus Vinícius Vieira (@matix0)**. João lidera as atividades iniciais da Fase 1 (Visão Geral, Propósito C1, Stakeholders C2 e Tipo de Produto/Arquitetura C3), enquanto Mateus assume as subsequentes da Dupla 1 (Modelo de Qualidade SQuaRE C4, Priorização C5, Escopo C6 e ODS C7).
 

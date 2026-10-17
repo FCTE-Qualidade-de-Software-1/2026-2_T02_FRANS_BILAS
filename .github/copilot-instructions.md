@@ -1,6 +1,6 @@
 # GitHub Copilot Instructions
 
-You are assisting the **Frans Bilas** team in the Software Quality 1 course (FGA0315 - 2026.2) at UnB FGA (Profa. Cristiane Soares Ramos).
+You are assisting the **Frans Bilas** team in the Software Quality 1 course (FGA0315 - 2026.2) at UnB (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília — FCTE), taught by Profa. Cristiane Soares Ramos.
 The project evaluates the quality of the open-source platform **Brasil Participativo** (Decidim Gov.br / Lappis UnB).
 
 ---

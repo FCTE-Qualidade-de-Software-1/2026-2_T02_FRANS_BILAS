@@ -1,6 +1,6 @@
 # AGENTS.md — Diretrizes para Agentes de IA e Automações
 
-Este repositório pertence à equipe **Frans Bilas (Turma 02)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)** da Universidade de Brasília (UnB - FGA), ministrada pela **Profa. Dra. Cristiane Soares Ramos**.
+Este repositório pertence à equipe **Frans Bilas (Turma 02)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)** da Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília — FCTE), ministrada pela **Profa. Dra. Cristiane Soares Ramos**.
 
 O usuário principal que lidera esta frente técnica é **João Victor da Silva Batista de Farias (João V. Farias — @beyondmagic)**, integrante da **Dupla 1 (Qualidade e GQM)** em conjunto com **Mateus Vinícius Vieira (@matix0)**.
 
@@ -32,7 +32,7 @@ O usuário principal que lidera esta frente técnica é **João Victor da Silva 
   - **PSM/CID**: Gestão do projeto com métricas de processo, acompanhamento semanal e tomada de decisão.
 - **Entregáveis Centrais**:
   - **GitPage**: Documentação estática gerada via [Zensical](https://github.com/krzysztofzuraw/zensical) localizada em `documentation/`.
-  - **Artigo Científico em LaTeX**: Localizado em `documentation/content/article/source/main.tex` (limite de 15 páginas, modelo SBC/IEEE/ACM).
+  - **Artigo Científico em LaTeX**: Localizado em `documentation/content/article/source/main.tex` (limite de 15 páginas, modelo IEEE / IEEEtran).
   - **Apresentações / Slides**: Localizados em `documentation/content/entregas/` (a apresentação da Entrega 1 fica em `documentation/content/entregas/1.md`, renderizada pelo plugin `zensical-slides`).
 
 ---

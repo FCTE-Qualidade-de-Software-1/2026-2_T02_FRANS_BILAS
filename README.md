@@ -1,7 +1,7 @@
 # Qualidade de Software 1 (FGA0315) — Turma 02 (2026.2)
 ## Equipe Frans Bilas — Avaliação do Brasil Participativo
 
-Repositório da disciplina de **Qualidade de Software 1** da Universidade de Brasília (UnB - FGA), ministrada pela Profa. Dra. Cristiane Soares Ramos.
+Repositório da disciplina de **Qualidade de Software 1** da Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília — FCTE), ministrada pela Profa. Dra. Cristiane Soares Ramos.
 
 O objetivo do projeto é a avaliação da qualidade de produto de software da plataforma [Brasil Participativo](https://gitlab.com/lappis-unb/decidimbr/decidim-govbr) (baseada no ecossistema Decidim), orientada pela norma **ISO/IEC 25010:2023 (SQuaRE)**, com definição e desdobramento de métricas via **GQM (Goal-Question-Metric)** e acompanhamento de processo via **PSM/CID**.
 

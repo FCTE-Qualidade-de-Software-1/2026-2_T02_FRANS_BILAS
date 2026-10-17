@@ -1,14 +1,112 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+\documentclass[journal]{IEEEtran}
 
-\title{QSW1 2026-2 - Equipe Frans Bilas}
-\author{Cristiane Ramos}
-\date{October 2026}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{hyperref}
+
+\hyphenation{par-ti-ci-pa-tivo qua-li-dade de-sen-vol-vi-mento}
 
 \begin{document}
 
+\title{Avaliação da Qualidade de Produto de Software da Plataforma Brasil Participativo}
+
+\author{João~Victor~da~Silva~Batista~de~Farias,
+        Davi~Mesquita~Sousa,
+        José~Vinícius~Alvares~Soares~de~Queiroz,
+        Lucca~Medeiros~Silva,
+        Mateus~Vinícius~Vieira,
+        e~Miguel~Arthur~Oliveira~de~Lima%
+\thanks{Os autores integram a equipe Frans Bilas na disciplina Qualidade de Software 1 (FGA0315 - 2026.2), Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília (FCTE), Universidade de Brasília (UnB), sob orientação da Profa. Dra. Cristiane Soares Ramos. Repositório do projeto: \url{https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANS_BILAS}}%
+}
+
+\markboth{Qualidade de Software 1 (FGA0315), Turma 02, Outubro de 2026}%
+{Equipe Frans Bilas: Avaliação da Qualidade do Brasil Participativo}
+
 \maketitle
 
-\section{Introduction}
+\begin{abstract}
+Este artigo relata o planejamento e a execução da avaliação de qualidade de produto de software da plataforma Brasil Participativo, a instância governamental baseada no ecossistema livre Decidim. O estudo apoia-se no modelo de qualidade da norma ISO/IEC 25010:2023 (SQuaRE) e no método Goal-Question-Metric (GQM), com acompanhamento de processo via PSM/CID. O escopo da avaliação concentra-se em três características prioritárias: Capacidade de Interação, Manutenibilidade e Segurança. Este trabalho apresenta a contextualização técnica do software, a definição do propósito da auditoria, o mapeamento das partes interessadas e a caracterização estruturada da arquitetura.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Qualidade de Software, ISO/IEC 25010:2023, SQuaRE, GQM, Brasil Participativo, Decidim, Software Público.
+\end{IEEEkeywords}
+
+\section{Introdução}
+\label{sec:introducao}
+
+A deliberação cívica em meios digitais depende da confiabilidade, acessibilidade e integridade das ferramentas empregadas pelo poder público. O Brasil Participativo é o canal digital oficial do Governo Federal brasileiro voltado à consulta pública e formulação de políticas públicas, tendo sido utilizado como instrumento central no processo de consulta do Plano Plurianual (PPA 2024-2027), ocasião em que registrou mais de 1,4 milhão de votos da população.
+
+Desenvolvido em parceria com o Laboratório Avançado de Pesquisa e Desenvolvimento de Software (LAPPIS) da Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília / FCTE), o sistema é um desdobramento customizado da plataforma livre Decidim. A relevância democrática do sistema justifica uma auditoria rigorosa orientada a normas internacionais. Esta avaliação adota a família ISO/IEC 25000 (SQuaRE) para identificar inconformidades, apontar débitos técnicos e fundamentar propostas de melhoria técnica no código-fonte aberto.
+
+\section{Planejamento da Avaliação e Modelo de Qualidade}
+\label{sec:fase1}
+
+\subsection{Propósito da Avaliação e Uso Pretendido}
+\label{sec:proposito}
+
+O objetivo central desta avaliação é gerar evidências quantificáveis sobre a manutenibilidade do código-fonte, a robustez das integrações institucionais de segurança e a capacidade de interação oferecida aos cidadãos. Os resultados apoiarão três decisões de engenharia e gestão:
+
+\begin{enumerate}
+    \item \textbf{Priorização de Refatoração}: Apontar aos mantenedores do LAPPIS os módulos com alto acoplamento, complexidade excessiva e baixa cobertura de testes automatizados.
+    \item \textbf{Segurança e Conformidade de Acesso}: Subsidiar a revisão de segurança na autenticação unificada via Gov.br e nas políticas de proteção HTTP.
+    \item \textbf{Melhoria na Capacidade de Interação}: Fornecer dados objetivos à Secretaria de Participação Digital sobre telas e fluxos que podem causar desistência no envio de propostas.
+\end{enumerate}
+
+\subsection{Requisitante e Partes Interessadas}
+\label{sec:stakeholders}
+
+Foram identificados quatro grupos principais de partes interessadas:
+
+\begin{itemize}
+    \item \textbf{Cidadãos / Usuários Finais}: Necessitam de interfaces intuitivas, baixa latência e sigilo estrito de sua participação.
+    \item \textbf{Equipe de Engenharia (LAPPIS)}: Busca facilidade de manutenção, estabilidade dos testes em RSpec e independência modular das extensões governamentais.
+    \item \textbf{Órgão Gestor Governamental}: Demanda disponibilidade durante picos de votação e conformidade legal com a legislação brasileira.
+    \item \textbf{Comunidade Decidim}: Beneficia-se de relatórios de conformidade e eventuais correções devolvidas ao ecossistema livre global.
+\end{itemize}
+
+\subsection{Tipo de Produto e Caracterização Arquitetural}
+\label{sec:arquitetura}
+
+O Brasil Participativo é categorizado como uma aplicação web transacional de deliberação cívica, implementada sob a forma de um monólito modular. O repositório central (\texttt{decidim-govbr}) integra o núcleo do Decidim a módulos complementares desenvolvidos para as necessidades do governo brasileiro:
+
+\begin{itemize}
+    \item \textbf{Ambiente de Execução}: Ruby 3.0.4 e framework Ruby on Rails 6.1.7.
+    \item \textbf{Núcleo Funcional}: Decidim 0.27.2 com componentes de processos participativos, consultas, iniciativas e propostas.
+    \item \textbf{Persistência Relacional}: PostgreSQL, com atributos dinâmicos serializados em colunas JSONB.
+    \item \textbf{Tarefas Assíncronas}: Filas processadas via Sidekiq 6.5.7 apoiadas em instância de memória Redis 4.7.
+    \item \textbf{Autenticação Unificada}: Single Sign-On com o Gov.br via OpenID Connect com chaves criptográficas JWKS (\texttt{omniauth\_govbr.rb}).
+    \item \textbf{Extensões do Governo Federal}: Módulos específicos incluindo \texttt{decidim-ej} (Empurrando Juntos), \texttt{decidim-extra\_user\_fields}, \texttt{decidim-homes} e \texttt{decidim-mobile}.
+\end{itemize}
+
+\subsection{Modelo de Qualidade ISO/IEC 25010:2023 (Critério 4)}
+\label{sec:modelo_square}
+\textit{Seção a cargo de Mateus Vinícius Vieira. Conterá a adaptação da norma ISO/IEC 25010:2023 ao produto e o diagrama conceitual correspondente.}
+
+\subsection{Seleção e Priorização das Características (Critério 5)}
+\label{sec:priorizacao}
+\textit{Seção a cargo de Mateus Vinícius Vieira. Detalhará a matriz de priorização das três características aprovadas: Capacidade de Interação, Manutenibilidade e Segurança.}
+
+\subsection{Escopo e Objetos de Avaliação (Critério 6)}
+\label{sec:escopo}
+\textit{Seção a cargo de Mateus Vinícius Vieira. Definirá o perímetro dos componentes avaliados e justificará os limites operacionais da análise estática.}
+
+\subsection{Alinhamento aos Objetivos de Desenvolvimento Sustentável (Critério 7)}
+\label{sec:ods}
+\textit{Seção a cargo de Mateus Vinícius Vieira. Apresentará a correlação entre as métricas do projeto e a Meta 16.7 do ODS 16 da ONU.}
+
+% \section{Considerações Iniciais}
+% \label{sec:consideracoes}
+% 
+% O planejamento estruturado na Fase 1 estabelece as bases conceituais para a aplicação do método GQM na Fase 2, na qual cada uma das três características selecionadas será desdobrada em objetivos, questões analíticas e métricas mensuráveis.
+% 
 
 \end{document}
