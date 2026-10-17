@@ -14,9 +14,9 @@ O trabalho [Brasil Participativo](https://gitlab.com/lappis-unb/decidimbr/decidi
 
 <span style="color: red">Tem que esclarecer melhor as características.<span/>
 
-- Eficiência e Desempenho;
-- Segurança;
-- ...
+- Manutenibilidade
+- Segurança
+- Usabilidade
 
 # Get started
 
