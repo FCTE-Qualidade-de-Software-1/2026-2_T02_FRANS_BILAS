@@ -1,3 +1,7 @@
+---
+icon: lucide/microscope
+---
+
 # Artigo Científico
 
 Um artigo será desenvolvido para de forma concisa e precisa abordar o que foi planejado, trabalhado, e atingido no projeto.
