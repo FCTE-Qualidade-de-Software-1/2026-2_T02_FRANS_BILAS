@@ -165,10 +165,12 @@ Q3.2 & As dependências estão livres de vulnerabilidades conhecidas? & Ao menos
 Q3.3 & Ações sensíveis exigem autenticação e permissão? & Todas exigem \\
 \bottomrule
 \end{tabular}
+\end{table*}
+
 \subsection{Métricas e Procedimentos de Cálculo}
 \label{sec:metricas}
 
-Para quantificar as nove questões formuladas, foram selecionadas dez métricas objetivas (Tabela~\ref{tab:metricas}). A seleção atende à premissa ética de não executar testes intrusivos ou de estresse contra a infraestrutura do governo em produção. As medidas de Capacidade de Interação fundamentam-se em sessões de teste com usuários com Termo de Consentimento Livre e Esclarecido (TCLE) assinado, enquanto Manutenibilidade e Segurança operam por análise estática e auditoria de manifesto no repositório \texttt{decidim-govbr}.
+Para quantificar as nove questões formuladas, foram selecionadas doze métricas objetivas (Tabela~\ref{tab:metricas}). A seleção atende à premissa ética de não executar testes intrusivos ou de estresse contra a infraestrutura do governo em produção. As medidas de Capacidade de Interação fundamentam-se em sessões de teste com usuários com Termo de Consentimento Livre e Esclarecido (TCLE) assinado, enquanto Manutenibilidade e Segurança operam por análise estática e auditoria de manifesto no repositório \texttt{decidim-govbr}.
 
 \begin{table*}[!t]
 \centering
@@ -183,7 +185,7 @@ Para quantificar as nove questões formuladas, foram selecionadas dez métricas 
 M1.1 & Q1.1 & Taxa de Conclusão de Tarefas (TCR): proporção de usuários que concluem as tarefas sem intervenção. & $TCR = (N_{\text{sucesso}} / N_{\text{total}}) \times 100$ & Observação em sessões com TCLE \\
 M1.2 & Q1.1 & Tempo Médio de Execução (TME): duração média decorrida para finalização bem-sucedida. & $TME = \frac{1}{n} \sum t_i$ (em segundos) & Carimbo de tempo das gravações \\
 M1.3 & Q1.2 & Frequência de Erros por Tarefa (FET): média de falhas e mensagens de validação por participante. & $FET = (\sum E_i) / N$ & Registro de eventos e notas do observador \\
-M1.4 & Q1.3 & Conformidade de Acessibilidade (ICA): aderência às diretrizes WCAG 2.1 AA e eMAG. & $ICA = (Regras_{\text{aprov}} / Regras_{\text{aplic}}) \times 100$ & Axe-core e Google Lighthouse CLI \\
+M1.4 & Q1.3 & Conformidade de Acessibilidade (ICA): aderência às diretrizes WCAG 2.1 AA e eMAG. & $ICA = (N_{\text{aprov}} / N_{\text{aplic}}) \times 100$ & Axe-core e Google Lighthouse CLI \\
 M1.5 & Q1.3 & Escala de Usabilidade do Sistema (SUS): índice padronizado de satisfação subjetiva~\cite{brooke1996sus}. & Escala Likert de 10 itens convertida (0--100) & Formulário pós-teste com participante \\
 \midrule
 \multicolumn{5}{@{}l}{\textit{G2: Manutenibilidade}} \\
@@ -194,8 +196,8 @@ M2.4 & Q2.3 & Índice de Cobertura de Sobrescritas (ICT): classes sobrescritas c
 \midrule
 \multicolumn{5}{@{}l}{\textit{G3: Segurança}} \\
 M3.1 & Q3.1 & Densidade de Vulnerabilidades de Código (DVC): achados de segurança ponderados por severidade. & $DVC = 3N_{\text{alta}} + 2N_{\text{media}} + 1N_{\text{baixa}}$ & Relatório do analisador Brakeman \\
-M3.2 & Q3.2 & Contagem de Dependências Vulneráveis (CDV): CVEs catalogadas nas gems do projeto. & $CDV = \sum Aviso_{\text{CVE}}$ & Auditoria estática via \texttt{bundler-audit} \\
-M3.3 & Q3.3 & Proteção de Endpoints Sensíveis (TPE): ações com autorização explícita nos controladores. & $TPE = (Ações_{\text{protegidas}} / Ações_{\text{sensiveis}}) \times 100$ & Inspeção de controladores e permissões \\
+M3.2 & Q3.2 & Contagem de Dependências Vulneráveis (CDV): CVEs catalogadas nas gems do projeto. & $CDV = \sum N_{\text{CVE}}$ & Auditoria estática via \texttt{bundler-audit} \\
+M3.3 & Q3.3 & Proteção de Endpoints Sensíveis (TPE): ações com autorização explícita nos controladores. & $TPE = (N_{\text{prot}} / N_{\text{sens}}) \times 100$ & Inspeção de controladores e permissões \\
 \bottomrule
 \end{tabular}
 \end{table*}
@@ -210,7 +212,7 @@ A interpretação das medidas adota quatro níveis de pontuação: Insuficiente,
 \caption{Níveis de pontuação e critérios de interpretação das métricas.}
 \label{tab:julgamento}
 \small
-\begin{tabular}{@{}l p{0.20\textwidth} c c c c@{}}
+\begin{tabular}{@{}l p{0.20\textwidth} p{0.18\textwidth} p{0.19\textwidth} p{0.19\textwidth} p{0.14\textwidth}@{}}
 \toprule
 \textbf{Código} & \textbf{Métrica} & \textbf{Insuficiente} & \textbf{Regular} & \textbf{Bom} & \textbf{Excelente} \\
 \midrule

@@ -78,7 +78,7 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 
 - **Papel no Projeto**: Dupla 1 (Qualidade e GQM) - Seleção de Métricas (F2-C4), Níveis de Julgamento (F2-C5) e Consistência entre Fases 1 e 2 (F2-C11).
 - **Ferramentas Utilizadas**: Antigravity (Gemini 3.8 Flash).
-- **Tarefas Realizadas com Apoio de IA**: Estruturação preliminar das fichas técnicas das 10 métricas de avaliação, formulação matemática das métricas, definição das faixas de pontuação da tabela de julgamento e diagrama Mermaid do GQM em três níveis.
+- **Tarefas Realizadas com Apoio de IA**: Estruturação preliminar das fichas técnicas das 12 métricas de avaliação, formulação matemática das métricas, definição das faixas de pontuação da tabela de julgamento e diagrama Mermaid do GQM em três níveis.
 - **Procedimento de Revisão Humana**: Calibração dos limiares de pontuação com base nas boas práticas do ecossistema Ruby on Rails e Decidim, validação da viabilidade operacional das coletas para impedir testes intrusivos contra servidores de produção e verificação da rastreabilidade com as decisões e stakeholders da Fase 1.
 
 ---
@@ -97,7 +97,7 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 17/10/2026 | Criação da política de uso ético de IA, registro individual e estrutura para a equipe | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
-| `1.1` | 18/10/2026 | Registro de uso de IA referente à especificação das métricas, níveis de julgamento e rastreabilidade da Fase 2 | [Lucca Medeiros Silva](https://github.com/luccameds) | [José Vinícius Alvares Soares de Queiroz](https://github.com/JoseViniciusQueiroz) |
+| `1.1` | 18/10/2026 | Registro de uso de IA referente à especificação das métricas, níveis de julgamento e rastreabilidade da Fase 2 | [Lucca Medeiros Silva](https://github.com/luccameds) | A definir |
 
 
 
