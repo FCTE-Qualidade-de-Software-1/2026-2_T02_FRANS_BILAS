@@ -92,16 +92,3 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 
 ---
 
-## 3. Template Obrigatório para Novos Registros
-
-Para manter a consistência, novas adições a esta página ou aos Pull Requests devem seguir o formato:
-
-```markdown
-### [Nome Completo do Integrante]
-
-- **Papel no Projeto**: [Dupla X / Atividade Y]
-- **Ferramentas Utilizadas**: [Nome da ferramenta e versão, ex.: Claude 3.5 Sonnet, GitHub Copilot]
-- **Tarefas Realizadas**: [Descrição pontual das seções, scripts ou testes auxiliados]
-- **Procedimento de Revisão Humana**: [Descrição objetiva de como os dados foram checados contra fontes primárias e como o texto foi retrabalhado manualmente]
-```
-
