@@ -67,3 +67,12 @@ Não aceitamos entregas de *meat-proxy* (copiar e colar texto de IA sem curadori
 - `scripts/`: Scripts utilitários e linters do projeto.
 - `.agents/skills/`: Skills de apoio aos agentes e revisores.
 
+---
+
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor | Revisor |
+| :---: | :---: | :--- | :--- | :--- |
+| `1.0` | 17/10/2026 | Guia de contribuição, fluxo de trabalho Git, governança e diretrizes anti-meat-proxy | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+
+

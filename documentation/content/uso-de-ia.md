@@ -92,3 +92,11 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 
 ---
 
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor | Revisor |
+| :---: | :---: | :--- | :--- | :--- |
+| `1.0` | 17/10/2026 | Criação da política de uso ético de IA, registro individual e estrutura para a equipe | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+
+
+

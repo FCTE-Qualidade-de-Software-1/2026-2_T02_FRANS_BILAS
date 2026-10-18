@@ -74,10 +74,13 @@ pdflatex -interaction=nonstopmode main.tex
 
 Os arquivos temporários (`*.aux`, `*.log`, `*.out`) são ignorados pelo Git e podem ser removidos após a compilação.
 
-O artigo científico constitui o relatório técnico final consolidado da disciplina. A produção foi concebida como instrumento didático e avaliativo de comunicação científica para exercitar o rigor metodológico na avaliação de software:
+---
 
-- **Finalidade Acadêmica**: O trabalho é produzido estritamente para a avaliação contínua da disciplina no semestre 2026.2. O formato de artigo foi determinado pela professora para exercitar síntese, precisão técnica e escrita formal.
-- **Destinação**: Não há compromisso de submissão externa compulsória para periódicos ou conferências da IEEE. Qualquer eventual submissão futura a eventos científicos dependerá de decisão posterior conjunta da equipe e dos professores orientadores.
-- **Transparência**: O texto é acompanhado da disponibilização integral de dados brutos, scripts de cálculo, modelos GQM e registros de gestão em nosso repositório público.
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor | Revisor |
+| :---: | :---: | :--- | :--- | :--- |
+| `1.0` | 17/10/2026 | Documentação sobre a escolha do modelo IEEEtran, requisitos pedagógicos e estrutura do artigo | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+
 
 

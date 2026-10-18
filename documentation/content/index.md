@@ -21,6 +21,14 @@ O trabalho [Brasil Participativo](https://gitlab.com/lappis-unb/decidimbr/decidi
 
 As características selecionadas para a avaliação do produto de software, de acordo com o modelo de qualidade da norma **ISO/IEC 25010:2023 (SQuaRE)**, são:
 
-- **Capacidade de Interação** *(Interaction Capability — antiga Usabilidade na revisão 2023 da norma)*
+- **Capacidade de Interação** *(Interaction Capability, antiga Usabilidade na revisão 2023 da norma)*
 - **Manutenibilidade** *(Maintainability)*
 - **Segurança** *(Security)*
+
+---
+
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor | Revisor |
+| :---: | :---: | :--- | :--- | :--- |
+| `1.0` | 17/10/2026 | Estruturação da página inicial, tabela de integrantes e características avaliadas | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |

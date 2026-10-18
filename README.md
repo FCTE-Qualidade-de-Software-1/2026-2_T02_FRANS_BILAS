@@ -57,3 +57,12 @@ Consulte o [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes sobre o fluxo de bra
 
 - **GitPage do Projeto**: [https://fcte-qualidade-de-software-1.github.io/2026-2_T02_FRANS_BILAS/](https://fcte-qualidade-de-software-1.github.io/2026-2_T02_FRANS_BILAS/)
 - **Repositório do Software Alvo**: [Decidim Gov.br / Lappis UnB](https://gitlab.com/lappis-unb/decidimbr/decidim-govbr)
+
+---
+
+### Histórico de Versões
+
+| Versão | Data | Descrição | Autor | Revisor |
+| :---: | :---: | :--- | :--- | :--- |
+| `1.0` | 17/10/2026 | Documentação inicial do repositório, integrantes, governança e links úteis | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+

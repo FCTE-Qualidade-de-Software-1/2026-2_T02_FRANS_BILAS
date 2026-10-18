@@ -109,3 +109,11 @@ to create a line break.
 
 Or use a blank line for a new paragraph.
 ```
+
+---
+
+## Histórico de Versões
+
+| Versão | Data | Descrição | Autor | Revisor |
+| :---: | :---: | :--- | :--- | :--- |
+| `1.0` | 17/10/2026 | Guia de referência rápida de sintaxe Markdown | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
