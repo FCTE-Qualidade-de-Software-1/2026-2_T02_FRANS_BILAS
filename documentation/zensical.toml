@@ -14,11 +14,14 @@ edit_uri = "edit/main/documentation/"
 nav = [
   { "Início" = "index.md" },
   { "Fases da Avaliação" = [
-    { "Fase 1 — Planejamento e Modelo" = "fases/1.md" },
+    { "Fase 1: Planejamento e Modelo" = "fases/1.md" },
   ] },
-  { "Artigo Científico" = "article/index.md" },
   { "Entregas" = [
     { "Entrega 1" = "entregas/1.md" },
+  ] },
+  { "Artigo Científico" = "article/index.md" },
+  { "Extras" = [
+    { "Uso de IA" = "uso-de-ia.md" }
   ] }
 ]
 
