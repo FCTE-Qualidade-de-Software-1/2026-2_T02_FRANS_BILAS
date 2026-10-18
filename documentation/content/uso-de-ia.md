@@ -67,10 +67,10 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 
 ### José Vinícius Alvares Soares de Queiroz
 
-- **Papel no Projeto**: A definir (Dupla 2 ou 3).
-- **Ferramentas Utilizadas**: *[A preencher pelo integrante]*
-- **Tarefas Realizadas com Apoio de IA**: *[A preencher pelo integrante]*
-- **Procedimento de Revisão Humana**: *[A preencher pelo integrante]*
+- **Papel no Projeto**: Referencial teórico, objetivos GQM, questões e hipóteses da Fase 2.
+- **Ferramentas Utilizadas**: Claude (Anthropic).
+- **Tarefas Realizadas com Apoio de IA**: Rascunho do referencial teórico (SQuaRE, GQM, PSM), dos objetivos no template GQM, das questões e das hipóteses em `fases/2.md`, da seção correspondente em `main.tex` e do slide 9 de `entregas/1.md`.
+- **Procedimento de Revisão Humana**: *[A preencher pelo integrante: como conferiu os objetivos contra a Fase 1, as referências e as hipóteses.]*
 
 ---
 
