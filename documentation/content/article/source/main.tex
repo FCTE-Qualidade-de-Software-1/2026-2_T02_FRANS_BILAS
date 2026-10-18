@@ -167,13 +167,83 @@ Q3.3 & Ações sensíveis exigem autenticação e permissão? & Todas exigem \\
 \end{tabular}
 \end{table*}
 
-% \section{Considerações Iniciais}
-% \label{sec:consideracoes}
-% 
-% O planejamento estruturado na Fase 1 estabelece as bases conceituais para a aplicação do método GQM na Fase 2, na qual cada uma das três características selecionadas será desdobrada em objetivos, questões analíticas e métricas mensuráveis.
-% 
+\subsection{Métricas e Procedimentos de Cálculo}
+\label{sec:metricas}
+
+Para quantificar as nove questões formuladas, foram selecionadas doze métricas objetivas (Tabela~\ref{tab:metricas}). A seleção atende à premissa ética de não executar testes intrusivos ou de estresse contra a infraestrutura do governo em produção. As medidas de Capacidade de Interação fundamentam-se em sessões de teste com usuários com Termo de Consentimento Livre e Esclarecido (TCLE) assinado, enquanto Manutenibilidade e Segurança operam por análise estática e auditoria de manifesto no repositório \texttt{decidim-govbr}.
+
+\begin{table*}[!t]
+\centering
+\caption{Especificação das métricas quantitativas por objetivo e questão.}
+\label{tab:metricas}
+\small
+\begin{tabular}{@{}l l p{0.32\textwidth} p{0.24\textwidth} p{0.26\textwidth}@{}}
+\toprule
+\textbf{Código} & \textbf{Questão} & \textbf{Métrica e Definição} & \textbf{Procedimento / Fórmula} & \textbf{Fonte e Ferramenta} \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{G1: Capacidade de Interação}} \\
+M1.1 & Q1.1 & Taxa de Conclusão de Tarefas (TCR): proporção de usuários que concluem as tarefas sem intervenção. & $TCR = (N_{\text{sucesso}} / N_{\text{total}}) \times 100$ & Observação em sessões com TCLE \\
+M1.2 & Q1.1 & Tempo Médio de Execução (TME): duração média decorrida para finalização bem-sucedida. & $TME = \frac{1}{n} \sum t_i$ (em segundos) & Carimbo de tempo das gravações \\
+M1.3 & Q1.2 & Frequência de Erros por Tarefa (FET): média de falhas e mensagens de validação por participante. & $FET = (\sum E_i) / N$ & Registro de eventos e notas do observador \\
+M1.4 & Q1.3 & Conformidade de Acessibilidade (ICA): aderência às diretrizes WCAG 2.1 AA e eMAG. & $ICA = (N_{\text{aprov}} / N_{\text{aplic}}) \times 100$ & Axe-core e Google Lighthouse CLI \\
+M1.5 & Q1.3 & Escala de Usabilidade do Sistema (SUS): índice padronizado de satisfação subjetiva~\cite{brooke1996sus}. & Escala Likert de 10 itens convertida (0--100) & Formulário pós-teste com participante \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{G2: Manutenibilidade}} \\
+M2.1 & Q2.1 & Taxa de Sobrescritas do Núcleo (TSN): razão de classes customizadas que reabrem módulos Decidim. & $TSN = (C_{\text{sobrescritas}} / C_{\text{total}}) \times 100$ & Árvore de arquivos em \texttt{app/} \\
+M2.2 & Q2.2 & Complexidade Ciclomática Média (CCM): fluxo de controle independente por método~\cite{mccabe1976complexity}. & $CCM = \frac{1}{M} \sum v(G_j)$ & RuboCop (\texttt{Metrics/CyclomaticComplexity}) \\
+M2.3 & Q2.2 & Densidade de Linhas por Classe (DLC): contagem de linhas efetivas de código (SLOC) por classe. & $DLC_{\text{media}} = (\sum SLOC_c) / C$ & RuboCop e utilitário de contagem \\
+M2.4 & Q2.3 & Índice de Cobertura de Sobrescritas (ICT): classes sobrescritas com arquivo de teste espelho. & $ICT = (S_{\text{cobertas}} / C_{\text{sobrescritas}}) \times 100$ & Correspondência cruzada \texttt{app/} e \texttt{spec/} \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{G3: Segurança}} \\
+M3.1 & Q3.1 & Densidade de Vulnerabilidades de Código (DVC): achados de segurança ponderados por severidade. & $DVC = 3N_{\text{alta}} + 2N_{\text{media}} + 1N_{\text{baixa}}$ & Relatório do analisador Brakeman \\
+M3.2 & Q3.2 & Contagem de Dependências Vulneráveis (CDV): CVEs catalogadas nas gems do projeto. & $CDV = \sum N_{\text{CVE}}$ & Auditoria estática via \texttt{bundler-audit} \\
+M3.3 & Q3.3 & Proteção de Endpoints Sensíveis (TPE): ações com autorização explícita nos controladores. & $TPE = (N_{\text{prot}} / N_{\text{sens}}) \times 100$ & Inspeção de controladores e permissões \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Níveis de Pontuação e Julgamento}
+\label{sec:julgamento}
+
+A interpretação das medidas adota quatro níveis de pontuação: Insuficiente, Regular, Bom e Excelente (Tabela~\ref{tab:julgamento}). Os limiares foram calibrados a partir das convenções consolidadas do ecossistema Ruby on Rails e de diretrizes públicas de usabilidade.
+
+\begin{table*}[!t]
+\centering
+\caption{Níveis de pontuação e critérios de interpretação das métricas.}
+\label{tab:julgamento}
+\small
+\begin{tabular}{@{}l p{0.20\textwidth} p{0.18\textwidth} p{0.19\textwidth} p{0.19\textwidth} p{0.14\textwidth}@{}}
+\toprule
+\textbf{Código} & \textbf{Métrica} & \textbf{Insuficiente} & \textbf{Regular} & \textbf{Bom} & \textbf{Excelente} \\
+\midrule
+M1.1 & Conclusão de Tarefas (TCR) & $< 60\%$ & $60\% \le \text{TCR} < 75\%$ & $75\% \le \text{TCR} < 90\%$ & $\ge 90\%$ \\
+M1.2 & Tempo Médio (TME) & $> 180\text{ s}$ & $120\text{ s} < \text{TME} \le 180\text{ s}$ & $60\text{ s} \le \text{TME} \le 120\text{ s}$ & $< 60\text{ s}$ \\
+M1.3 & Frequência de Erros (FET) & $> 2{,}0$ & $1{,}0 < \text{FET} \le 2{,}0$ & $0{,}5 \le \text{FET} \le 1{,}0$ & $< 0{,}5$ \\
+M1.4 & Acessibilidade (ICA) & $< 70\%$ & $70\% \le \text{ICA} < 85\%$ & $85\% \le \text{ICA} < 95\%$ & $\ge 95\%$ \\
+M1.5 & Usabilidade Percebida (SUS) & $< 50$ pts & $50 \le \text{SUS} < 68$ pts & $68 \le \text{SUS} < 80$ pts & $\ge 80$ pts \\
+M2.1 & Sobrescritas Núcleo (TSN) & $> 40\%$ & $25\% < \text{TSN} \le 40\%$ & $10\% \le \text{TSN} \le 25\%$ & $< 10\%$ \\
+M2.2 & Complexidade Ciclomática (CCM) & $> 10$ & $7 < \text{CCM} \le 10$ & $4 \le \text{CCM} \le 7$ & $< 4$ \\
+M2.3 & Densidade Linhas (DLC) & Média $> 150$ ou Máx $> 400$ & Média $100\text{--}150$ ou Máx $300\text{--}400$ & Média $60\text{--}100$ e Máx $\le 300$ & Média $< 60$ e Máx $\le 200$ \\
+M2.4 & Cobertura Sobrescritas (ICT) & $< 50\%$ & $50\% \le \text{ICT} < 70\%$ & $70\% \le \text{ICT} < 90\%$ & $\ge 90\%$ \\
+M3.1 & Vulnerabilidades Código (DVC) & $N_{\text{alta}} \ge 1$ ou Score $> 15$ & $N_{\text{alta}} = 0$, Score $8\text{--}15$ & $N_{\text{alta}} = 0$, Score $1\text{--}7$ & Score $= 0$ \\
+M3.2 & Dependências Vulneráveis (CDV) & $\ge 5$ CVEs & $2\text{--}4$ CVEs & $1$ CVE & $0$ CVE \\
+M3.3 & Proteção de Endpoints (TPE) & $< 80\%$ & $80\% \le \text{TPE} < 95\%$ & $95\% \le \text{TPE} < 100\%$ & $100\%$ \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Consistência entre Fases e Rastreabilidade}
+\label{sec:rastreabilidade}
+
+A especificação da Fase 2 preserva a rastreabilidade estrita com as premissas estabelecidas na Seção~\ref{sec:fase1}. Cada métrica quantitativa atende a uma questão operacional que, por sua vez, operacionaliza o objetivo concebido sob a perspectiva da parte interessada afetada:
+\begin{enumerate}
+    \item As métricas M1.1 a M1.5 avaliam barreiras operacionais do ponto de vista do cidadão, fundamentando a decisão de redesenho dos fluxos participativos.
+    \item As métricas M2.1 a M2.4 diagnosticam o acoplamento estrutural e o débito técnico sob a ótica dos desenvolvedores do LAPPIS, direcionando refatorações preventivas no repositório \texttt{decidim-govbr}.
+    \item As métricas M3.1 a M3.3 asseguram que o órgão gestor governamental obtenha visibilidade sobre a integridade dos dados e a exposição a vulnerabilidades conhecidas, orientando o endurecimento das diretrizes de segurança.
+\end{enumerate}
 
 \bibliographystyle{IEEEtran}
 \bibliography{refs}
 
 \end{document}
+
