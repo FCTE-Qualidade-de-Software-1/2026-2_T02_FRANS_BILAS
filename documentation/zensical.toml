@@ -15,6 +15,7 @@ nav = [
   { "Início" = "index.md" },
   { "Fases da Avaliação" = [
     { "Fase 1: Planejamento e Modelo" = "fases/1.md" },
+    { "Fase 2: Especificação (GQM)" = "fases/2.md" },
   ] },
   { "Entregas" = [
     { "Entrega 1" = "entregas/1.md" },

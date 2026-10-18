@@ -47,6 +47,24 @@ A deliberação cívica em meios digitais depende da confiabilidade, acessibilid
 
 Desenvolvido em parceria com o Laboratório Avançado de Pesquisa e Desenvolvimento de Software (LAPPIS) da Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília / FCTE), o sistema é um desdobramento customizado da plataforma livre Decidim. A relevância democrática do sistema justifica uma auditoria rigorosa orientada a normas internacionais. Esta avaliação adota a família ISO/IEC 25000 (SQuaRE) para identificar inconformidades, apontar débitos técnicos e fundamentar propostas de melhoria técnica no código-fonte aberto.
 
+\section{Referencial Teórico}
+\label{sec:referencial}
+
+\subsection{Família SQuaRE}
+\label{sec:square}
+
+A série ISO/IEC 25000, chamada SQuaRE, reúne as normas de requisitos e avaliação de qualidade de software. O modelo de qualidade de produto da ISO/IEC 25010:2023 organiza a qualidade em nove características; nessa revisão, a antiga Usabilidade passou a se chamar Capacidade de Interação~\cite{iso25010}. Este trabalho usa três delas: Capacidade de Interação, Manutenibilidade e Segurança. A ISO/IEC 25040 divide a avaliação em estabelecer os requisitos, especificar, projetar, executar e concluir~\cite{iso25040}. As Fases 1 a 4 do trabalho seguem essa ordem.
+
+\subsection{Goal-Question-Metric}
+\label{sec:gqm}
+
+O GQM parte de objetivos e desce até as métricas em três níveis: conceitual (objetivo), operacional (questão) e quantitativo (métrica)~\cite{basili1994gqm}. Cada objetivo segue o template \textit{analisar} o objeto, \textit{com o propósito de}, \textit{em relação a} um foco de qualidade, \textit{do ponto de vista de} uma parte interessada, \textit{no contexto de} um ambiente. A equipe registra também uma hipótese por questão, usada como referência na interpretação dos resultados.
+
+\subsection{PSM e ISO/IEC 15939}
+\label{sec:psm}
+
+A ISO/IEC/IEEE 15939 descreve o processo de medição: planejar, coletar, analisar e usar as medidas para decidir~\cite{iso15939}. O PSM é o guia prático que deu origem à norma e agrupa as medidas em categorias de informação~\cite{mcgarry2002psm}. A gestão deste projeto usa três delas: Desempenho dos Processos, Calendário e Progresso, e Recursos e Custos.
+
 \section{Planejamento da Avaliação e Modelo de Qualidade}
 \label{sec:fase1}
 
@@ -103,10 +121,59 @@ O Brasil Participativo é categorizado como uma aplicação web transacional de 
 \label{sec:ods}
 \textit{Seção a cargo de Mateus Vinícius Vieira. Apresentará a correlação entre as métricas do projeto e a Meta 16.7 do ODS 16 da ONU.}
 
+\section{Especificação da Avaliação}
+\label{sec:fase2}
+
+Esta seção desdobra as características priorizadas na Seção~\ref{sec:fase1} em objetivos de medição, questões e hipóteses. Cada objetivo atende a uma das decisões da Seção~\ref{sec:proposito} e adota o ponto de vista de uma parte interessada da Seção~\ref{sec:stakeholders}.
+
+\subsection{Objetivos de Medição}
+\label{sec:objetivos}
+
+\begin{itemize}
+    \item \textbf{G1 (Capacidade de Interação)}: analisar o fluxo de participação (entrada com Gov.br, busca de processo, envio e apoio a propostas) com o propósito de identificar barreiras que levam à desistência, em relação à apreensibilidade, operabilidade, proteção contra erros e inclusividade, do ponto de vista do cidadão, no contexto de pessoas sem uso prévio da plataforma, no computador e no celular.
+    \item \textbf{G2 (Manutenibilidade)}: analisar o código do repositório \texttt{decidim-govbr}, com foco nas extensões do governo federal, com o propósito de apontar os módulos que mais precisam de refatoração, em relação à modularidade, analisabilidade e testabilidade, do ponto de vista da equipe de engenharia do LAPPIS, no contexto de análise estática de uma versão fixa do repositório.
+    \item \textbf{G3 (Segurança)}: analisar o código e as dependências do \texttt{decidim-govbr} com o propósito de avaliar a proteção dos dados e das ações dos participantes, em relação à confidencialidade, integridade, autenticidade e resistência, do ponto de vista do órgão gestor governamental, no contexto de análise estática, sem testes ativos contra a produção.
+\end{itemize}
+
+\subsection{Questões e Hipóteses}
+\label{sec:questoes}
+
+A Tabela~\ref{tab:gqm} lista as questões de cada objetivo e a hipótese correspondente. Os limites numéricos são valores de referência, a calibrar com os níveis de pontuação; nenhum deles é dado coletado.
+
+\begin{table*}[!t]
+\centering
+\caption{Questões e hipóteses por objetivo de medição.}
+\label{tab:gqm}
+\small
+\begin{tabular}{@{}l p{0.42\textwidth} p{0.45\textwidth}@{}}
+\toprule
+\textbf{ID} & \textbf{Questão} & \textbf{Hipótese} \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{G1: Capacidade de Interação (cidadão)}} \\
+Q1.1 & O cidadão conclui as tarefas centrais sem ajuda? & Ao menos 80\% concluem; o envio de proposta tem a menor taxa \\
+Q1.2 & A plataforma evita e ajuda a corrigir erros? & Erros são sinalizados, mas sem orientação de correção \\
+Q1.3 & O fluxo é utilizável com deficiência e no celular? & Sem falhas graves; problemas de contraste e rótulos \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{G2: Manutenibilidade (LAPPIS)}} \\
+Q2.1 & As sobrescritas do Decidim estão concentradas? & Parte sobrescreve classes do núcleo \\
+Q2.2 & É fácil localizar onde fazer uma mudança? & Complexidade baixa, concentrada em poucos arquivos \\
+Q2.3 & Os testes RSpec cobrem as classes customizadas? & Nem todas as sobrescritas têm teste \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{G3: Segurança (órgão gestor)}} \\
+Q3.1 & Há padrões de vulnerabilidade no código? & Poucos ou nenhum achado de alta severidade \\
+Q3.2 & As dependências estão livres de vulnerabilidades conhecidas? & Ao menos uma dependência vulnerável \\
+Q3.3 & Ações sensíveis exigem autenticação e permissão? & Todas exigem \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
 % \section{Considerações Iniciais}
 % \label{sec:consideracoes}
 % 
 % O planejamento estruturado na Fase 1 estabelece as bases conceituais para a aplicação do método GQM na Fase 2, na qual cada uma das três características selecionadas será desdobrada em objetivos, questões analíticas e métricas mensuráveis.
 % 
+
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
 
 \end{document}
