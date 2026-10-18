@@ -1,4 +1,4 @@
-# Qualidade de Software 1 (FGA0315) — Turma 02 (2026.2)
+# Qualidade de Software 1 (FGA0315) — Turma 01 (2026.2)
 ## Equipe Frans Bilas — Avaliação do Brasil Participativo
 
 Repositório da disciplina de **Qualidade de Software 1** da Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília — FCTE), ministrada pela Profa. Dra. Cristiane Soares Ramos.

@@ -4,7 +4,7 @@ icon: lucide/microscope
 
 # Artigo Científico
 
-Esta página apresenta as diretrizes, a estrutura e o andamento do artigo científico elaborado pela equipe **Frans Bilas (Turma 02)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)**, ministrada pela Profa. Dra. Cristiane Soares Ramos na Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília / FCTE).
+Esta página apresenta as diretrizes, a estrutura e o andamento do artigo científico elaborado pela equipe **Frans Bilas (Turma 01)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)**, ministrada pela Profa. Dra. Cristiane Soares Ramos na Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília / FCTE).
 
 ---
 

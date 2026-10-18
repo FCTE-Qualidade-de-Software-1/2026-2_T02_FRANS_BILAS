@@ -1,6 +1,6 @@
 # AGENTS.md — Diretrizes para Agentes de IA e Automações
 
-Este repositório pertence à equipe **Frans Bilas (Turma 02)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)** da Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília — FCTE), ministrada pela **Profa. Dra. Cristiane Soares Ramos**.
+Este repositório pertence à equipe **Frans Bilas (Turma 01)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)** da Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília — FCTE), ministrada pela **Profa. Dra. Cristiane Soares Ramos**.
 
 O usuário principal que lidera esta frente técnica é **João Victor da Silva Batista de Farias (João V. Farias — @beyondmagic)**, integrante da **Dupla 1 (Qualidade e GQM)** em conjunto com **Mateus Vinícius Vieira (@matix0)**.
 
