@@ -58,10 +58,10 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 
 ### Davi Mesquita Sousa
 
-- **Papel no Projeto**: A definir (Dupla 2 ou 3).
-- **Ferramentas Utilizadas**: *[A preencher pelo integrante]*
-- **Tarefas Realizadas com Apoio de IA**: *[A preencher pelo integrante]*
-- **Procedimento de Revisão Humana**: *[A preencher pelo integrante]*
+- **Papel no Projeto**: Ainda não definido no registro atual da equipe.
+- **Ferramentas Utilizadas**: Gemini.
+- **Tarefas Realizadas com Apoio de IA**: Correção textual dos conteúdos da documentação.
+- **Procedimento de Revisão Humana**: O texto corrigido foi revisado manualmente antes do registro.
 
 ---
 
@@ -98,7 +98,5 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 17/10/2026 | Criação da política de uso ético de IA, registro individual e estrutura para a equipe | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `1.1` | 18/10/2026 | Registro de uso de IA referente à especificação das métricas, níveis de julgamento e rastreabilidade da Fase 2 | [Lucca Medeiros Silva](https://github.com/luccameds) | A definir |
-
-
 
 
