@@ -85,10 +85,10 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 
 ### Miguel Arthur Oliveira de Lima
 
-- **Papel no Projeto**: A definir (Dupla 2 ou 3).
-- **Ferramentas Utilizadas**: *[A preencher pelo integrante]*
-- **Tarefas Realizadas com Apoio de IA**: *[A preencher pelo integrante]*
-- **Procedimento de Revisão Humana**: *[A preencher pelo integrante]*
+- **Papel no Projeto**: Dupla 3 (Gestão e Infraestrutura) — Planejamento de sprints, governança, métricas de processo (PSM/CID), consolidação da documentação da Fase 1 e apoio à Entrega 1.
+- **Ferramentas Utilizadas**: Antigravity (Gemini 3.8 Flash).
+- **Tarefas Realizadas com Apoio de IA**: Modelagem do diagrama conceitual da norma ISO/IEC 25010:2023 em Mermaid, estruturação da matriz de priorização formal com ponderação de impacto e risco para as características de qualidade, e auditoria dos critérios de entrega da Fase 1 e 2.
+- **Procedimento de Revisão Humana**: Calibração dos pesos e notas da matriz de priorização com base no contexto de software público deliberativo, validação da integridade sintática do diagrama de subcaracterísticas e adequação rigorosa à terminologia da ISO/IEC 25010:2023 e às regras da disciplina.
 
 ---
 
@@ -98,5 +98,6 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 17/10/2026 | Criação da política de uso ético de IA, registro individual e estrutura para a equipe | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `1.1` | 18/10/2026 | Registro de uso de IA referente à especificação das métricas, níveis de julgamento e rastreabilidade da Fase 2 | [Lucca Medeiros Silva](https://github.com/luccameds) | A definir |
+| `1.2` | 19/10/2026 | Registro individual de uso de IA de Miguel Arthur (modelagem SQuaRE, priorização e governança) | [Miguel Arthur Oliveira de Lima](https://github.com/zlimaz) | A definir |
 
 
