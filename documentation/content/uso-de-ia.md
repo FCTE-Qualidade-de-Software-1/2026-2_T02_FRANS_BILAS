@@ -70,7 +70,7 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 - **Papel no Projeto**: Referencial teórico, objetivos GQM, questões e hipóteses da Fase 2.
 - **Ferramentas Utilizadas**: Claude (Anthropic).
 - **Tarefas Realizadas com Apoio de IA**: Rascunho do referencial teórico (SQuaRE, GQM, PSM), dos objetivos no template GQM, das questões e das hipóteses em `fases/2.md`, da seção correspondente em `main.tex` e do slide 9 de `entregas/1.md`.
-- **Procedimento de Revisão Humana**: *[A preencher pelo integrante: como conferiu os objetivos contra a Fase 1, as referências e as hipóteses.]*
+- **Procedimento de Revisão Humana**: Clonei o repositório `decidim-govbr` (commit `176b046`, ramo `develop`) e conferi no código as afirmações das hipóteses: as extensões vêm de repositórios separados, o projeto sobrescreve classes do Decidim em `app/permissions/` e `app/commands/`, e há 156 testes RSpec em `spec/`. Confirmei no `Gemfile.lock` as versões Decidim 0.27.2, Rails 6.1.7.2 e Ruby 3.0.4 e corrigi as hipóteses H2.1, H2.3 e H3.2 com base nisso. Conferi as referências nas páginas da ISO e do editor, completando a do GQM com editor, volume e páginas. 
 
 ---
 
