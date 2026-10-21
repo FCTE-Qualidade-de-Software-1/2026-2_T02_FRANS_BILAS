@@ -17,6 +17,7 @@ nav = [
     { "Fase 1: Planejamento e Modelo" = "fases/1.md" },
     { "Fase 2: Especificação (GQM)" = "fases/2.md" },
   ] },
+  { "Gestão do Projeto (PSM)" = "gestao.md" },
   { "Entregas" = [
     { "Entrega 1" = "entregas/1.md" },
   ] },
