@@ -13,13 +13,13 @@ edit_uri = "edit/main/documentation/"
 
 nav = [
   { "Início" = "index.md" },
-  { "Fases da Avaliação" = [
-    { "Fase 1: Planejamento e Modelo" = "fases/1.md" },
-    { "Fase 2: Especificação (GQM)" = "fases/2.md" },
-  ] },
   { "Gestão do Projeto" = [
     { "Métricas PSM/CID" = "gestao.md" },
     { "Atas de Reunião" = "atas/index.md" },
+  ] },
+  { "Fases da Avaliação" = [
+    { "Fase 1: Planejamento e Modelo" = "fases/1.md" },
+    { "Fase 2: Especificação (GQM)" = "fases/2.md" },
   ] },
   { "Entregas" = [
     { "Entrega 1" = "entregas/1.md" },
