@@ -17,7 +17,10 @@ nav = [
     { "Fase 1: Planejamento e Modelo" = "fases/1.md" },
     { "Fase 2: Especificação (GQM)" = "fases/2.md" },
   ] },
-  { "Gestão do Projeto (PSM)" = "gestao.md" },
+  { "Gestão do Projeto" = [
+    { "Métricas PSM/CID" = "gestao.md" },
+    { "Atas de Reunião" = "atas/index.md" },
+  ] },
   { "Entregas" = [
     { "Entrega 1" = "entregas/1.md" },
   ] },
@@ -57,7 +60,7 @@ features = [
   # "header.autohide",
   # "navigation.expand",
   "navigation.footer",
-  "navigation.indexes",
+  # "navigation.indexes",
   "navigation.instant",
   "navigation.instant.prefetch",
   # "navigation.instant.progress",

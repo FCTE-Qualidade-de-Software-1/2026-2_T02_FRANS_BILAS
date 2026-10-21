@@ -63,7 +63,7 @@ Esta categoria monitora a alocação de tempo e a paridade de esforço entre tod
 
     onde $t_{i,k}$ é o tempo em horas despendido pelo integrante $i$ na atividade $k$, e $T_i$ é o número total de tarefas realizadas na semana.
 
-- **Fonte e Procedimento de Coleta**: Apontamento individual consolidado pela Dupla 3 ao término de cada sprint. A equipe realiza check-ins curtos após as aulas presenciais de segunda e quarta-feira, registrando as horas nas atas de sprint.
+- **Fonte e Procedimento de Coleta**: Apontamento individual consolidado pela Dupla 3 ao término de cada sprint. A equipe realiza check-ins curtos após as aulas presenciais de segunda e quarta-feira, registrando as horas nas [atas de reunião](atas/index.md).
 - **Meta e Critério de Controle**: Linha de base estipulada em **6 a 8 horas/semana por membro**. Valores abaixo de 4 horas geram alerta de sobrecarga para os demais colegas; valores acima de 12 horas exigem rebalanceamento de atividades.
 
 ### 2.2 M-PSM-2: Percentual de Contribuição Individual (PCI)
