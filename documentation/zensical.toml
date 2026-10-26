@@ -20,6 +20,7 @@ nav = [
   { "Fases da Avaliação" = [
     { "Fase 1: Planejamento e Modelo" = "fases/1.md" },
     { "Fase 2: Especificação (GQM)" = "fases/2.md" },
+    { "TCLE das Sessões com Usuários" = "tcle.md" },
   ] },
   { "Entregas" = [
     { "Entrega 1" = "entregas/1.md" },
