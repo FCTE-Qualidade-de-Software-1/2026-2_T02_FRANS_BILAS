@@ -169,6 +169,8 @@ O guia pede que as medidas sejam revistas para garantir que estão em uso; se n�
 
 A coleta passa para o GitHub Projects porque o guia pede que ela seja "automatizada até onde for prático e integrada ao fluxo de trabalho" (CID P1, §5). McGarry recomenda padronizar as medidas básicas e deixar os indicadores flexíveis (cap. 2, §2.2).
 
+O quadro da equipe é o Project [FRANS BILAS - Brasil Participativo](https://github.com/orgs/FCTE-Qualidade-de-Software-1/projects/33), ligado a este repositório. Ele reúne as issues do PC1, fechadas com quem fez cada item como responsável, e o backlog dos Sprints 3 a 6, tirado do Plano de Sprints de 14/10.
+
 Campos de cada issue (as medidas básicas):
 
 | Campo | Tipo | Alimenta |
@@ -240,7 +242,7 @@ A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints m
 
 | Prazo | Ação | Responsável |
 | :---: | :--- | :--- |
-| 28/10 | Criar o GitHub Projects com os campos da coleta, as iterações dos Sprints 3 a 5 e o milestone E2; cadastrar o backlog do Sprint 3 como issues | Dupla 3 |
+| 28/10 | Criar o GitHub Projects com os campos da coleta, as iterações dos Sprints e o milestone E2; cadastrar o backlog do Sprint 3 como issues. Concluído em 26/10 (issues #41 e #42) | Mateus |
 | 28/10 | Exigir PR para integrar na `main` | Dupla 3 |
 | 29/10 | Revisar esta página com a equipe e fechar os [pontos em validação](#9-pontos-em-validacao) | Dupla 3 com Mateus |
 | 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar ao Ponto de Controle 2 | Equipe |
