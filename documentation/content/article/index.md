@@ -47,19 +47,19 @@ Conforme a especificação do trabalho final, o artigo deve respeitar as seguint
 
 ## 4. Estrutura das Seções do Artigo
 
-O manuscrito segue a progressão lógica das quatro fases de avaliação de produto:
+O manuscrito segue a progressão lógica das normas da família SQuaRE e as exigências da especificação da disciplina:
 
 | Seção do Artigo | Conteúdo Principal | Fase Correspondente |
 | :--- | :--- | :--- |
-| **Resumo e Abstract** | Síntese do objeto, método GQM, características SQuaRE e conclusões | Transversal |
-| **1. Introdução** | Relevância democrática do Brasil Participativo, histórico LAPPIS e motivação | AG-C1 |
-| **2. Planejamento da Avaliação** | Propósito (C1), stakeholders (C2), arquitetura (C3), modelo SQuaRE (C4), priorização (C5), escopo (C6) e ODS (C7) | Fase 1 |
-| **3. Definição de Métricas (GQM)** | Grafo GQM, fichas técnicas de métricas, critérios de interpretação e hipóteses analíticas | Fase 2 |
-| **4. Plano de Avaliação e Coleta** | Métodos de medição, ferramentas de análise estática, ambiente de teste e protocolo de coleta | Fase 3 |
-| **5. Análise dos Resultados** | Apresentação dos dados, correlação entre características e as duas melhorias técnicas implementadas | Fase 4 |
-| **6. Julgamento e Recomendações** | Avaliação conclusiva contra os critérios de sucesso e recomendações para o governo | Fase 4 |
-| **Referências Bibliográficas** | Fontes normativas e teóricas gerenciadas em BibTeX | AG-C2 |
-| **Apêndices** | Tabela de Contribuição (esforço somando 100%) e Declaração de Uso de IA | AG-C3 e AG-C5 |
+| **Resumo e Abstract** | Síntese do objeto avaliado, método GQM, processo ISO/IEC 25040, características SQuaRE e escopo | Transversal |
+| **1. Introdução** | Contextualização do Brasil Participativo, histórico LAPPIS UnB e motivação democrática | AG-C1 |
+| **2. Referencial Teórico** | Normas SQuaRE (ISO/IEC 25010 e 25040), método GQM, processo de medição PSM (ISO/IEC/IEEE 15939) e literatura clássica | AG-C2 |
+| **3. Metodologia de Desenvolvimento do Projeto** | Processo avaliativo (ISO/IEC 25040), operacionalização analítica GQM, gestão por sprints com duplas e métricas PSM/CID, salvaguardas éticas e governança anti-meat-proxy | Especificação E1 / Gestão |
+| **4. Fase 1: Planejamento da Avaliação e Modelo de Qualidade** | Propósito (C1), stakeholders (C2), arquitetura (C3), modelo SQuaRE adaptado (C4), matriz formal ponderada de priorização (C5), escopo (C6) e ODS 16 (C7) | Fase 1 |
+| **5. Fase 2: Especificação da Avaliação (GQM)** | Objetivos G1 a G3 (F2-C1), questões operacionais (F2-C2), hipóteses (F2-C3), doze métricas quantitativas com fórmulas (F2-C4), níveis de pontuação (F2-C5) e rastreabilidade vertical | Fase 2 |
+| **6. Conclusão e Próximos Passos** | Síntese do planejamento executado e encaminhamentos para as Fases 3 e 4 | Transversal |
+| **Referências Bibliográficas** | Fontes normativas, metodológicas e clássicas gerenciadas em BibTeX | AG-C2 |
+| **Apêndices** | Tabela de Contribuição paritária (AG-C5 / Premissa 13) e Declaração de Uso de IA (AG-C3) | AG-C3 e AG-C5 |
 
 ---
 
@@ -70,9 +70,12 @@ Para compilar o artigo localmente e gerar o PDF com o compilador TeX instalado:
 ```bash
 cd documentation/content/article/source
 pdflatex -interaction=nonstopmode main.tex
+bibtex main
+pdflatex -interaction=nonstopmode main.tex
+pdflatex -interaction=nonstopmode main.tex
 ```
 
-Os arquivos temporários (`*.aux`, `*.log`, `*.out`) são ignorados pelo Git e podem ser removidos após a compilação.
+Os arquivos temporários (`*.aux`, `*.log`, `*.out`, `*.bbl`, `*.blg`) são ignorados pelo Git e podem ser removidos após a compilação.
 
 ---
 
@@ -81,6 +84,8 @@ Os arquivos temporários (`*.aux`, `*.log`, `*.out`) são ignorados pelo Git e p
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 17/10/2026 | Documentação sobre a escolha do modelo IEEEtran, requisitos pedagógicos e estrutura do artigo | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+| `1.1` | 26/10/2026 | Atualização da estrutura com inclusão da seção explícita de Metodologia, conclusão dos itens da Fase 1 e apêndices | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+
 
 
 
