@@ -125,7 +125,7 @@ Cada indicador segue os elementos do construto de medição (McGarry, cap. 2, §
 | Medida derivada | Total por pessoa e \(\%_i = \frac{R_i}{\sum_j R_j} \times 100\) | \(\text{Precisão} = \frac{R}{E} \times 100\) |
 | Indicador | Barras por integrante por sprint | Precisão por sprint |
 | Modelo de análise | Participação comparada à divisão esperada de 1/6 (16,7%) | Acima de 100%: a equipe subestimou; abaixo: superestimou |
-| Critério de decisão | Participação abaixo de 10% ou acima de 25% no sprint leva à conversa na reunião (critério por acordo da equipe, Aula 09, slide "Critérios de decisão"; [em validação](#9-pontos-em-validacao)) | Fora de 80% a 120%: rever a forma de estimar (adaptado da Fig. 26, CID P2, §9.2; [em validação](#9-pontos-em-validacao)) |
+| Critério de decisão | Participação abaixo de 10% ou acima de 25% no sprint leva à conversa na reunião (critério por acordo da equipe, Aula 09, slide "Critérios de decisão"; [em validação](#10-pontos-em-validacao)) | Fora de 80% a 120%: rever a forma de estimar (adaptado da Fig. 26, CID P2, §9.2; [em validação](#10-pontos-em-validacao)) |
 
 ### 4.3 Desempenho dos Processos
 
@@ -214,19 +214,60 @@ Linha de base de N6, tirada do histórico da `main` em 26/10: 42 integrações, 
 
 Os valores da Entrega 1 foram definidos por acordo, com horas estimadas, e não por registro. A partir do Sprint 3, a tabela passa a ser calculada pelas horas reais do indicador de esforço (N3).
 
-| Integrante | Papel no Projeto | Principais Responsabilidades e Entregáveis | Horas Est. (Sprint 1) | Esforço (%) |
-| :--- | :--- | :--- | :---: | :---: |
-| **João Victor da Silva Batista de Farias** | Dupla 1 (Qualidade/GQM) | Propósito da avaliação, mapeamento de stakeholders, contextualização técnica e caracterização da arquitetura. | ~7h | **16,67%** |
-| **Mateus Vinícius Vieira** | Dupla 1 (Qualidade/GQM) | Modelo de qualidade SQuaRE, priorização preliminar, escopo, profundidade e alinhamento aos ODS. | ~7h | **16,67%** |
-| **José Vinícius Alvares Soares de Queiroz** | Dupla 2 (GQM/Métricas) | Referencial teórico (SQuaRE/GQM/PSM), objetivos GQM, questões, hipóteses e implicações de medição. | ~7h | **16,67%** |
-| **Lucca Medeiros Silva** | Dupla 1 e 2 (Métricas) | Fichas técnicas das 12 métricas, formulação matemática MathJax, níveis de pontuação e matriz de rastreabilidade. | ~7h | **16,67%** |
-| **Miguel Arthur Oliveira de Lima** | Dupla 3 (Gestão/Infra) | Diagrama SQuaRE em Mermaid, matriz formal de priorização, governança, métricas PSM/CID e consolidação. | ~7h | **16,67%** |
-| **Davi Mesquita Sousa** | Dupla 3 (Gestão/Infra) | Revisão textual e de estilo, alinhamento dos slides da Entrega 1 e suporte à infraestrutura da GitPage. | ~7h | **16,67%** |
-| **TOTAL** | — | **Esforço Coletivo Consolidado** | **~42h** | **100,00%** |
+| Integrante | Usuário GitHub | Papel no Projeto | Principais Responsabilidades e Entregáveis | Horas Est. (Sprint 1) | Esforço (%) |
+| :--- | :--- | :--- | :--- | :---: | :---: |
+| **João Victor da Silva Batista de Farias** | [@BeyondMagic](https://github.com/BeyondMagic) | Dupla 1 (Qualidade/GQM) | Propósito da avaliação, partes interessadas, contextualização técnica, arquitetura do software, estruturação do artigo em LaTeX IEEEtran, introdução, metodologia, governança anti-meat-proxy e estimativa de esforço do backlog no Projects. | ~7h | **16,67%** |
+| **Mateus Vinícius Vieira** | [@matix0](https://github.com/matix0) | Dupla 1 (Qualidade/GQM) | Coordenação geral do backlog e sprints, estruturação da gestão do projeto adequada ao PSM/CID e elaboração do Termo de Consentimento Livre e Esclarecido (TCLE) para testes de usabilidade. | ~7h | **16,67%** |
+| **José Vinícius Alvares Soares de Queiroz** | [@JoseViniciusQueiroz](https://github.com/JoseViniciusQueiroz) | Dupla 2 (GQM/Métricas) | Levantamento do referencial teórico (SQuaRE, GQM e PSM), objetivos conceituais GQM, questões operacionais, hipóteses iniciais, apoio na priorização da Fase 1 e correção técnica do Rails. | ~7h | **16,67%** |
+| **Lucca Medeiros Silva** | [@luccameds](https://github.com/luccameds) | Dupla 2 (GQM/Métricas) | Fichas técnicas das doze métricas quantitativas, formulação matemática com MathJax, níveis de pontuação, critérios de julgamento, grafo GQM completo e matriz de rastreabilidade vertical. | ~7h | **16,67%** |
+| **Miguel Arthur Oliveira de Lima** | [@zlimaz](https://github.com/zlimaz) | Dupla 3 (Gestão/Infra) | Concepção do modelo de qualidade SQuaRE adaptado, diagrama hierárquico em Mermaid, matriz de priorização ponderada e trade-offs, modelo inicial PSM/CID e referências cruzadas no artigo. | ~7h | **16,67%** |
+| **Davi Mesquita Sousa** | [@davimesquit](https://github.com/davimesquit) | Dupla 3 (Gestão/Infra) | Delimitação de escopo, profundidade e objetos de avaliação, alinhamento aos ODS e metas, alinhamento de seções e slides com a Fase 1 e revisão de sumário e referências do artigo. | ~7h | **16,67%** |
+| **TOTAL** | - | **Esforço Coletivo Consolidado** | **Execução paritária das atividades da Entrega 1** | **~42h** | **100,00%** |
 
 ---
 
-## 9. Pontos em validação
+## 9. Painel Automatizado de Métricas e Indicadores de Processo
+
+Em cumprimento às diretrizes de automação e transparência do modelo PSM/CID (McGarry, cap. 2, §2.2; CID P1, §5), os indicadores de processo são extraídos diretamente do repositório Git e da API do GitHub Projects pela rotina automatizada `.github/scripts/update_metrics.py`. O pipeline de integração contínua (`.github/workflows/metrics.yml`) executa essa extração a cada push nas branches principais, atualizando os artefatos de dados e diagramas visuais versionados em `documentation/snippets/management/`.
+
+### 9.1 Resumo Consolidado de Atividade e Carga de Trabalho
+
+O artefato tabular abaixo é gerado dinamicamente pelo pipeline, consolidando a contagem de commits, adição e remoção de linhas de código e issues atribuídas a cada integrante da equipe:
+
+--8<-- "management/contributions-summary.md"
+
+### 9.2 Distribuição de Tarefas e Backlog (Issues)
+
+A distribuição da carga de trabalho entre os integrantes reflete o cadastramento e fechamento de issues no GitHub Projects da disciplina:
+
+--8<-- "management/issues-summary.md"
+
+```mermaid
+--8<-- "management/assigned-issues.mmd"
+```
+
+### 9.3 Dinâmica Semanal de Commits e Evolução do Código
+
+Os gráficos a seguir acompanham a cadência semanal de integrações e o volume de código alterado por membro:
+
+#### Velocidade Semanal de Commits
+```mermaid
+--8<-- "management/commit-velocity.mmd"
+```
+
+#### Adições de Linhas de Código
+```mermaid
+--8<-- "management/code-additions.mmd"
+```
+
+#### Remoções e Limpeza de Código
+```mermaid
+--8<-- "management/code-deletions.mmd"
+```
+
+---
+
+## 10. Pontos em validação
 
 Três decisões desta versão dependem de acordo da equipe:
 
@@ -236,7 +277,7 @@ Três decisões desta versão dependem de acordo da equipe:
 
 ---
 
-## 10. Cronograma da adequação
+## 11. Cronograma da adequação
 
 A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints medidos na release da E2, em 17/11.
 
@@ -244,7 +285,7 @@ A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints m
 | :---: | :--- | :--- |
 | 28/10 | Criar o GitHub Projects com os campos da coleta, as iterações dos Sprints e o milestone E2; cadastrar o backlog do Sprint 3 como issues. Concluído em 26/10 (issues #41 e #42) | Mateus |
 | 28/10 | Exigir PR para integrar na `main` | Dupla 3 |
-| 29/10 | Revisar esta página com a equipe e fechar os [pontos em validação](#9-pontos-em-validacao) | Dupla 3 com Mateus |
+| 29/10 | Revisar esta página com a equipe e fechar os [pontos em validação](#10-pontos-em-validacao) | Dupla 3 com Mateus |
 | 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar ao Ponto de Controle 2 | Equipe |
 | 11/11 | Fim do Sprint 4: segunda medição; ajustar indicadores pouco usados, com motivo em ata | Equipe |
 | 17/11 | Fim do Sprint 5: série dos Sprints 3 a 5, decisões registradas e tabela de contribuição calculada pelas horas reais, na release E2 | Dupla 3; revisão: Mateus |
@@ -270,3 +311,4 @@ A Parte 3 do guia (garantia de software e dívida técnica) não entra na gestã
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 21/10/2026 | Estruturação formal do modelo PSM/CID, métricas de processo e Tabela de Contribuição paritária (100%) | [Miguel Arthur Oliveira de Lima](https://github.com/zlimaz) | A definir |
 | `2.0` | 26/10/2026 | Adequação ao PSM/CID: diagnóstico, necessidades N1 a N6, indicadores da tabela ICM, construtos completos, processo de medição, regras de coleta e cronograma até a E2 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `2.1` | 26/10/2026 | Inclusão dos nomes e usuários GitHub dos integrantes, e painel automatizado de métricas com gráficos e tabelas de processo | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
