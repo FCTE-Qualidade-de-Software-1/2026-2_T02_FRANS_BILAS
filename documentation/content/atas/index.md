@@ -15,6 +15,7 @@ O registro sistemático das reuniões documenta o processo de tomada de decisão
 | Reunião | Data | Modalidade | Pauta Principal | Presença | Registro |
 | :---: | :---: | :---: | :--- | :---: | :---: |
 | **Ata 01** | 16/10/2026 | Síncrona (Whatsapp) | Planejamento da Entrega 1, análise de critérios, formação de duplas e governança técnica | 6/6 (100%) | [Ver Detalhes](#2-ata-da-reuniao-01-16102026) |
+| **Ata 02** | 29/10/2026 | Síncrona (Google Meet) | Planning do Sprint 3: Fase 3, Ponto de Controle 2 e manutenção das duplas | 5/6 (83%) | [Ver Detalhes](#3-ata-da-reuniao-02-29102026) |
 
 ---
 
@@ -92,7 +93,112 @@ Responsável: João Victor da Silva Batista de Farias (Dupla 1)
 
 ---
 
-## 3. Modelo Padronizado para Novas Atas
+## 3. Ata da Reunião 02 (29/10/2026)
+
+### 3.1 Identificação e Participantes
+
+- **Data**: 29 de outubro de 2026 (quinta-feira)
+- **Horário**: 20h04 às 20h23 (duração aproximada: 19 min)
+- **Local**: Google Meet, com transcrição automática
+- **Redator da Ata**: Mateus Vinícius Vieira
+- **Facilitador**: Mateus Vinícius Vieira, com o roteiro da planning enviado ao grupo antes da reunião
+- **Participantes Presentes**:
+  - Davi Mesquita Sousa
+  - João Victor da Silva Batista de Farias
+  - José Vinícius Alvares Soares de Queiroz
+  - Mateus Vinícius Vieira
+  - Miguel Arthur Oliveira de Lima
+- **Ausente**: Lucca Medeiros Silva tentou entrar na chamada depois do encerramento.
+- **Quórum**: 5 de 6 integrantes presentes (83%).
+
+---
+
+### 3.2 Objetivos da Reunião
+
+1. Apresentar o planejamento do Sprint 3, voltado à Fase 3 e ao Ponto de Controle 2 (PC2).
+2. Definir o formato de trabalho das atividades do Sprint 3.
+3. Fixar o prazo de encerramento do sprint.
+
+---
+
+### 3.3 Pautas e Deliberações
+
+#### Pauta 1: Critérios das Fases 3 e 4
+
+- José Vinícius enviou no grupo os prints dos critérios gerais das Fases 3 e 4.
+- Três integrantes ainda não tinham respondido o formulário avaliativo da disciplina, que fecha em 30/10: Davi, Mateus e Miguel.
+
+#### Pauta 2: Foco e prazo do Sprint 3
+
+- O Sprint 3 começou no papel em 27/10, mas a planning só aconteceu em 29/10.
+- O foco é deixar a Fase 3 estruturada para o PC2. A equipe vai mostrar à professora o início da Fase 3, as Fases 1 e 2 revisadas e a gestão PSM atualizada.
+- O calendário sorteia 5 equipes para 04/11 e 5 para 09/11. A equipe se prepara para 04/11, para ganhar tempo para a Fase 4 antes da Entrega 2 (18/11).
+- O escopo segue os blocos 2 e 3 do roteiro e do GitHub Projects: critérios F3-C1, F3-C2 e F3-C8, adequação da gestão ao PSM e correções do PC1. Entram o plano de avaliação, as instruções de coleta, o ambiente de avaliação, o cronograma de coleta alinhado à Fase 4 e o TCLE, cuja base já está no repositório.
+- As atividades do Sprint 4 ainda não foram definidas. Dependem do que sobrar do Sprint 3.
+
+#### Pauta 3: Trabalho em duplas e carga
+
+- José Vinícius contou 14 atividades no bloco 3 do roteiro.
+- O grupo decidiu manter o trabalho em duplas, para que um revise o outro e assuma a tarefa se o colega travar.
+- As duplas continuam as da Ata 01: Dupla 1 (João e Mateus), Dupla 2 (José Vinícius e Lucca) e Dupla 3 (Davi e Miguel). Na Dupla 1, João fica com mais revisão neste sprint, já que fez a maior parte na Entrega 1.
+- José Vinícius apontou o desequilíbrio da distribuição atual no Projects: seis atividades com a Dupla 2, quatro com a Dupla 3 e uma com a Dupla 1.
+- Mateus vai revisar as horas estimadas de cada issue e redistribuir as tarefas para que as três duplas fiquem com carga parecida. A estimativa falada na reunião foi de 15 a 20 horas para o sprint inteiro. O quadro soma hoje 39 horas estimadas nas issues abertas do Sprint 3, então a revisão deve conciliar os dois números.
+
+#### Pauta 4: Artigo
+
+- O artigo tem as Fases 1 e 2. As Fases 3 e 4 entram depois de concluídas.
+
+#### Pautas do roteiro que ficaram para depois
+
+Os pontos em validação da [Gestão](../gestao.md#10-pontos-em-validacao) não foram votados: critério de esforço por integrante (N3), faixa de precisão de estimativa (N4) e responsáveis pela coleta. Também ficaram em aberto quem apresenta cada parte do PC2 e a diferença entre a release E2 em 17/11 (Gestão) e a Entrega 2 em 18/11 (calendário).
+
+---
+
+### 3.4 Decisões
+
+| Decisão | Registro para a medição |
+| :--- | :--- |
+| As atividades do Sprint 3 são feitas em duplas, com revisão mútua | Divisão em uma issue por pessoa ainda pendente (regra 1 da coleta) |
+| O Sprint 3 termina em 04/11 | Fim do período de N1 a N6 no Sprint 3 |
+| A equipe se prepara para apresentar o PC2 em 04/11 | Vale mesmo se o sorteio cair em 09/11 |
+
+---
+
+### 3.5 Encaminhamentos
+
+| Ação | Responsável | Prazo |
+| :--- | :--- | :---: |
+| Revisar as horas estimadas e redistribuir as issues do Sprint 3 entre as duplas | Mateus Vinícius Vieira | Antes do início das tarefas |
+| Responder o formulário avaliativo da disciplina | Davi, Mateus e Miguel | 30/10/2026 |
+| Executar as atividades da Fase 3 do Sprint 3 | Todas as duplas | 04/11/2026 |
+| Votar os pontos em validação da Gestão e definir quem apresenta cada parte do PC2 | Equipe | Próxima reunião |
+| Atualizar o artigo com as Fases 3 e 4 | Equipe | 18/11/2026 |
+
+---
+
+### 3.6 Redistribuição de 30/10
+
+O primeiro encaminhamento foi concluído em 30/10. Mateus redistribuiu o Sprint 3 no GitHub Projects por pessoa, com as horas revistas para considerar o uso de IA nas tarefas de escrita. O sprint passou de 13 issues e 39 h para 18 issues e 31 h, cada uma com um responsável só.
+
+| Integrante | Issues | Horas estimadas |
+| :--- | :--- | :---: |
+| Mateus Vinícius Vieira | #59 e #60 (revisão das Fases 1 e 2), #69 (correções do PC1), #70 (slides do PC2) | 8 |
+| Miguel Arthur Oliveira de Lima | #67 (recrutamento), #68 (revisão do plano), #44 (pontos em validação), #43 (PR obrigatório) | 5,5 |
+| José Vinícius Alvares Soares de Queiroz | #62 (Plano de Avaliação), #66 (análise estática de segurança), #65 (cronograma da coleta) | 5 |
+| João Victor da Silva Batista de Farias | #90 (coleta piloto de usabilidade), #45 (campos do TCLE) | 4,5 |
+| Lucca Medeiros Silva | #63 (passo a passo das medidas), #89 (análise estática de manutenibilidade) | 4 |
+| Davi Mesquita Sousa | #64 (ambiente de avaliação), #46 (medição do Sprint 3) | 4 |
+
+Outras mudanças:
+
+- A #66 e a #67 foram divididas: a parte de manutenibilidade virou a #89 e a coleta piloto virou a #90.
+- A #59 e a #60 saíram do Sprint 2 e passaram a cobrir as Fases 1 e 2.
+- Revisão de fases, correções do PC1 e slides ficam com Mateus. Nas apresentações (#70 e #84), Mateus monta os slides e a equipe apresenta.
+- Os 8 h de Mateus passam do teto de 25% por pessoa proposto para N3. A decisão foi dele, como líder do grupo.
+
+---
+
+## 4. Modelo Padronizado para Novas Atas
 
 Para preservar a rastreabilidade e uniformidade da documentação da equipe, todas as atas subsequentes devem adotar a seguinte estrutura:
 
@@ -126,4 +232,5 @@ Para preservar a rastreabilidade e uniformidade da documentação da equipe, tod
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 21/10/2026 | Criação da página de atas, registro detalhado da Reunião 01 de planejamento (16/10/2026) e template padronizado | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+| `1.1` | 30/10/2026 | Registro da Reunião 02, planning do Sprint 3 (29/10/2026), e da redistribuição de tarefas de 30/10 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 
