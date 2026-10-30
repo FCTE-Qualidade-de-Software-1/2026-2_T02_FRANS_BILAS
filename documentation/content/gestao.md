@@ -242,8 +242,14 @@ A distribuição da carga de trabalho entre os integrantes reflete o cadastramen
 
 --8<-- "management/issues-summary.md"
 
+#### Issues Atribuídas por Integrante
 ```mermaid
 --8<-- "management/assigned-issues.mmd"
+```
+
+#### Tarefas Resolvidas por Integrante
+```mermaid
+--8<-- "management/resolved-issues.mmd"
 ```
 
 ### 9.3 Dinâmica Semanal de Commits e Evolução do Código
@@ -312,3 +318,4 @@ A Parte 3 do guia (garantia de software e dívida técnica) não entra na gestã
 | `1.0` | 21/10/2026 | Estruturação formal do modelo PSM/CID, métricas de processo e Tabela de Contribuição paritária (100%) | [Miguel Arthur Oliveira de Lima](https://github.com/zlimaz) | A definir |
 | `2.0` | 26/10/2026 | Adequação ao PSM/CID: diagnóstico, necessidades N1 a N6, indicadores da tabela ICM, construtos completos, processo de medição, regras de coleta e cronograma até a E2 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `2.1` | 26/10/2026 | Inclusão dos nomes e usuários GitHub dos integrantes, e painel automatizado de métricas com gráficos e tabelas de processo | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+| `2.2` | 29/10/2026 | Inclusão do gráfico de tarefas resolvidas por integrante no painel automatizado | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |

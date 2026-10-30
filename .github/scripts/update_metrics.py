@@ -332,15 +332,15 @@ def render_timeline_chart(title: str, y_label: str, weeks: list, series_by_autho
     return chart
 
 
-def render_bar_chart(title: str, y_label: str, counts_by_author: dict) -> str:
+def render_bar_chart(title: str, y_label: str, counts_by_author: dict, key: str = "total") -> str:
     """Format Mermaid xychart-beta with dedicated series per contributor for distinct colors."""
     x_labels = [f'"{author}"' for author in TRACKED_AUTHORS]
-    vals = [counts_by_author.get(author, {}).get("total", 0) for author in TRACKED_AUTHORS]
+    vals = [counts_by_author.get(author, {}).get(key, 0) for author in TRACKED_AUTHORS]
     max_bound = calculate_upper_bound(vals, min_bound=5)
 
     bar_lines = []
     for i, author in enumerate(TRACKED_AUTHORS):
-        author_val = counts_by_author.get(author, {}).get("total", 0)
+        author_val = counts_by_author.get(author, {}).get(key, 0)
         slot_vals = [author_val if j == i else 0 for j in range(len(TRACKED_AUTHORS))]
         bar_lines.append(f'    bar [{", ".join(str(v) for v in slot_vals)}]')
 
@@ -486,6 +486,13 @@ def main():
         "Issues Atribuídas por Integrante",
         "Issues",
         issue_counts,
+        key="total",
+    )
+    resolved_chart = render_bar_chart(
+        "Tarefas Resolvidas por Integrante",
+        "Tarefas Resolvidas",
+        issue_counts,
+        key="closed",
     )
 
     # Generate markdown tables
@@ -497,6 +504,7 @@ def main():
     (SNIPPETS_DIR / "code-additions.mmd").write_text(additions_chart + "\n", encoding="utf-8")
     (SNIPPETS_DIR / "code-deletions.mmd").write_text(deletions_chart + "\n", encoding="utf-8")
     (SNIPPETS_DIR / "assigned-issues.mmd").write_text(issues_chart + "\n", encoding="utf-8")
+    (SNIPPETS_DIR / "resolved-issues.mmd").write_text(resolved_chart + "\n", encoding="utf-8")
     (SNIPPETS_DIR / "contributions-summary.md").write_text(contributions_table + "\n", encoding="utf-8")
     (SNIPPETS_DIR / "issues-summary.md").write_text(issues_table + "\n", encoding="utf-8")
 
