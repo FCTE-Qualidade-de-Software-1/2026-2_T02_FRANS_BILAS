@@ -2,7 +2,20 @@
 
 Este repositório pertence à equipe **Frans Bilas (Turma 01)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)** da Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília — FCTE), ministrada pela **Profa. Dra. Cristiane Soares Ramos**.
 
-O usuário principal que lidera esta frente técnica é **João Victor da Silva Batista de Farias (João V. Farias — @beyondmagic)**, integrante da **Dupla 1 (Qualidade e GQM)** em conjunto com **Mateus Vinícius Vieira (@matix0)**.
+Mais de um integrante usa agentes de IA neste repositório. Identifique quem está interagindo pelo `git config user.email` e use a tabela abaixo. O líder do grupo é **Mateus Vinícius Vieira (@matix0)**.
+
+### Integrantes
+
+| Integrante | GitHub | E-mail de commit | Dupla | Responsabilidades no Sprint 3 |
+| :--- | :--- | :--- | :---: | :--- |
+| Mateus Vinícius Vieira | @matix0 | mateusviniciuspw@gmail.com | 1 | Líder: backlog, sprints e gestão PSM/CID; revisão das Fases 1 e 2, correções do PC1, documentação e slides (a equipe apresenta). Não edita o artigo |
+| João Victor da Silva Batista de Farias | @BeyondMagic | koetemagie@gmail.com | 1 | Coleta piloto de usabilidade e TCLE |
+| José Vinícius Alvares Soares de Queiroz | @JoseViniciusQueiroz | viniciusa.s.queiroz@gmail.com | 2 | Plano de Avaliação, análise estática de segurança e cronograma da coleta |
+| Lucca Medeiros Silva | @luccameds | 63163895+luccameds@users.noreply.github.com | 2 | Passo a passo das medidas e análise estática de manutenibilidade |
+| Miguel Arthur Oliveira de Lima | @zlimaz | miguell1040z@gmail.com | 3 | Recrutamento, revisão do Plano de Avaliação e pontos em validação da Gestão |
+| Davi Mesquita Sousa | @davimesquit | davimesquita.2004@gmail.com | 3 | Ambiente de avaliação e medição do sprint |
+
+A divisão completa e atualizada fica no GitHub Projects 33 e na [Ata 02](documentation/content/atas/index.md).
 
 ### Divisão de Responsabilidades da Dupla 1 (Fase 1 / Entrega 1):
 - **João V. Farias (Atividades Iniciais)**:
@@ -75,7 +88,7 @@ Os slides da Entrega 1 ficam em `documentation/content/entregas/1.md`.
 
 ## 5. Convenções de Git e Contribuição
 
-- **Branches**: `tipo/numero-descricao` (ex.: `docs/1-proposito-stakeholders`).
+- **Branches**: `tipo/numero-descricao` (ex.: `docs/1-proposito-stakeholders`), com `numero` da issue relacionada. Agentes nunca usam nomes gerados automaticamente, como `claude/<slug>-<hash>`: se a sessão começar numa branch assim, renomeie antes do primeiro commit.
 - **Commits**: Conventional Commits em português ou inglês (`docs:`, `feat:`, `fix:`, `refactor:`, `chore:`).
 - **Pre-commit Hook**: Ativado via `git config core.hooksPath .githooks`. Executa automaticamente o script `scripts/check_humanizer.py` a cada commit de arquivos `.md` e `.tex`.
 
