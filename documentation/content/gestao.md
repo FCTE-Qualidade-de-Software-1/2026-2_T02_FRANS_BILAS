@@ -296,6 +296,14 @@ Fonte: GitHub Projects 33, issues do milestone E1 (PC1).
 
 Em cumprimento às diretrizes de automação e transparência do modelo PSM/CID (McGarry, cap. 2, §2.2; CID P1, §5), os indicadores de processo são extraídos diretamente do repositório Git e da API do GitHub Projects pela rotina automatizada `.github/scripts/update_metrics.py`. O pipeline de integração contínua (`.github/workflows/metrics.yml`) executa essa extração a cada push nas branches principais, atualizando os artefatos de dados e diagramas visuais versionados em `documentation/snippets/management/`.
 
+Origem de cada dado do painel:
+
+- **Commits e linhas alteradas**: histórico do Git.
+- **Issues abertas e fechadas por integrante**: issues do repositório, lidas com o token do próprio workflow.
+- **Horas estimadas e reais**: campos do GitHub Projects 33. O token padrão do GitHub Actions não lê projetos da organização, então as horas só aparecem quando o repositório tem o segredo `PROJECTS_TOKEN`, um token com leitura do Projects. Sem ele, as colunas de horas mostram "sem acesso".
+
+Até 04/11, quando a consulta ao Projects falhava, o script usava valores fixos no código. Por isso as Tabelas 12 e 13 e as Figuras 2 e 3 ficaram paradas nos números de 27/10. A falha foi encontrada na medição do Sprint 3 e corrigida na issue #106: o script não tem mais valores de reserva e, se não conseguir ler as issues, não grava nada.
+
 ### 9.1 Resumo Consolidado de Atividade e Carga de Trabalho
 
 O artefato tabular abaixo é gerado dinamicamente pelo pipeline, consolidando a contagem de commits, adição e remoção de linhas de código e issues atribuídas a cada integrante da equipe (Tabela 12).
@@ -468,7 +476,7 @@ A quarta atividade do PSM pergunta se as medidas estão em uso (Seção 5). No S
 - **Indicadores em uso.** N1, N2 e N6 tiveram dado coletado, e os três levaram a uma decisão (Tabela 16).
 - **Indicadores sem dado.** N3, N4 e N5 dependem de campos preenchidos à mão, e nenhum foi preenchido. A tabela de contribuição da E2 sai de N3. Se os campos continuarem vazios no Sprint 4, o indicador perde o uso e precisa ser trocado, com o motivo registrado em ata.
 - **Status no quadro.** As seis issues fechadas continuam com Status "Backlog" no Projects. O fechamento da issue é a fonte usada por N1 e N2; o campo Status não entra na conta.
-- **Painel automático.** Ao conferir os dados, a medição encontrou uma falha no painel da Seção 9: quando a consulta ao Projects falhava, o script usava valores fixos no código, e as Tabelas 12 e 13 deixaram de mudar depois de 27/10. A correção é a issue #106.
+- **Painel automático.** Ao conferir os dados, a medição encontrou uma falha no painel da Seção 9: quando a consulta ao Projects falhava, o script usava valores fixos no código, e as Tabelas 12 e 13 deixaram de mudar depois de 27/10. A falha foi corrigida na issue #106, como descreve a Seção 9.
 - **Limitação de N2.** O burndown foi reconstruído pelo milestone atual e pelas datas de criação e fechamento. Uma issue reaberta (#75) conta como aberta no período todo.
 
 ---
@@ -494,3 +502,4 @@ A Parte 3 do guia (garantia de software e dívida técnica) não entra na gestã
 | `2.2` | 29/10/2026 | Inclusão do gráfico de tarefas resolvidas por integrante no painel automatizado | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `2.3` | 04/11/2026 | Registro das correções do PC1, situação dos sprints e do cronograma da adequação, pontos em aberto da Ata 02, e legenda, fonte e citação no texto de todas as tabelas e figuras | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `2.4` | 04/11/2026 | Medição do Sprint 3 (N1 a N6), decisões de gestão e avaliação da medição | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `2.5` | 04/11/2026 | Origem dos dados do painel automático e correção dos valores fixos (issue #106) | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
