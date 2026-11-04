@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  issues: read
 
 jobs:
   update-metrics:
@@ -27,6 +28,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Token com leitura do Projects 33 da organização; sem ele, o painel mostra as horas como "sem acesso".
+          PROJECTS_TOKEN: ${{ secrets.PROJECTS_TOKEN }}
       - name: Commit updated snippets
         run: |
           git config user.name "github-actions[bot]"

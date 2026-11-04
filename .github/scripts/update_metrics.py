@@ -21,6 +21,8 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 SNIPPETS_DIR = REPO_ROOT / "documentation" / "snippets" / "management"
 
 PROJECT_ID = "PVT_kwDODIobq84BoE3c"
+REPO_OWNER = "FCTE-Qualidade-de-Software-1"
+REPO_NAME = "2026-2_T02_FRANS_BILAS"
 
 TEAM_MEMBERS = [
     {
@@ -167,131 +169,152 @@ def get_git_log_data():
     return full_weeks, commits_by_week, additions_by_week, deletions_by_week, totals
 
 
-def get_project_and_issue_metrics():
-    """Retrieve issue counts and estimated/real effort from GitHub Projects 33."""
-    counts = {
-        author: {
-            "total": 0,
-            "closed": 0,
-            "open": 0,
-            "est_closed": 0.0,
-            "real_closed": 0.0,
-            "est_all": 0.0,
-            "real_all": 0.0,
-        }
-        for author in TRACKED_AUTHORS
-    }
+def resolve_token(*env_names):
+    """Token do GitHub: variáveis de ambiente, depois o gh CLI local, depois a config local do MCP."""
+    for name in env_names:
+        if os.environ.get(name):
+            return os.environ[name]
+    try:
+        token = subprocess.run(["gh", "auth", "token"], capture_output=True, text=True, check=True).stdout.strip()
+        if token:
+            return token
+    except Exception:
+        pass
+    try:
+        mcp_file = Path.home() / ".gemini" / "config" / "mcp_config.json"
+        if mcp_file.exists():
+            cfg = json.loads(mcp_file.read_text())
+            return cfg.get("mcpServers", {}).get("github", {}).get("env", {}).get("GITHUB_PERSONAL_ACCESS_TOKEN")
+    except Exception:
+        pass
+    return None
 
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
-    if not token:
-        try:
-            mcp_file = Path.home() / ".gemini" / "config" / "mcp_config.json"
-            if mcp_file.exists():
-                cfg = json.loads(mcp_file.read_text())
-                token = cfg.get("mcpServers", {}).get("github", {}).get("env", {}).get("GITHUB_PERSONAL_ACCESS_TOKEN")
-        except Exception:
-            pass
 
-    headers = {
-        "Content-Type": "application/json",
-        "User-Agent": "MetricsScript",
-    }
+def graphql_paginate(query: str, path: list, token: str) -> list:
+    """Executa uma consulta GraphQL paginada e devolve todos os nós. Falha com exceção."""
+    headers = {"Content-Type": "application/json", "User-Agent": "MetricsScript"}
     if token:
         headers["Authorization"] = f"bearer {token}"
+    nodes, cursor = [], None
+    while True:
+        req = urllib.request.Request(
+            "https://api.github.com/graphql",
+            data=json.dumps({"query": query, "variables": {"cursor": cursor}}).encode("utf-8"),
+            headers=headers,
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        if data.get("errors"):
+            raise RuntimeError(data["errors"][0].get("message"))
+        block = data.get("data")
+        for key in path:
+            block = (block or {}).get(key)
+        if block is None:
+            raise RuntimeError(f"resposta sem {'.'.join(path)} (token sem acesso?)")
+        nodes += block["nodes"]
+        if not block["pageInfo"]["hasNextPage"]:
+            return nodes
+        cursor = block["pageInfo"]["endCursor"]
 
-    query = """
-    query {
-      node(id: "%s") {
-        ... on ProjectV2 {
-          items(first: 100) {
+
+ISSUES_QUERY = """
+query($cursor: String) {
+  repository(owner: "%s", name: "%s") {
+    issues(first: 100, after: $cursor) {
+      pageInfo { hasNextPage endCursor }
+      nodes { number state assignees(first: 10) { nodes { login } } }
+    }
+  }
+}
+""" % (REPO_OWNER, REPO_NAME)
+
+PROJECT_QUERY = """
+query($cursor: String) {
+  node(id: "%s") {
+    ... on ProjectV2 {
+      items(first: 100, after: $cursor) {
+        pageInfo { hasNextPage endCursor }
+        nodes {
+          content { ... on Issue { number } }
+          fieldValues(first: 30) {
             nodes {
-              id
-              content {
-                ... on Issue {
-                  number
-                  title
-                  state
-                  assignees(first: 10) { nodes { login } }
-                }
-              }
-              fieldValues(first: 20) {
-                nodes {
-                  ... on ProjectV2ItemFieldNumberValue {
-                    number
-                    field { ... on ProjectV2FieldCommon { name } }
-                  }
-                }
+              ... on ProjectV2ItemFieldNumberValue {
+                number
+                field { ... on ProjectV2FieldCommon { name } }
               }
             }
           }
         }
       }
     }
-    """ % PROJECT_ID
+  }
+}
+""" % PROJECT_ID
 
-    items = []
+
+def get_project_and_issue_metrics():
+    """Conta issues por integrante pelo repositório e soma as horas do GitHub Projects 33.
+
+    As contagens vêm das issues do repositório, que o token do GitHub Actions consegue ler.
+    As horas vêm do Projects, que exige um token com acesso à organização (PROJECTS_TOKEN).
+    Sem esse acesso, as horas ficam como None e as tabelas mostram "sem acesso". Não há
+    valores de reserva: se as issues não puderem ser lidas, o script falha e nada é gravado.
+    """
+    issues = graphql_paginate(ISSUES_QUERY, ["repository", "issues"], resolve_token("GITHUB_TOKEN", "GH_TOKEN"))
+
+    hours = {}
     try:
-        req = urllib.request.Request(
-            "https://api.github.com/graphql",
-            data=json.dumps({"query": query}).encode("utf-8"),
-            headers=headers,
-        )
-        with urllib.request.urlopen(req, timeout=12) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            items = data.get("data", {}).get("node", {}).get("items", {}).get("nodes", [])
-    except Exception as e:
-        print(f"GraphQL request warning: {e}", file=sys.stderr)
-        items = []
-
-    if items:
+        items = graphql_paginate(PROJECT_QUERY, ["node", "items"], resolve_token("PROJECTS_TOKEN", "GITHUB_TOKEN", "GH_TOKEN"))
         for it in items:
-            c = it.get("content") or {}
-            state = c.get("state", "").upper()
-            assignees = [a["login"] for a in c.get("assignees", {}).get("nodes", [])]
+            number = (it.get("content") or {}).get("number")
+            if number is None:
+                continue
+            fields = {}
+            for fv in it["fieldValues"]["nodes"]:
+                if fv and fv.get("field"):
+                    fields[fv["field"]["name"]] = fv.get("number")
+            hours[number] = (fields.get("Esforço estimado (h)"), fields.get("Esforço real (h)"))
+    except Exception as e:
+        print(f"Projects 33 sem acesso; horas não serão exibidas: {e}", file=sys.stderr)
+        hours = None
 
-            est = None
-            real = None
-            for fv in it.get("fieldValues", {}).get("nodes", []):
-                fname = fv.get("field", {}).get("name")
-                if fname == "Esforço estimado (h)":
-                    est = fv.get("number")
-                elif fname == "Esforço real (h)":
-                    real = fv.get("number")
-
-            weight = 1.0 / len(assignees) if assignees else 1.0
-            for a in assignees:
-                handle = normalize_author(a, "")
-                if handle in counts:
-                    counts[handle]["total"] += 1
-                    if state == "CLOSED":
-                        counts[handle]["closed"] += 1
-                        if est is not None:
-                            counts[handle]["est_closed"] += est * weight
-                        if real is not None:
-                            counts[handle]["real_closed"] += real * weight
-                    else:
-                        counts[handle]["open"] += 1
-
-                    if est is not None:
-                        counts[handle]["est_all"] += est * weight
-                    if real is not None:
-                        counts[handle]["real_all"] += real * weight
-    else:
-        # Fallback values from verified Project 33 state
-        fallback_stats = {
-            "BeyondMagic": {"total": 27, "closed": 18, "open": 9, "est_closed": 39.0, "real_closed": 13.2, "est_all": 50.7, "real_all": 13.2},
-            "matix0": {"total": 14, "closed": 4, "open": 10, "est_closed": 10.0, "real_closed": 3.4, "est_all": 22.8, "real_all": 3.4},
-            "JoseViniciusQueiroz": {"total": 20, "closed": 8, "open": 12, "est_closed": 18.0, "real_closed": 6.0, "est_all": 46.7, "real_all": 6.0},
-            "luccameds": {"total": 20, "closed": 8, "open": 12, "est_closed": 20.0, "real_closed": 6.7, "est_all": 48.7, "real_all": 6.7},
-            "zlimaz": {"total": 21, "closed": 7, "open": 14, "est_closed": 12.0, "real_closed": 4.1, "est_all": 27.8, "real_all": 4.1},
-            "davimesquit": {"total": 20, "closed": 6, "open": 14, "est_closed": 9.0, "real_closed": 3.1, "est_all": 24.8, "real_all": 3.1},
+    counts = {
+        author: {
+            "total": 0, "closed": 0, "open": 0,
+            "est_closed": 0.0, "real_closed": 0.0, "est_all": 0.0, "real_all": 0.0,
         }
-        for h, v in fallback_stats.items():
-            if h in counts:
-                counts[h].update(v)
+        for author in TRACKED_AUTHORS
+    }
+    for issue in issues:
+        assignees = [a["login"] for a in issue["assignees"]["nodes"]]
+        closed = issue["state"] == "CLOSED"
+        est, real = (hours or {}).get(issue["number"], (None, None))
+        weight = 1.0 / len(assignees) if assignees else 1.0
+        for a in assignees:
+            handle = normalize_author(a, "")
+            if handle not in counts:
+                continue
+            c = counts[handle]
+            c["total"] += 1
+            c["closed" if closed else "open"] += 1
+            if est is not None:
+                c["est_all"] += est * weight
+                if closed:
+                    c["est_closed"] += est * weight
+            if real is not None:
+                c["real_all"] += real * weight
+                if closed:
+                    c["real_closed"] += real * weight
 
+    if hours is None:
+        for c in counts.values():
+            for key in ("est_closed", "real_closed", "est_all", "real_all"):
+                c[key] = None
     return counts
 
+
+def format_hours(value) -> str:
+    return "sem acesso" if value is None else f"{value:.1f}h".replace(".", ",")
 
 def calculate_upper_bound(values, min_bound=10):
     """Compute clean y-axis ceiling rounded to a readable multiple."""
@@ -381,18 +404,18 @@ def generate_contributions_table(git_totals: dict, issue_counts: dict) -> str:
 
         st = issue_counts.get(handle, {})
         closed_iss = st.get("closed", 0)
-        est = st.get("est_closed", 0.0)
-        real = st.get("real_closed", 0.0)
+        est = st.get("est_closed")
+        real = st.get("real_closed")
 
         tot_commits += c
         tot_adds += a
         tot_dels += d
         tot_closed += closed_iss
-        tot_est += est
-        tot_real += real
+        tot_est = None if est is None or tot_est is None else tot_est + est
+        tot_real = None if real is None or tot_real is None else tot_real + real
 
-        est_str = f"{est:.1f}h".replace(".", ",")
-        real_str = f"{real:.1f}h".replace(".", ",")
+        est_str = format_hours(est)
+        real_str = format_hours(real)
         sign_net = f"+{net}" if net > 0 else str(net)
         lines.append(
             f"| **{name}** | [{handle}](https://github.com/{handle}) | {dupla} | {c} | +{a} / -{d} ({sign_net}) | {closed_iss} | {est_str} | {real_str} |"
@@ -400,8 +423,8 @@ def generate_contributions_table(git_totals: dict, issue_counts: dict) -> str:
 
     tot_net = tot_adds - tot_dels
     tot_sign_net = f"+{tot_net}" if tot_net > 0 else str(tot_net)
-    tot_est_str = f"{tot_est:.1f}h".replace(".", ",")
-    tot_real_str = f"{tot_real:.1f}h".replace(".", ",")
+    tot_est_str = format_hours(tot_est)
+    tot_real_str = format_hours(tot_real)
     lines.append(
         f"| **Total Consolidado** | - | - | **{tot_commits}** | **+{tot_adds} / -{tot_dels} ({tot_sign_net})** | **{tot_closed}** | **{tot_est_str}** | **{tot_real_str}** |"
     )
@@ -431,25 +454,25 @@ def generate_issues_table(issue_counts: dict) -> str:
         closed = st.get("closed", 0)
         opened = st.get("open", 0)
         total = st.get("total", 0)
-        est = st.get("est_closed", 0.0)
-        real = st.get("real_closed", 0.0)
+        est = st.get("est_closed")
+        real = st.get("real_closed")
         rate = f"{(closed / total * 100):.1f}%".replace(".", ",") if total > 0 else "0,0%"
 
         tot_closed += closed
         tot_open += opened
         tot_all += total
-        tot_est += est
-        tot_real += real
+        tot_est = None if est is None or tot_est is None else tot_est + est
+        tot_real = None if real is None or tot_real is None else tot_real + real
 
-        est_str = f"{est:.1f}h".replace(".", ",")
-        real_str = f"{real:.1f}h".replace(".", ",")
+        est_str = format_hours(est)
+        real_str = format_hours(real)
         lines.append(
             f"| **{name}** | [{handle}](https://github.com/{handle}) | {dupla} | {closed} | {opened} | {total} | {est_str} | {real_str} | {rate} |"
         )
 
     overall_rate = f"{(tot_closed / tot_all * 100):.1f}%".replace(".", ",") if tot_all > 0 else "0,0%"
-    tot_est_str = f"{tot_est:.1f}h".replace(".", ",")
-    tot_real_str = f"{tot_real:.1f}h".replace(".", ",")
+    tot_est_str = format_hours(tot_est)
+    tot_real_str = format_hours(tot_real)
     lines.append(
         f"| **Total Consolidado** | - | - | **{tot_closed}** | **{tot_open}** | **{tot_all}** | **{tot_est_str}** | **{tot_real_str}** | **{overall_rate}** |"
     )
