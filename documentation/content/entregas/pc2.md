@@ -82,7 +82,7 @@ NOTA PARA APRESENTAÇÃO (José):
 | 06/11 a 10/11 | Inspeção de acessibilidade e sessões com usuários | M1.1 a M1.5 |
 | 10/11 a 11/11 | Cálculo e dados brutos no repositório | Todas |
 
-Fonte: Fase 3, Seção 5.
+Fonte: cronograma da coleta (issue #65), que entra na Seção 5 da Fase 3.
 
 - **Consistência**: as 12 métricas da Fase 2 têm método e recurso no plano; a conferência contra os níveis e critérios (#68) está em elaboração
 
