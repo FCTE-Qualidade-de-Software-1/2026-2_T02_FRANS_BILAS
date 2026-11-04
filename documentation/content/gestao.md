@@ -12,7 +12,9 @@ A base desta página é o guia CID (Partes 1 e 2), o livro de McGarry et al. (ca
 
 ## 1. Diagnóstico da versão 1.0
 
-A tabela compara cada elemento do PSM com o estado da página em 26/10.
+A Tabela 1 compara cada elemento do PSM com o estado da página em 26/10.
+
+**Tabela 1**: Diagnóstico da versão 1.0 diante dos elementos do PSM.
 
 | Elemento do PSM | O que o material pede | Estado na versão 1.0 | Situação |
 | :--- | :--- | :--- | :---: |
@@ -25,9 +27,13 @@ A tabela compara cada elemento do PSM com o estado da página em 26/10.
 | Indicador por iteração | Comparar obtido com esperado a cada iteração (CID P2, §8.3) | Um valor por métrica no Sprint 1 | Falta |
 | Processo de medição | Comprometer, planejar, executar e avaliar (McGarry, cap. 1, §1.6) | Planejamento feito no plano de sprints; execução parcial | Parcial |
 
+Fonte: elaborado pela equipe a partir do guia CID, de McGarry et al. e da Aula 09.
+
 ### 1.1 Correções do Ponto de Controle 1
 
-A correção pedida no PC1 foi a gestão: a versão 1.0 tinha as categorias do PSM, mas não o modelo de informação nem o processo de medição. A versão 2.0 (PR #86, 26/10) trata cada item marcado como Falta ou Parcial no diagnóstico acima.
+A correção pedida no PC1 foi a gestão: a versão 1.0 tinha as categorias do PSM, mas não o modelo de informação nem o processo de medição. A versão 2.0 (PR #86, 26/10) trata cada item marcado como Falta ou Parcial na Tabela 1, como mostra a Tabela 2.
+
+**Tabela 2**: Correções do PC1 na gestão, da versão 1.0 para a 2.0.
 
 | Elemento do PSM | Situação na 1.0 | O que a 2.0 fez | Onde está |
 | :--- | :---: | :--- | :--- |
@@ -39,13 +45,15 @@ A correção pedida no PC1 foi a gestão: a versão 1.0 tinha as categorias do P
 | Indicador por iteração | Falta | Série medida a partir do Sprint 3, com uma medição por sprint até a E2 | [Seção 7](#7-acompanhamento-dos-sprints) |
 | Processo de medição | Parcial | As quatro atividades do PSM, cada uma com responsável e prazo | [Seção 5](#5-processo-de-medicao) |
 
-Fonte: diagnóstico da Seção 1 e PR #86.
+Fonte: Tabela 1 e PR #86.
 
 ---
 
 ## 2. Necessidades de informação
 
-Seis perguntas de gestão guiam a medição, duas por categoria. Cada uma nasce de uma questão do projeto, classificada nos três tipos de McGarry (cap. 2, §2.1): problema, risco ou falta de informação.
+Seis perguntas de gestão guiam a medição, duas por categoria. Cada uma nasce de uma questão do projeto, classificada nos três tipos de McGarry (cap. 2, §2.1): problema, risco ou falta de informação. A Tabela 3 lista as seis, e a Figura 1 as agrupa por categoria.
+
+**Tabela 3**: Necessidades de informação da gestão.
 
 | ID | Categoria | Necessidade de informação | Questão do projeto que a origina | Tipo |
 | :---: | :--- | :--- | :--- | :---: |
@@ -55,6 +63,10 @@ Seis perguntas de gestão guiam a medição, duas por categoria. Cada uma nasce 
 | **N4** | Recursos e Custos | Nossas estimativas de esforço são precisas? | Sprints 3 a 5 têm cerca de uma semana cada e duas melhorias técnicas | Risco |
 | **N5** | Desempenho dos Processos | Quanto tempo um item leva do início à conclusão? | Trabalho acumulado no fim do sprint | Problema |
 | **N6** | Desempenho dos Processos | Todo trabalho passa por revisão de outra dupla antes do merge? | Até 26/10, 39 das 42 integrações na `main` entraram sem PR | Problema |
+
+Fonte: elaborado pela equipe.
+
+**Figura 1**: Necessidades de informação por categoria do PSM.
 
 ```mermaid
 flowchart TD
@@ -86,11 +98,15 @@ flowchart TD
     class N1,N2,N3,N4,N5,N6 met;
 ```
 
+Fonte: elaborado pela equipe.
+
 ---
 
 ## 3. Indicadores selecionados
 
-Cinco indicadores vêm da tabela ICM do guia. O sexto é adaptação da equipe, como o guia permite: "um conjunto mínimo prático de medidas deve ser selecionado e adaptado" (CID P1, §5).
+Cinco indicadores vêm da tabela ICM do guia. O sexto é adaptação da equipe, como o guia permite: "um conjunto mínimo prático de medidas deve ser selecionado e adaptado" (CID P1, §5). A Tabela 4 mostra a origem de cada um.
+
+**Tabela 4**: Indicadores selecionados e sua origem no guia CID.
 
 | Necessidade | Indicador | Linha ICM (CID P1, Tab. 5) | Especificação no guia | Substitui |
 | :---: | :--- | :--- | :--- | :---: |
@@ -100,6 +116,8 @@ Cinco indicadores vêm da tabela ICM do guia. O sexto é adaptação da equipe, 
 | N4 | Esforço estimado × real | 8 (*Estimate vs. Actual Effort*) | CID P1, Tab. 5 | Novo |
 | N5 | Cycle time por item | 32 (*Process Efficiency, Speed*) | CID P2, §8.5 | Novo |
 | N6 | Revisão por pares | Adaptação; próxima da linha 18 (rework identificado e gerenciado) | Construído pela equipe | TRP |
+
+Fonte: elaborado pela equipe a partir do guia CID, Parte 1, Tab. 5.
 
 O que aconteceu com as métricas da versão 1.0:
 
@@ -113,9 +131,11 @@ O que aconteceu com as métricas da versão 1.0:
 
 ## 4. Construtos de medição
 
-Cada indicador segue os elementos do construto de medição (McGarry, cap. 2, §2.2, Fig. 2-3; Aula 09, slide 19). Todos os métodos são objetivos, por contagem ou soma, e todas as escalas são de razão.
+Cada indicador segue os elementos do construto de medição (McGarry, cap. 2, §2.2, Fig. 2-3; Aula 09, slide 19). Todos os métodos são objetivos, por contagem ou soma, e todas as escalas são de razão. As Tabelas 5, 6 e 7 trazem o construto de cada par de indicadores.
 
 ### 4.1 Calendário e Progresso
+
+**Tabela 5**: Construtos de medição de Calendário e Progresso (N1 e N2).
 
 | Elemento | Comprometido × concluído (N1) | Burndown da E2 (N2) |
 | :--- | :--- | :--- |
@@ -129,7 +149,11 @@ Cada indicador segue os elementos do construto de medição (McGarry, cap. 2, §
 | Modelo de análise | \(\text{Desvio} = 100\% - \%_{\text{concl}}\) | Comparação do aberto com os dias que restam |
 | Critério de decisão | Desvio acima de 5%: investigar a causa; acima de 10%: ação corretiva (CID P2, §8.3) | Variância acima de 5%: revisar na reunião; acima de 10%: replanejar escopo (CID P2, §8.2) |
 
+Fonte: elaborado pela equipe a partir de McGarry et al. (cap. 2, §2.2) e do guia CID, Parte 2.
+
 ### 4.2 Recursos e Custos
+
+**Tabela 6**: Construtos de medição de Recursos e Custos (N3 e N4).
 
 | Elemento | Esforço por integrante (N3) | Estimado × real (N4) |
 | :--- | :--- | :--- |
@@ -143,7 +167,11 @@ Cada indicador segue os elementos do construto de medição (McGarry, cap. 2, §
 | Modelo de análise | Participação comparada à divisão esperada de 1/6 (16,7%) | Acima de 100%: a equipe subestimou; abaixo: superestimou |
 | Critério de decisão | Participação abaixo de 10% ou acima de 25% no sprint leva à conversa na reunião (critério por acordo da equipe, Aula 09, slide "Critérios de decisão"; [em validação](#10-pontos-em-validacao)) | Fora de 80% a 120%: rever a forma de estimar (adaptado da Fig. 26, CID P2, §9.2; [em validação](#10-pontos-em-validacao)) |
 
+Fonte: elaborado pela equipe a partir de McGarry et al. (cap. 2, §2.2) e do guia CID, Parte 2.
+
 ### 4.3 Desempenho dos Processos
+
+**Tabela 7**: Construtos de medição de Desempenho dos Processos (N5 e N6).
 
 | Elemento | Cycle time (N5) | Revisão por pares (N6) |
 | :--- | :--- | :--- |
@@ -157,6 +185,8 @@ Cada indicador segue os elementos do construto de medição (McGarry, cap. 2, §
 | Modelo de análise | Distância de cada item até a média | Todo item não revisado conta como exceção |
 | Critério de decisão | Item mais de 10% acima da média: investigar (CID P2, §8.5) | Abaixo de 100%: o item não conta como Pronto e a `main` passa a exigir PR |
 
+Fonte: elaborado pela equipe a partir de McGarry et al. (cap. 2, §2.2) e do guia CID, Parte 2.
+
 ### 4.4 Critério de Pronto
 
 A contagem de \(D\) em N1 e N2 só inclui itens que cumprem as duas condições:
@@ -168,7 +198,9 @@ A contagem de \(D\) em N1 e N2 só inclui itens que cumprem as duas condições:
 
 ## 5. Processo de medição
 
-A medição segue as quatro atividades do modelo de processo do PSM (McGarry, cap. 1, §1.6), repetidas a cada sprint.
+A medição segue as quatro atividades do modelo de processo do PSM (McGarry, cap. 1, §1.6), repetidas a cada sprint (Tabela 8).
+
+**Tabela 8**: Atividades do processo de medição.
 
 | Atividade do PSM | O que a equipe faz | Responsável | Quando |
 | :--- | :--- | :--- | :--- |
@@ -176,6 +208,8 @@ A medição segue as quatro atividades do modelo de processo do PSM (McGarry, ca
 | Planejar a medição | Necessidades N1 a N6, indicadores da tabela ICM e construtos descritos nesta página | Dupla 3 com Mateus | Até 29/10 |
 | Executar a medição | Coleta no GitHub Projects; análise nos encontros de segunda e quarta; decisão registrada em [ata](atas/index.md) | Dupla 3 coleta; equipe analisa | A cada sprint |
 | Avaliar a medição | Verificar quais indicadores apoiaram decisões; trocar os que não foram usados, registrando o motivo | Equipe toda | Fim de cada sprint |
+
+Fonte: elaborado pela equipe a partir de McGarry et al. (cap. 1, §1.6).
 
 O guia pede que as medidas sejam revistas para garantir que estão em uso; se não estiverem, outras medidas podem ser necessárias (CID P1, §2). A avaliação no fim de cada sprint cumpre esse papel.
 
@@ -187,7 +221,9 @@ A coleta passa para o GitHub Projects porque o guia pede que ela seja "automatiz
 
 O quadro da equipe é o Project [FRANS BILAS - Brasil Participativo](https://github.com/orgs/FCTE-Qualidade-de-Software-1/projects/33), ligado a este repositório. Ele reúne as issues do PC1, fechadas com quem fez cada item como responsável, e o backlog dos Sprints 3 a 6, tirado do Plano de Sprints de 14/10.
 
-Campos de cada issue (as medidas básicas):
+A Tabela 9 lista os campos de cada issue, que são as medidas básicas.
+
+**Tabela 9**: Campos das issues no GitHub Projects 33.
 
 | Campo | Tipo | Alimenta |
 | :--- | :---: | :---: |
@@ -198,6 +234,8 @@ Campos de cada issue (as medidas básicas):
 | Esforço estimado (h) | Número | N4 |
 | Esforço real (h) | Número | N3, N4 |
 | Início e Conclusão | Data | N5 |
+
+Fonte: GitHub Projects 33.
 
 Regras de registro:
 
@@ -213,6 +251,10 @@ Regras de registro:
 
 ## 7. Acompanhamento dos sprints
 
+A Tabela 10 resume o foco, a situação e a medição de cada sprint.
+
+**Tabela 10**: Sprints do projeto.
+
 | Sprint | Período | Foco temático e entregáveis | Status | Medição |
 | :---: | :---: | :--- | :---: | :--- |
 | **Sprint 1** | 14/10 a 19/10 | Fase 1 completa, estruturação da GitPage, slides e apresentação do PC1. | **Concluído** | Linha de base (estimativa): 100% dos itens do plano concluídos |
@@ -222,6 +264,8 @@ Regras de registro:
 | **Sprint 5** | 12/11 a 17/11 | Fase 4: Julgamento, segunda melhoria técnica, artigo v2 e Release E2. | Planejado | 3ª medição de N1 a N6 |
 | **Sprint 6** | 19/11 a 30/11 | Preparação para a apresentação final e encerramento do projeto. | Planejado | Continuação da série |
 
+Fonte: Plano de Sprints de 14/10 e GitHub Projects 33.
+
 Linha de base de N6, tirada do histórico da `main` em 26/10: 42 integrações, das quais 3 vieram de PR (#1, #2 e #3). Nenhum dos três PRs tem revisão registrada no GitHub, então \(V = 0\) e \(\%_{\text{rev}} = \frac{0}{42} \times 100 = 0\%\).
 
 O planejamento do Sprint 3 foi feito na reunião de 29/10 ([Ata 02](atas/index.md)). Em 30/10, o backlog foi redistribuído por pessoa: 18 issues e 31 horas estimadas, uma issue por responsável, como pede a regra 1 da coleta. A carga de Mateus (8 h) passa do teto de 25% proposto para N3, por decisão dele como líder, registrada na mesma ata.
@@ -230,7 +274,9 @@ O planejamento do Sprint 3 foi feito na reunião de 29/10 ([Ata 02](atas/index.m
 
 ## 8. Tabela de Contribuição da Equipe (Critério AG-C5)
 
-Os valores da Entrega 1 refletem as medições registradas diretamente nas issues do GitHub Projects 33. O esforço estimado foi calibrado conforme a complexidade técnica das tarefas, e as horas realizadas nas issues concluídas foram apuradas em aproximadamente 1/3 do tempo estimado, registrando a dedicação efetiva dos membros.
+Os valores da Entrega 1 refletem as medições registradas diretamente nas issues do GitHub Projects 33. O esforço estimado foi calibrado conforme a complexidade técnica das tarefas, e as horas realizadas nas issues concluídas foram apuradas em aproximadamente 1/3 do tempo estimado, registrando a dedicação efetiva dos membros. A Tabela 11 resume a divisão.
+
+**Tabela 11**: Contribuição da equipe na Entrega 1.
 
 | Integrante | Usuário GitHub | Papel no Projeto | Principais Responsabilidades e Entregáveis | Horas Estimadas | Horas Realizadas (1/3) | Esforço Real (%) |
 | :--- | :--- | :--- | :--- | :---: | :---: | :---: |
@@ -242,6 +288,8 @@ Os valores da Entrega 1 refletem as medições registradas diretamente nas issue
 | **Davi Mesquita Sousa** | [@davimesquit](https://github.com/davimesquit) | Dupla 3 (Gestão/Infra) | Delimitação de escopo, profundidade e objetos de avaliação, alinhamento aos ODS e metas, alinhamento de seções e slides com a Fase 1 e revisão de sumário e referências do artigo. | 9,0h | 3,1h | **8,5%** |
 | **TOTAL** | - | **Esforço Coletivo Consolidado** | **Execução das atividades da Entrega 1 registradas no GitHub Projects 33** | **108,0h** | **36,4h** | **100,00%** |
 
+Fonte: GitHub Projects 33, issues do milestone E1 (PC1).
+
 ---
 
 ## 9. Painel Automatizado de Métricas e Indicadores de Processo
@@ -250,44 +298,72 @@ Em cumprimento às diretrizes de automação e transparência do modelo PSM/CID 
 
 ### 9.1 Resumo Consolidado de Atividade e Carga de Trabalho
 
-O artefato tabular abaixo é gerado dinamicamente pelo pipeline, consolidando a contagem de commits, adição e remoção de linhas de código e issues atribuídas a cada integrante da equipe:
+O artefato tabular abaixo é gerado dinamicamente pelo pipeline, consolidando a contagem de commits, adição e remoção de linhas de código e issues atribuídas a cada integrante da equipe (Tabela 12).
+
+**Tabela 12**: Commits, linhas alteradas e issues por integrante.
 
 --8<-- "management/contributions-summary.md"
 
+Fonte: gerado por `.github/scripts/update_metrics.py`.
+
 ### 9.2 Distribuição de Tarefas e Backlog (Issues)
 
-A distribuição da carga de trabalho entre os integrantes reflete o cadastramento e fechamento de issues no GitHub Projects da disciplina:
+A distribuição da carga de trabalho entre os integrantes reflete o cadastramento e fechamento de issues no GitHub Projects da disciplina (Tabela 13 e Figuras 2 e 3).
+
+**Tabela 13**: Issues abertas e fechadas por integrante.
 
 --8<-- "management/issues-summary.md"
 
+Fonte: gerado por `.github/scripts/update_metrics.py`.
+
 #### Issues Atribuídas por Integrante
+**Figura 2**: Issues atribuídas por integrante.
+
 ```mermaid
 --8<-- "management/assigned-issues.mmd"
 ```
 
+Fonte: gerado por `.github/scripts/update_metrics.py`.
+
 #### Tarefas Resolvidas por Integrante
+**Figura 3**: Tarefas resolvidas por integrante.
+
 ```mermaid
 --8<-- "management/resolved-issues.mmd"
 ```
 
+Fonte: gerado por `.github/scripts/update_metrics.py`.
+
 ### 9.3 Dinâmica Semanal de Commits e Evolução do Código
 
-Os gráficos a seguir acompanham a cadência semanal de integrações e o volume de código alterado por membro:
+As Figuras 4, 5 e 6 acompanham a cadência semanal de integrações e o volume de código alterado por membro:
 
 #### Velocidade Semanal de Commits
+**Figura 4**: Commits por semana.
+
 ```mermaid
 --8<-- "management/commit-velocity.mmd"
 ```
 
+Fonte: gerado por `.github/scripts/update_metrics.py`.
+
 #### Adições de Linhas de Código
+**Figura 5**: Linhas de código adicionadas por integrante.
+
 ```mermaid
 --8<-- "management/code-additions.mmd"
 ```
 
+Fonte: gerado por `.github/scripts/update_metrics.py`.
+
 #### Remoções e Limpeza de Código
+**Figura 6**: Linhas de código removidas por integrante.
+
 ```mermaid
 --8<-- "management/code-deletions.mmd"
 ```
+
+Fonte: gerado por `.github/scripts/update_metrics.py`.
 
 ---
 
@@ -299,16 +375,18 @@ Três decisões desta versão dependem de acordo da equipe:
 2. **Faixa de precisão de estimativa (N4).** A faixa de 80% a 120% foi adaptada de uma figura de exemplo da Parte 2 (Fig. 26).
 3. **Responsáveis e datas.** As tarefas de coleta ficaram com a Dupla 3, com coordenação de Mateus, a partir de 28/10. A divisão pode mudar na próxima reunião.
 
-A reunião de 29/10 ([Ata 02](atas/index.md)) não votou esses três pontos, e eles seguem para a próxima reunião (issue #44). A mesma ata deixou mais dois pontos em aberto:
+A reunião de 29/10 ([Ata 02](atas/index.md)) não votou esses três pontos, e eles seguem para a próxima reunião (issue #44). A mesma ata deixou mais um ponto em aberto:
 
 4. **Apresentação do PC2.** Quem apresenta cada parte.
-5. **Data da Entrega 2.** Esta página usa a release em 17/11, e o calendário da disciplina marca a Entrega 2 em 18/11.
+A Ata 02 também perguntava pela diferença entre a release em 17/11 e a Entrega 2 em 18/11. O cronograma da disciplina confirma a Entrega 2 em 18/11; a release em 17/11 é um prazo interno da equipe, um dia antes, já previsto no Plano de Sprints de 14/10.
 
 ---
 
 ## 11. Cronograma da adequação
 
-A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints medidos na release da E2, em 17/11.
+A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints medidos na release da E2, em 17/11 (Tabela 14).
+
+**Tabela 14**: Cronograma da adequação ao PSM/CID.
 
 | Prazo | Ação | Responsável | Situação em 04/11 |
 | :---: | :--- | :--- | :--- |
@@ -319,6 +397,8 @@ A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints m
 | 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar ao Ponto de Controle 2 | Equipe | Em andamento (issue #46) |
 | 11/11 | Fim do Sprint 4: segunda medição; ajustar indicadores pouco usados, com motivo em ata | Equipe | Planejado |
 | 17/11 | Fim do Sprint 5: série dos Sprints 3 a 5, decisões registradas e tabela de contribuição calculada pelas horas reais, na release E2 | Dupla 3; revisão: Mateus | Planejado |
+
+Fonte: elaborado pela equipe.
 
 A adequação está pronta quando os seis indicadores tiverem valor nos três sprints, cada valor fora do critério tiver uma decisão em ata e a tabela de contribuição sair do indicador de esforço.
 
@@ -343,4 +423,4 @@ A Parte 3 do guia (garantia de software e dívida técnica) não entra na gestã
 | `2.0` | 26/10/2026 | Adequação ao PSM/CID: diagnóstico, necessidades N1 a N6, indicadores da tabela ICM, construtos completos, processo de medição, regras de coleta e cronograma até a E2 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `2.1` | 26/10/2026 | Inclusão dos nomes e usuários GitHub dos integrantes, e painel automatizado de métricas com gráficos e tabelas de processo | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `2.2` | 29/10/2026 | Inclusão do gráfico de tarefas resolvidas por integrante no painel automatizado | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
-| `2.3` | 04/11/2026 | Registro das correções do PC1, situação dos sprints e do cronograma da adequação, e pontos em aberto da Ata 02 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `2.3` | 04/11/2026 | Registro das correções do PC1, situação dos sprints e do cronograma da adequação, pontos em aberto da Ata 02, e legenda, fonte e citação no texto de todas as tabelas e figuras | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
