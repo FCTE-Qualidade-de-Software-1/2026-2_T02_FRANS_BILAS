@@ -1,0 +1,190 @@
+arquivo,linha,classe,classe_pai,acao,namespace_admin,status,conferencia_manual
+app/controllers/concerns/decidim/admin/content_blocks/landing_page.rb,13,,,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/concerns/decidim/admin/content_blocks/landing_page.rb,19,,,update,sim,protegida (no corpo da ação),protegida
+app/controllers/concerns/decidim/admin/content_blocks/landing_page_content_blocks.rb,11,,,create,sim,protegida (no corpo da ação),protegida
+app/controllers/concerns/decidim/admin/content_blocks/landing_page_content_blocks.rb,26,,,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/concerns/decidim/admin/content_blocks/landing_page_content_blocks.rb,41,,,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/concerns/decidim/admin/content_blocks/landing_page_content_blocks.rb,48,,,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/component_permissions_controller.rb,10,ComponentPermissionsController,ResourcePermissionsController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/component_permissions_controller.rb,19,ComponentPermissionsController,ResourcePermissionsController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/components_controller.rb,11,ComponentsController,Decidim::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/components_controller.rb,17,ComponentsController,Decidim::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/components_controller.rb,36,ComponentsController,Decidim::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/components_controller.rb,61,ComponentsController,Decidim::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/components_controller.rb,68,ComponentsController,Decidim::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/components_controller.rb,88,ComponentsController,Decidim::Admin::ApplicationController,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/components_controller.rb,105,ComponentsController,Decidim::Admin::ApplicationController,publish,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/components_controller.rb,117,ComponentsController,Decidim::Admin::ApplicationController,unpublish,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/components_controller.rb,129,ComponentsController,Decidim::Admin::ApplicationController,share,sim,verificar,sem verificação: igual ao Decidim 0.27.2
+app/controllers/decidim/admin/exports_controller.rb,10,ExportsController,Decidim::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/exports_controller.rb,23,ExportsController,Decidim::Admin::ApplicationController,download,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/officializations_controller.rb,15,OfficializationsController,Decidim::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/officializations_controller.rb,20,OfficializationsController,Decidim::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/officializations_controller.rb,26,OfficializationsController,Decidim::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/officializations_controller.rb,40,OfficializationsController,Decidim::Admin::ApplicationController,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/officializations_controller.rb,52,OfficializationsController,Decidim::Admin::ApplicationController,show_email,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/officializations_controller.rb,60,OfficializationsController,Decidim::Admin::ApplicationController,delete_user,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/organization_controller.rb,10,OrganizationController,Decidim::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/organization_controller.rb,15,OrganizationController,Decidim::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/organization_controller.rb,33,OrganizationController,Decidim::Admin::ApplicationController,users,sim,verificar,sem verificação: igual ao Decidim 0.27.2
+app/controllers/decidim/admin/organization_controller.rb,37,OrganizationController,Decidim::Admin::ApplicationController,user_entities,sim,verificar,sem verificação: igual ao Decidim 0.27.2
+app/controllers/decidim/admin/organization_controller.rb,41,OrganizationController,Decidim::Admin::ApplicationController,autofill_menu_links,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/organization_controller.rb,54,OrganizationController,Decidim::Admin::ApplicationController,autofill_footer_menu_links,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/organization_homepage_controller.rb,11,OrganizationHomepageController,Decidim::Admin::ApplicationController,content_block_scope,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,15,OrganizationHomepageController,Decidim::Admin::ApplicationController,scoped_resource,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,19,OrganizationHomepageController,Decidim::Admin::ApplicationController,enforce_permission_to_update_resource,sim,protegida (no corpo da ação),"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,23,OrganizationHomepageController,Decidim::Admin::ApplicationController,resource_sort_url,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,27,OrganizationHomepageController,Decidim::Admin::ApplicationController,resource_create_url,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,31,OrganizationHomepageController,Decidim::Admin::ApplicationController,content_blocks_title,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,35,OrganizationHomepageController,Decidim::Admin::ApplicationController,add_content_block_text,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,39,OrganizationHomepageController,Decidim::Admin::ApplicationController,content_block_destroy_confirmation_text,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,43,OrganizationHomepageController,Decidim::Admin::ApplicationController,active_content_blocks_title,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,47,OrganizationHomepageController,Decidim::Admin::ApplicationController,inactive_content_blocks_title,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/organization_homepage_controller.rb,51,OrganizationHomepageController,Decidim::Admin::ApplicationController,resource_content_block_cell,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/admin/proposal_badges_controller.rb,6,ProposalBadgesController,Decidim::Admin::ApplicationController,index,sim,verificar,excluída: sem rota em config/routes.rb
+app/controllers/decidim/admin/proposal_badges_controller.rb,12,ProposalBadgesController,Decidim::Admin::ApplicationController,update,sim,verificar,sem verificação: introduzida no decidim-govbr
+app/controllers/decidim/admin/proposal_badges_controller.rb,34,ProposalBadgesController,Decidim::Admin::ApplicationController,update_proposal_badge,sim,verificar,sem verificação: introduzida no decidim-govbr
+app/controllers/decidim/admin/proposal_badges_controller.rb,51,ProposalBadgesController,Decidim::Admin::ApplicationController,destroy_all_badges,sim,verificar,sem verificação: introduzida no decidim-govbr
+app/controllers/decidim/admin/proposal_badges_controller.rb,68,ProposalBadgesController,Decidim::Admin::ApplicationController,destroy_one_badge,sim,verificar,sem verificação: introduzida no decidim-govbr
+app/controllers/decidim/admin/static_page_topics_controller.rb,9,StaticPageTopicsController,Decidim::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_page_topics_controller.rb,14,StaticPageTopicsController,Decidim::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_page_topics_controller.rb,34,StaticPageTopicsController,Decidim::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_page_topics_controller.rb,39,StaticPageTopicsController,Decidim::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_page_topics_controller.rb,56,StaticPageTopicsController,Decidim::Admin::ApplicationController,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_page_topics_controller.rb,67,StaticPageTopicsController,Decidim::Admin::ApplicationController,toggle_published,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_pages_controller.rb,13,StaticPagesController,Decidim::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_pages_controller.rb,19,StaticPagesController,Decidim::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_pages_controller.rb,24,StaticPagesController,Decidim::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_pages_controller.rb,44,StaticPagesController,Decidim::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_pages_controller.rb,49,StaticPagesController,Decidim::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_pages_controller.rb,67,StaticPagesController,Decidim::Admin::ApplicationController,show,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_pages_controller.rb,71,StaticPagesController,Decidim::Admin::ApplicationController,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/admin/static_pages_controller.rb,82,StaticPagesController,Decidim::Admin::ApplicationController,toggle_published,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/assemblies_controller.rb,13,AssembliesController,Decidim::Assemblies::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/assemblies_controller.rb,20,AssembliesController,Decidim::Assemblies::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/assemblies_controller.rb,26,AssembliesController,Decidim::Assemblies::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/assemblies_controller.rb,44,AssembliesController,Decidim::Assemblies::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/assemblies_controller.rb,50,AssembliesController,Decidim::Assemblies::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/assemblies_controller.rb,70,AssembliesController,Decidim::Assemblies::Admin::ApplicationController,copy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/partners_controller.rb,12,PartnersController,Decidim::Assemblies::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/partners_controller.rb,18,PartnersController,Decidim::Assemblies::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/partners_controller.rb,23,PartnersController,Decidim::Assemblies::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/partners_controller.rb,40,PartnersController,Decidim::Assemblies::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/partners_controller.rb,46,PartnersController,Decidim::Assemblies::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/assemblies/admin/partners_controller.rb,64,PartnersController,Decidim::Assemblies::Admin::ApplicationController,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/comments/comments_controller.rb,70,CommentsController,Decidim::Comments::ApplicationController,update,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/comments/comments_controller.rb,143,CommentsController,Decidim::Comments::ApplicationController,create,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/comments/comments_controller.rb,185,CommentsController,Decidim::Comments::ApplicationController,destroy,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/devise/registrations_controller.rb,19,RegistrationsController,::Devise::RegistrationsController,new,não,verificar,"excluída: autenticação, pública por definição"
+app/controllers/decidim/devise/registrations_controller.rb,25,RegistrationsController,::Devise::RegistrationsController,create,não,verificar,"excluída: autenticação, pública por definição"
+app/controllers/decidim/devise/sessions_controller.rb,14,SessionsController,::Devise::SessionsController,new,não,verificar,"excluída: autenticação, pública por definição"
+app/controllers/decidim/devise/sessions_controller.rb,29,SessionsController,::Devise::SessionsController,destroy,não,verificar,"excluída: autenticação, pública por definição"
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,28,,,templatable_type,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,32,,,templatable,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,37,,,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,45,,,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,66,,,import,sim,verificar,sem verificação: introduzida no decidim-govbr
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,89,,,import_questions,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,97,,,answer_options,sim,verificar,sem verificação: igual ao Decidim 0.27.2
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,109,,,questionnaire_for,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,115,,,update_url,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,121,,,after_update_url,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,127,,,public_url,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,133,,,answer_options_url,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/forms/admin/concerns/has_questionnaire.rb,139,,,edit_questionnaire_title,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/forms/concerns/has_questionnaire.rb,28,,,answer,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_collections_controller.rb,9,MediaLinksCollectionsController,Decidim::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_collections_controller.rb,15,MediaLinksCollectionsController,Decidim::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_collections_controller.rb,21,MediaLinksCollectionsController,Decidim::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_collections_controller.rb,39,MediaLinksCollectionsController,Decidim::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_collections_controller.rb,45,MediaLinksCollectionsController,Decidim::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_collections_controller.rb,63,MediaLinksCollectionsController,Decidim::Admin::ApplicationController,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_controller.rb,10,MediaLinksController,Decidim::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_controller.rb,17,MediaLinksController,Decidim::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_controller.rb,22,MediaLinksController,Decidim::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_controller.rb,39,MediaLinksController,Decidim::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_controller.rb,45,MediaLinksController,Decidim::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_controller.rb,63,MediaLinksController,Decidim::Admin::ApplicationController,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/media_links_controller.rb,75,MediaLinksController,Decidim::Admin::ApplicationController,participatory_space_media_links_path,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/govbr/admin/user_proposals_statistic_settings_controller.rb,7,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/user_proposals_statistic_settings_controller.rb,13,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/user_proposals_statistic_settings_controller.rb,19,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/user_proposals_statistic_settings_controller.rb,37,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/user_proposals_statistic_settings_controller.rb,43,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/user_proposals_statistic_settings_controller.rb,61,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/user_proposals_statistic_settings_controller.rb,73,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,export,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/user_proposals_statistic_settings_controller.rb,80,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,force_refresh,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/govbr/admin/user_proposals_statistic_settings_controller.rb,97,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,participatory_space_user_proposals_statistic_settings_path,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/govbr/user_proposals_statistic_settings_controller.rb,21,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,create,não,verificar,protegida: before_action :authorize_user chama enforce_permission_to
+app/controllers/decidim/meetings/agenda_controller.rb,11,AgendaController,Decidim::Meetings::ApplicationController,new,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/agenda_controller.rb,17,AgendaController,Decidim::Meetings::ApplicationController,create,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/agenda_controller.rb,35,AgendaController,Decidim::Meetings::ApplicationController,edit,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/agenda_controller.rb,41,AgendaController,Decidim::Meetings::ApplicationController,update,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/meeting_closes_controller.rb,12,MeetingClosesController,Decidim::Meetings::ApplicationController,edit,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/meeting_closes_controller.rb,18,MeetingClosesController,Decidim::Meetings::ApplicationController,update,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/meetings_controller.rb,32,MeetingsController,Decidim::Meetings::ApplicationController,new,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/meetings_controller.rb,37,MeetingsController,Decidim::Meetings::ApplicationController,create,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/meetings_controller.rb,61,MeetingsController,Decidim::Meetings::ApplicationController,edit,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/meetings_controller.rb,66,MeetingsController,Decidim::Meetings::ApplicationController,update,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/meetings_controller.rb,76,MeetingsController,Decidim::Meetings::ApplicationController,withdraw,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/registrations_controller.rb,9,RegistrationsController,Decidim::Meetings::ApplicationController,answer,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/registrations_controller.rb,32,RegistrationsController,Decidim::Meetings::ApplicationController,create,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/registrations_controller.rb,50,RegistrationsController,Decidim::Meetings::ApplicationController,destroy,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/meetings/registrations_controller.rb,66,RegistrationsController,Decidim::Meetings::ApplicationController,export,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/participatory_process_copies_controller.rb,11,ParticipatoryProcessCopiesController,Decidim::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/participatory_process_copies_controller.rb,16,ParticipatoryProcessCopiesController,Decidim::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,15,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,content_block_scope,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,19,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,scoped_resource,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,23,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,enforce_permission_to_update_resource,sim,protegida (no corpo da ação),"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,27,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,resource_sort_url,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,31,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,resource_create_url,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,36,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,content_blocks_title,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,40,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,add_content_block_text,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,44,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,content_block_destroy_confirmation_text,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,48,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,active_content_blocks_title,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,52,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,inactive_content_blocks_title,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_process_group_landing_page_controller.rb,56,ParticipatoryProcessGroupLandingPageController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,resource_content_block_cell,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/participatory_processes/admin/participatory_processes_controller.rb,20,ParticipatoryProcessesController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/participatory_processes_controller.rb,25,ParticipatoryProcessesController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/participatory_processes_controller.rb,30,ParticipatoryProcessesController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/participatory_processes_controller.rb,47,ParticipatoryProcessesController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/participatory_processes_controller.rb,53,ParticipatoryProcessesController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/participatory_processes_controller.rb,73,ParticipatoryProcessesController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,copy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/partners_controller.rb,12,PartnersController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,index,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/partners_controller.rb,18,PartnersController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/partners_controller.rb,23,PartnersController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/partners_controller.rb,40,PartnersController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/partners_controller.rb,46,PartnersController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/participatory_processes/admin/partners_controller.rb,64,PartnersController,Decidim::ParticipatoryProcesses::Admin::ApplicationController,destroy,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,13,ParticipatoryTextsController,Admin::ApplicationController,index,sim,verificar,"excluída: só redireciona para a edição, que verifica permissão"
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,20,ParticipatoryTextsController,Admin::ApplicationController,new_import,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,26,ParticipatoryTextsController,Admin::ApplicationController,set_flash_and_redirect,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,31,ParticipatoryTextsController,Admin::ApplicationController,handle_validation_failures,sim,verificar,"excluída: método auxiliar, não é rota"
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,38,ParticipatoryTextsController,Admin::ApplicationController,import,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,61,ParticipatoryTextsController,Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,93,ParticipatoryTextsController,Admin::ApplicationController,update_as_preview,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,117,ParticipatoryTextsController,Admin::ApplicationController,edit_as_preview,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,127,ParticipatoryTextsController,Admin::ApplicationController,discard,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,137,ParticipatoryTextsController,Admin::ApplicationController,new_copy_and_paste,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,143,ParticipatoryTextsController,Admin::ApplicationController,copy_and_paste,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/participatory_texts_controller.rb,160,ParticipatoryTextsController,Admin::ApplicationController,manipulate_paragraph,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/proposal_answers_controller.rb,15,ProposalAnswersController,Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/proposal_answers_controller.rb,20,ProposalAnswersController,Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/proposal_answers_controller.rb,38,ProposalAnswersController,Admin::ApplicationController,remove_label_from_proposal,sim,verificar,sem verificação: introduzida no decidim-govbr
+app/controllers/decidim/proposals/admin/proposals_controller.rb,18,ProposalsController,Admin::ApplicationController,index,sim,verificar,sem verificação: introduzida no decidim-govbr
+app/controllers/decidim/proposals/admin/proposals_controller.rb,25,ProposalsController,Admin::ApplicationController,show,sim,verificar,sem verificação: igual ao Decidim 0.27.2
+app/controllers/decidim/proposals/admin/proposals_controller.rb,30,ProposalsController,Admin::ApplicationController,new,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/proposals_controller.rb,37,ProposalsController,Admin::ApplicationController,create,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/proposals_controller.rb,54,ProposalsController,Admin::ApplicationController,update_category,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/proposals_controller.rb,83,ProposalsController,Admin::ApplicationController,publish_answers,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/proposals_controller.rb,104,ProposalsController,Admin::ApplicationController,update_scope,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/proposals_controller.rb,132,ProposalsController,Admin::ApplicationController,edit,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/admin/proposals_controller.rb,145,ProposalsController,Admin::ApplicationController,update,sim,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/proposals_controller.rb,60,ProposalsController,Decidim::Proposals::ApplicationController,new,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/proposals_controller.rb,66,ProposalsController,Decidim::Proposals::ApplicationController,create,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/proposals_controller.rb,136,ProposalsController,Decidim::Proposals::ApplicationController,publish,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/proposals_controller.rb,188,ProposalsController,Decidim::Proposals::ApplicationController,edit,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/proposals_controller.rb,192,ProposalsController,Decidim::Proposals::ApplicationController,update,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/proposals/proposals_controller.rb,210,ProposalsController,Decidim::Proposals::ApplicationController,withdraw,não,protegida (no corpo da ação),protegida
+app/controllers/decidim/reports/reports_controller.rb,5,ReportsController,Decidim::ApplicationController,create,não,verificar,sem verificação efetiva: o redirect para não administradores não interrompe a ação; introduzida no decidim-govbr
+app/controllers/decidim/govbr/user_proposals_statistic_settings_controller.rb,,UserProposalsStatisticSettingsController,Decidim::Admin::ApplicationController,export_user_data,não,incluída na conferência manual,"protegida: before_action :authorize_user; exporta dados de usuários, rota em config/routes.rb"
