@@ -259,7 +259,7 @@ A Tabela 10 resume o foco, a situação e a medição de cada sprint.
 | :---: | :---: | :--- | :---: | :--- |
 | **Sprint 1** | 14/10 a 19/10 | Fase 1 completa, estruturação da GitPage, slides e apresentação do PC1. | **Concluído** | Linha de base (estimativa): 100% dos itens do plano concluídos |
 | **Sprint 2** | 20/10 a 25/10 | Fase 2 (GQM), Gestão PSM/CID, artigo científico v1 e Release E1. | **Concluído** | Linha de base (estimativa) |
-| **Sprint 3** | 27/10 a 04/11 | Fase 3: Plano de Avaliação, recursos de teste e Ponto de Controle 2. | **Em andamento** | 1ª medição de N1 a N6 (issue #46) |
+| **Sprint 3** | 27/10 a 04/11 | Fase 3: Plano de Avaliação, recursos de teste e Ponto de Controle 2. | **Em encerramento** | 1ª medição de N1 a N6 em 04/11 ([Seção 12](#12-medicao-do-sprint-3)) |
 | **Sprint 4** | 05/11 a 11/11 | Execução da coleta, consolidação de dados brutos e primeira melhoria técnica. | Planejado | 2ª medição de N1 a N6 |
 | **Sprint 5** | 12/11 a 17/11 | Fase 4: Julgamento, segunda melhoria técnica, artigo v2 e Release E2. | Planejado | 3ª medição de N1 a N6 |
 | **Sprint 6** | 19/11 a 30/11 | Preparação para a apresentação final e encerramento do projeto. | Planejado | Continuação da série |
@@ -394,13 +394,82 @@ A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints m
 | 28/10 | Exigir PR para integrar na `main` | Dupla 3 | Pendente (issue #43); commits diretos continuaram a entrar na `main` depois de 26/10 |
 | 29/10 | Revisar esta página com a equipe e fechar os [pontos em validação](#10-pontos-em-validacao) | Dupla 3 com Mateus | Não votado em 29/10; segue para a próxima reunião (issue #44) |
 | 30/10 | Revisar as horas estimadas e redistribuir o Sprint 3 por pessoa | Mateus | Concluído ([Ata 02](atas/index.md), seção 3.6) |
-| 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar ao Ponto de Controle 2 | Equipe | Em andamento (issue #46) |
+| 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar ao Ponto de Controle 2 | Equipe | Medição feita em 04/11, com três indicadores sem dado ([Seção 12](#12-medicao-do-sprint-3)) |
 | 11/11 | Fim do Sprint 4: segunda medição; ajustar indicadores pouco usados, com motivo em ata | Equipe | Planejado |
 | 17/11 | Fim do Sprint 5: série dos Sprints 3 a 5, decisões registradas e tabela de contribuição calculada pelas horas reais, na release E2 | Dupla 3; revisão: Mateus | Planejado |
 
 Fonte: elaborado pela equipe.
 
 A adequação está pronta quando os seis indicadores tiverem valor nos três sprints, cada valor fora do critério tiver uma decisão em ata e a tabela de contribuição sair do indicador de esforço.
+
+---
+
+## 12. Medição do Sprint 3
+
+A primeira medição da série foi feita em 04/11, último dia do sprint, às 03h. O script [`scripts/psm_medicao.py`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANS_BILAS/blob/main/scripts/psm_medicao.py) lê o GitHub Projects 33, os PRs e o histórico da `main`, e grava os dados brutos e os indicadores em [`dados/gestao/sprint-3.json`](dados/gestao/sprint-3.json). Itens fechados até o fim do dia entram numa nova execução do mesmo script.
+
+O comprometido são as 17 issues listadas por responsável na redistribuição de 30/10 ([Ata 02](atas/index.md), seção 3.6). O texto da ata fala em 18 issues, mas a tabela da mesma seção lista 17, e a medição usa a lista.
+
+### 12.1 Resultados
+
+A Tabela 15 compara cada indicador com o critério de decisão da Seção 4, e a Figura 7 mostra o burndown da E2.
+
+**Tabela 15**: Indicadores do Sprint 3 diante dos critérios de decisão.
+
+| Indicador | Valor medido | Critério de decisão | Resultado |
+| :--- | :--- | :--- | :--- |
+| N1 Comprometido × concluído | 1 de 17 no critério de Pronto: \(\%_{\text{concl}} = 5{,}9\%\). Fechadas: 6 de 17 (35,3%) | Desvio acima de 10%: ação corretiva | Desvio de 94,1%: ação corretiva |
+| N2 Burndown da E2 | 32 de 40 itens abertos em 04/11. Concluídos: 20% dos itens, com 38% do prazo até 17/11 já passado | Variância acima de 10%: replanejar escopo | Variância de 18 pontos percentuais: replanejar |
+| N3 Esforço por integrante | Nenhuma das 17 issues tem "Esforço real" preenchido | Participação fora de 10% a 25% | Não calculável |
+| N4 Estimado × real | Mesmo motivo de N3 | Precisão fora de 80% a 120% | Não calculável |
+| N5 Cycle time | Nenhuma das 6 issues fechadas tem "Início" e "Conclusão" preenchidos | Item mais de 10% acima da média | Não calculável |
+| N6 Revisão por pares | 1 de 9 integrações na `main` revisada por outra dupla: \(\%_{\text{rev}} = 11{,}1\%\). Por PR: 7 de 9 | Abaixo de 100%: o item não conta como Pronto e a `main` passa a exigir PR | Abaixo do critério |
+
+Fonte: [`dados/gestao/sprint-3.json`](dados/gestao/sprint-3.json), gerado por `scripts/psm_medicao.py` em 04/11/2026.
+
+Detalhes que explicam os números:
+
+- **N1.** A única issue no critério de Pronto é a #62, fechada pelo PR #92 com revisão de Mateus (Dupla 1) sobre trabalho de José Vinícius (Dupla 2). As #59, #60, #69 e #70 fecharam por PRs sem revisão de outra dupla (#100, #101 e #103), e a #66 pelo PR #104, também sem revisão registrada. Das 11 abertas, 10 não têm branch nem PR; a exceção é a #65 (PR #105).
+- **N2.** A variância é a diferença entre a parte do prazo já passada (8 de 21 dias, de 27/10 a 17/11) e a parte dos itens concluída (8 de 40). O guia não fixa essa conta, e a equipe adotou essa. O escopo da E2 cresceu de 33 para 40 itens no sprint: #89 e #90 em 30/10, #93 a #97 em 04/11.
+- **N6.** As 9 integrações excluem os commits automáticos do painel (`github-actions[bot]`). As duas que não vieram de PR são commits diretos de 28/10 e 29/10. A revisão do #92 foi registrada como comentário, sem aprovação formal no GitHub.
+
+**Figura 7**: Burndown da E2 no Sprint 3, com itens abertos ao fim de cada dia e a linha ideal até 17/11.
+
+```mermaid
+xychart-beta
+    title "Itens abertos no milestone E2"
+    x-axis ["27/10", "28/10", "29/10", "30/10", "31/10", "01/11", "02/11", "03/11", "04/11"]
+    y-axis "Itens abertos" 0 --> 40
+    line [31, 31, 31, 33, 33, 33, 33, 33, 32]
+    line [31, 29.5, 28, 26.6, 25.1, 23.6, 22.1, 20.7, 19.2]
+```
+
+Fonte: [`dados/gestao/sprint-3.json`](dados/gestao/sprint-3.json). A linha ideal vai de 31 itens abertos em 27/10 a zero em 17/11.
+
+### 12.2 Interpretação e decisões
+
+A Tabela 16 liga cada indicador fora do critério à causa e à decisão de gestão.
+
+**Tabela 16**: Decisões de gestão a partir da medição do Sprint 3.
+
+| Indicador | Causa identificada | Decisão | Situação |
+| :--- | :--- | :--- | :--- |
+| N1 | Dez issues do sprint sem nenhum trabalho registrado até o último dia; PRs de 04/11 integrados sem revisão de outra dupla | Redistribuição dos Sprints 4 a 6 com uma issue por pessoa e carga entre 10 h e 17 h; coleta (#89, #90) movida para o Sprint 4 | Aplicada no Projects 33 em 04/11 |
+| N2 | Escopo da E2 cresceu 21% (33 para 40 itens) e a coleta passou para o Sprint 4 | Se a variância passar de 10% de novo em 11/11, a segunda melhoria (#80) sai do escopo. A especificação exige uma melhoria, e a equipe planejou duas | Proposta para a Ata 03 (#94) |
+| N3, N4 e N5 | "Esforço real", "Início" e "Conclusão" não foram preenchidos ao fechar as issues, contra a regra 2 da coleta | Cada responsável preenche os três campos antes de fechar a issue; a planning do Sprint 4 confere os do Sprint 3 | Proposta para a Ata 03 (#94) |
+| N6 | A `main` ainda aceita commit direto (#43), e os PRs de 04/11 entraram sem revisão de outra dupla | Proteger a `main` com PR obrigatório e uma aprovação de outra dupla | Pendente (#43) |
+
+Fonte: elaborado pela equipe a partir da Tabela 15.
+
+### 12.3 Avaliação da medição
+
+A quarta atividade do PSM pergunta se as medidas estão em uso (Seção 5). No Sprint 3:
+
+- **Indicadores em uso.** N1, N2 e N6 tiveram dado coletado, e os três levaram a uma decisão (Tabela 16).
+- **Indicadores sem dado.** N3, N4 e N5 dependem de campos preenchidos à mão, e nenhum foi preenchido. A tabela de contribuição da E2 sai de N3. Se os campos continuarem vazios no Sprint 4, o indicador perde o uso e precisa ser trocado, com o motivo registrado em ata.
+- **Status no quadro.** As seis issues fechadas continuam com Status "Backlog" no Projects. O fechamento da issue é a fonte usada por N1 e N2; o campo Status não entra na conta.
+- **Painel automático.** Ao conferir os dados, a medição encontrou uma falha no painel da Seção 9: quando a consulta ao Projects falhava, o script usava valores fixos no código, e as Tabelas 12 e 13 deixaram de mudar depois de 27/10. A correção é a issue #106.
+- **Limitação de N2.** O burndown foi reconstruído pelo milestone atual e pelas datas de criação e fechamento. Uma issue reaberta (#75) conta como aberta no período todo.
 
 ---
 
@@ -424,3 +493,4 @@ A Parte 3 do guia (garantia de software e dívida técnica) não entra na gestã
 | `2.1` | 26/10/2026 | Inclusão dos nomes e usuários GitHub dos integrantes, e painel automatizado de métricas com gráficos e tabelas de processo | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `2.2` | 29/10/2026 | Inclusão do gráfico de tarefas resolvidas por integrante no painel automatizado | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `2.3` | 04/11/2026 | Registro das correções do PC1, situação dos sprints e do cronograma da adequação, pontos em aberto da Ata 02, e legenda, fonte e citação no texto de todas as tabelas e figuras | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `2.4` | 04/11/2026 | Medição do Sprint 3 (N1 a N6), decisões de gestão e avaliação da medição | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
