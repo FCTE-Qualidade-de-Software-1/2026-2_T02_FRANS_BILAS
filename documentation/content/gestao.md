@@ -6,7 +6,7 @@ icon: lucide/gauge
 
 Esta página documenta como a equipe **Frans Bilas (Turma 01)** mede a própria execução na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)**. O GQM fica com a avaliação do produto (Brasil Participativo). A gestão interna segue o **PSM (*Practical Software Measurement*)** e o guia **CID (*Continuous Iterative Development*)**.
 
-A base desta página é o guia CID (Partes 1 e 2), o livro de McGarry et al. (cap. 1 e 2) e a Aula 09 da disciplina. Na versão 1.0, a página tinha as três categorias do PSM, mas não seguia o modelo de informação nem o processo de medição. A versão 2.0 corrige isso, e a adequação termina na release da Entrega 2, em 17/11.
+A base desta página é o guia CID (Partes 1 e 2), o livro de McGarry et al. (cap. 1 e 2) e a Aula 09 da disciplina. Na versão 1.0, a página tinha as três categorias do PSM, mas não seguia o modelo de informação nem o processo de medição. A versão 2.0 corrige isso, e a adequação termina na release da Entrega 2, em 21/11, um dia antes da entrega final de 22/11.
 
 ---
 
@@ -58,7 +58,7 @@ Seis perguntas de gestão guiam a medição, duas por categoria. Cada uma nasce 
 | ID | Categoria | Necessidade de informação | Questão do projeto que a origina | Tipo |
 | :---: | :--- | :--- | :--- | :---: |
 | **N1** | Calendário e Progresso | Os itens comprometidos em cada sprint são entregues? | Itens do Sprint 1 fechados na madrugada do prazo | Problema |
-| **N2** | Calendário e Progresso | A Entrega 2 será concluída até a release de 17/11? | Atraso custa 50% da nota por dia e não há substitutiva | Risco |
+| **N2** | Calendário e Progresso | A Entrega 2 será concluída até a release de 21/11? | Atraso custa 50% da nota por dia e não há substitutiva | Risco |
 | **N3** | Recursos e Custos | Quanto esforço cada integrante investe, e a divisão está equilibrada? | Tabela de contribuição feita por acordo, sem horas registradas | Falta de informação |
 | **N4** | Recursos e Custos | Nossas estimativas de esforço são precisas? | Sprints 3 a 5 têm cerca de uma semana cada e duas melhorias técnicas | Risco |
 | **N5** | Desempenho dos Processos | Quanto tempo um item leva do início à conclusão? | Trabalho acumulado no fim do sprint | Problema |
@@ -145,7 +145,7 @@ Cada indicador segue os elementos do construto de medição (McGarry, cap. 2, §
 | Método | Contagem no GitHub Projects no 1º e no último dia do sprint | Contagem diária no milestone E2 |
 | Unidade | Item | Item |
 | Medida derivada | \(\%_{\text{concl}} = \frac{D}{C} \times 100\) | \(\text{Aberto} = P - D\) |
-| Indicador | Barras por sprint (comprometido e concluído) e % acumulado | Linha do trabalho em aberto até 17/11 |
+| Indicador | Barras por sprint (comprometido e concluído) e % acumulado | Linha do trabalho em aberto até 21/11 |
 | Modelo de análise | \(\text{Desvio} = 100\% - \%_{\text{concl}}\) | Comparação do aberto com os dias que restam |
 | Critério de decisão | Desvio acima de 5%: investigar a causa; acima de 10%: ação corretiva (CID P2, §8.3) | Variância acima de 5%: revisar na reunião; acima de 10%: replanejar escopo (CID P2, §8.2) |
 
@@ -259,10 +259,10 @@ A Tabela 10 resume o foco, a situação e a medição de cada sprint.
 | :---: | :---: | :--- | :---: | :--- |
 | **Sprint 1** | 14/10 a 19/10 | Fase 1 completa, estruturação da GitPage, slides e apresentação do PC1. | **Concluído** | Linha de base (estimativa): 100% dos itens do plano concluídos |
 | **Sprint 2** | 20/10 a 25/10 | Fase 2 (GQM), Gestão PSM/CID, artigo científico v1 e Release E1. | **Concluído** | Linha de base (estimativa) |
-| **Sprint 3** | 27/10 a 04/11 | Fase 3: Plano de Avaliação, recursos de teste e Ponto de Controle 2. | **Em encerramento** | 1ª medição de N1 a N6 em 04/11 ([Seção 12](#12-medicao-do-sprint-3)) |
+| **Sprint 3** | 27/10 a 04/11 | Fase 3: Plano de Avaliação, recursos de teste e apresentação das métricas PSM (04/11 ou 11/11). | **Em encerramento** | 1ª medição de N1 a N6 em 04/11 ([Seção 12](#12-medicao-do-sprint-3)) |
 | **Sprint 4** | 05/11 a 11/11 | Execução da coleta, consolidação de dados brutos e primeira melhoria técnica. | Planejado | 2ª medição de N1 a N6 |
-| **Sprint 5** | 12/11 a 17/11 | Fase 4: Julgamento, segunda melhoria técnica, artigo v2 e Release E2. | Planejado | 3ª medição de N1 a N6 |
-| **Sprint 6** | 19/11 a 30/11 | Preparação para a apresentação final e encerramento do projeto. | Planejado | Continuação da série |
+| **Sprint 5** | 12/11 a 21/11 | Fase 4: julgamento, segunda melhoria técnica, artigo v2, Ponto de Controle 2 (16/11 ou 18/11) e release E2 em 21/11. | Planejado | 3ª medição de N1 a N6 |
+| **Sprint 6** | 22/11 a 02/12 | Entrega final (22/11), apresentações finais (23/11, 25/11 e 30/11), 2ª Avaliação Cruzada e Autoavaliação 2 (até 02/12). | Planejado | Continuação da série |
 
 Fonte: Plano de Sprints de 14/10 e GitHub Projects 33.
 
@@ -386,13 +386,13 @@ Três decisões desta versão dependem de acordo da equipe:
 A reunião de 29/10 ([Ata 02](atas/index.md)) não votou esses três pontos, e eles seguem para a próxima reunião (issue #44). A mesma ata deixou mais um ponto em aberto:
 
 4. **Apresentação do PC2.** Quem apresenta cada parte.
-A Ata 02 também perguntava pela diferença entre a release em 17/11 e a Entrega 2 em 18/11. O cronograma da disciplina confirma a Entrega 2 em 18/11; a release em 17/11 é um prazo interno da equipe, um dia antes, já previsto no Plano de Sprints de 14/10.
+A Ata 02 também perguntava pela diferença entre a release em 17/11 e a Entrega 2 em 18/11. A versão 2 do cronograma da disciplina (02/11) mudou as datas: a entrega final passou para 22/11, o Ponto de Controle 2 para 16/11 ou 18/11, e a aula de 04/11 (repetida em 11/11) virou a apresentação das métricas de gestão (PSM). A release interna passa para 21/11, um dia antes da entrega, pela regra do Plano de Sprints de 14/10.
 
 ---
 
 ## 11. Cronograma da adequação
 
-A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints medidos na release da E2, em 17/11 (Tabela 14).
+A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints medidos na release da E2, em 21/11 (Tabela 14).
 
 **Tabela 14**: Cronograma da adequação ao PSM/CID.
 
@@ -402,9 +402,9 @@ A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints m
 | 28/10 | Exigir PR para integrar na `main` | Dupla 3 | Pendente (issue #43); commits diretos continuaram a entrar na `main` depois de 26/10 |
 | 29/10 | Revisar esta página com a equipe e fechar os [pontos em validação](#10-pontos-em-validacao) | Dupla 3 com Mateus | Não votado em 29/10; segue para a próxima reunião (issue #44) |
 | 30/10 | Revisar as horas estimadas e redistribuir o Sprint 3 por pessoa | Mateus | Concluído ([Ata 02](atas/index.md), seção 3.6) |
-| 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar ao Ponto de Controle 2 | Equipe | Medição feita em 04/11, com três indicadores sem dado ([Seção 12](#12-medicao-do-sprint-3)) |
+| 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar à apresentação das métricas PSM (04/11 ou 11/11) | Equipe | Medição feita em 04/11, com três indicadores sem dado ([Seção 12](#12-medicao-do-sprint-3)) |
 | 11/11 | Fim do Sprint 4: segunda medição; ajustar indicadores pouco usados, com motivo em ata | Equipe | Planejado |
-| 17/11 | Fim do Sprint 5: série dos Sprints 3 a 5, decisões registradas e tabela de contribuição calculada pelas horas reais, na release E2 | Dupla 3; revisão: Mateus | Planejado |
+| 21/11 | Fim do Sprint 5: série dos Sprints 3 a 5, decisões registradas e tabela de contribuição calculada pelas horas reais, na release E2 | Dupla 3; revisão: Mateus | Planejado |
 
 Fonte: elaborado pela equipe.
 
@@ -427,7 +427,7 @@ A Tabela 15 compara cada indicador com o critério de decisão da Seção 4, e a
 | Indicador | Valor medido | Critério de decisão | Resultado |
 | :--- | :--- | :--- | :--- |
 | N1 Comprometido × concluído | 1 de 17 no critério de Pronto: \(\%_{\text{concl}} = 5{,}9\%\). Fechadas: 6 de 17 (35,3%) | Desvio acima de 10%: ação corretiva | Desvio de 94,1%: ação corretiva |
-| N2 Burndown da E2 | 32 de 40 itens abertos em 04/11. Concluídos: 20% dos itens, com 38% do prazo até 17/11 já passado | Variância acima de 10%: replanejar escopo | Variância de 18 pontos percentuais: replanejar |
+| N2 Burndown da E2 | 32 de 40 itens abertos em 04/11. Concluídos: 20% dos itens, com 32% do prazo até 21/11 já passado | Variância acima de 10%: replanejar escopo | Variância de 12 pontos percentuais: replanejar |
 | N3 Esforço por integrante | Nenhuma das 17 issues tem "Esforço real" preenchido | Participação fora de 10% a 25% | Não calculável |
 | N4 Estimado × real | Mesmo motivo de N3 | Precisão fora de 80% a 120% | Não calculável |
 | N5 Cycle time | Nenhuma das 6 issues fechadas tem "Início" e "Conclusão" preenchidos | Item mais de 10% acima da média | Não calculável |
@@ -438,10 +438,10 @@ Fonte: [`dados/gestao/sprint-3.json`](dados/gestao/sprint-3.json), gerado por `s
 Detalhes que explicam os números:
 
 - **N1.** A única issue no critério de Pronto é a #62, fechada pelo PR #92 com revisão de Mateus (Dupla 1) sobre trabalho de José Vinícius (Dupla 2). As #59, #60, #69 e #70 fecharam por PRs sem revisão de outra dupla (#100, #101 e #103), e a #66 pelo PR #104, também sem revisão registrada. Das 11 abertas, 10 não têm branch nem PR; a exceção é a #65 (PR #105).
-- **N2.** A variância é a diferença entre a parte do prazo já passada (8 de 21 dias, de 27/10 a 17/11) e a parte dos itens concluída (8 de 40). O guia não fixa essa conta, e a equipe adotou essa. O escopo da E2 cresceu de 33 para 40 itens no sprint: #89 e #90 em 30/10, #93 a #97 em 04/11.
+- **N2.** A variância é a diferença entre a parte do prazo já passada (8 de 25 dias, de 27/10 até a release de 21/11) e a parte dos itens concluída (8 de 40). O guia não fixa essa conta, e a equipe adotou essa. O escopo da E2 cresceu de 33 para 40 itens no sprint: #89 e #90 em 30/10, #93 a #97 em 04/11.
 - **N6.** As 9 integrações excluem os commits automáticos do painel (`github-actions[bot]`). As duas que não vieram de PR são commits diretos de 28/10 e 29/10. A revisão do #92 foi registrada como comentário, sem aprovação formal no GitHub.
 
-**Figura 7**: Burndown da E2 no Sprint 3, com itens abertos ao fim de cada dia e a linha ideal até 17/11.
+**Figura 7**: Burndown da E2 no Sprint 3, com itens abertos ao fim de cada dia e a linha ideal até a release de 21/11.
 
 ```mermaid
 xychart-beta
@@ -449,10 +449,10 @@ xychart-beta
     x-axis ["27/10", "28/10", "29/10", "30/10", "31/10", "01/11", "02/11", "03/11", "04/11"]
     y-axis "Itens abertos" 0 --> 40
     line [31, 31, 31, 33, 33, 33, 33, 33, 32]
-    line [31, 29.5, 28, 26.6, 25.1, 23.6, 22.1, 20.7, 19.2]
+    line [31, 29.8, 28.5, 27.3, 26, 24.8, 23.6, 22.3, 21.1]
 ```
 
-Fonte: [`dados/gestao/sprint-3.json`](dados/gestao/sprint-3.json). A linha ideal vai de 31 itens abertos em 27/10 a zero em 17/11.
+Fonte: [`dados/gestao/sprint-3.json`](dados/gestao/sprint-3.json). A linha ideal vai de 31 itens abertos em 27/10 a zero em 21/11.
 
 ### 12.2 Interpretação e decisões
 
@@ -503,3 +503,4 @@ A Parte 3 do guia (garantia de software e dívida técnica) não entra na gestã
 | `2.3` | 04/11/2026 | Registro das correções do PC1, situação dos sprints e do cronograma da adequação, pontos em aberto da Ata 02, e legenda, fonte e citação no texto de todas as tabelas e figuras | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `2.4` | 04/11/2026 | Medição do Sprint 3 (N1 a N6), decisões de gestão e avaliação da medição | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `2.5` | 04/11/2026 | Origem dos dados do painel automático e correção dos valores fixos (issue #106) | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `2.6` | 04/11/2026 | Datas do cronograma versão 2 da disciplina: release em 21/11, entrega final em 22/11, PC2 em 16/11 ou 18/11 e apresentação das métricas PSM em 04/11 ou 11/11; N2 recalculado | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |

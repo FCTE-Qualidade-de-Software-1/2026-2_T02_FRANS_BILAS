@@ -34,7 +34,7 @@ NOTA PARA APRESENTAÇÃO (Mateus):
 NOTA PARA APRESENTAÇÃO (Davi):
 - Primeira medição da série, feita em 04/11 com o script scripts/psm_medicao.py; dados brutos em dados/gestao/sprint-3.json. Detalhes na Seção 12 da Gestão.
 - N1: o critério de Pronto exige PR revisado por outra dupla. Só a #62 passou; 6 de 17 issues fecharam.
-- N2: 8 de 40 itens concluídos com 38% do prazo até 17/11 já passado; o escopo cresceu de 33 para 40.
+- N2: 8 de 40 itens concluídos com 32% do prazo até a release de 21/11 já passado; o escopo cresceu de 33 para 40.
 - N3, N4 e N5 não puderam ser calculados: ninguém preencheu horas reais nem datas. Isso é o resultado da avaliação da medição, e a decisão vai para a Ata 03.
 - A medição também achou uma falha no painel automático, que mostrava valores fixos (issue #106).
 -->
@@ -42,7 +42,7 @@ NOTA PARA APRESENTAÇÃO (Davi):
 | Indicador | Sprint 3 | Decisão |
 | :--- | :--- | :--- |
 | N1 Comprometido × concluído | 1 de 17 no critério de Pronto (5,9%) | Redistribuição dos Sprints 4 a 6, uma issue por pessoa |
-| N2 Burndown da E2 | 32 de 40 abertos; variância de 18 p.p. | Cortar a #80 se passar de 10% em 11/11 |
+| N2 Burndown da E2 | 32 de 40 abertos; variância de 12 p.p. | Cortar a #80 se passar de 10% em 11/11 |
 | N3, N4 e N5 | Sem dado: horas reais e datas em branco | Campos obrigatórios ao fechar a issue |
 | N6 Revisão por pares | 11,1% das integrações | PR obrigatório na `main` (#43) |
 
@@ -143,7 +143,7 @@ Fonte: [Dados da Coleta: Segurança](../dados/seguranca/index.md).
 NOTA PARA APRESENTAÇÃO (Lucca):
 - A especificação exige executar pelo menos uma ação de melhoria, justificada pelas evidências da avaliação.
 - Os candidatos vêm da coleta de Segurança. A escolha final cabe à equipe, junto com os resultados de Manutenibilidade (#89).
-- Se a apresentação for em 09/11, trocar este slide pela melhoria escolhida e pelo que já foi feito (#73).
+- O PC2 é em 16/11 ou 18/11, depois do Sprint 4: trocar este slide pela melhoria escolhida e pelo que já foi feito (#73).
 -->
 
 - **Selos de propostas**: quatro ações sem verificação de permissão, com rotas fora do escopo de administração (M3.3); esforço baixo
@@ -196,3 +196,4 @@ NOTA PARA APRESENTAÇÃO (João):
 | `1.0` | 04/11/2026 | Slides do Ponto de Controle 2 com notas de apresentação | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `1.1` | 04/11/2026 | Sete slides principais e dois de apêndice, slide de melhoria técnica e critérios da Fase 3 nas notas | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `1.2` | 04/11/2026 | Slide da medição do Sprint 3 (N1 a N6) no lugar do apêndice do quadro | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `1.3` | 04/11/2026 | Datas do cronograma versão 2 (PC2 em 16/11 ou 18/11) e N2 recalculado para a release de 21/11 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
