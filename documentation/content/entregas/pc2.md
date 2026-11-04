@@ -15,7 +15,7 @@ Faculdade de Ciências e Tecnologias em Engenharia (FCTE, Campus UnB Gama)
 NOTA PARA APRESENTAÇÃO (Mateus):
 - Abrir em 30 segundos: gestão corrigida, Fases 1 e 2 revisadas, Fase 3 iniciada com os primeiros dados.
 - A correção pedida no PC1 foi a gestão. A versão 1.0 tinha as três categorias do PSM, mas não o modelo de informação nem o processo de medição. A Tabela 2 da página de Gestão liga cada falha à correção.
-- Sprint 3: planning em 29/10 (Ata 02) e redistribuição por pessoa em 30/10. O apêndice A1 tem os números do quadro.
+- Sprint 3: planning em 29/10 (Ata 02) e redistribuição por pessoa em 30/10. O slide 2 traz a medição.
 - Premissa 3 da especificação: medições, interpretação e decisões de gestão registradas.
 -->
 
@@ -26,7 +26,31 @@ NOTA PARA APRESENTAÇÃO (Mateus):
 
 ---
 
-## 2. Fases 1 e 2 Revisadas
+## 2. Gestão: Medição do Sprint 3
+
+<p class="apresentador">Davi Mesquita Sousa</p>
+
+<!--
+NOTA PARA APRESENTAÇÃO (Davi):
+- Primeira medição da série, feita em 04/11 com o script scripts/psm_medicao.py; dados brutos em dados/gestao/sprint-3.json. Detalhes na Seção 12 da Gestão.
+- N1: o critério de Pronto exige PR revisado por outra dupla. Só a #62 passou; 6 de 17 issues fecharam.
+- N2: 8 de 40 itens concluídos com 38% do prazo até 17/11 já passado; o escopo cresceu de 33 para 40.
+- N3, N4 e N5 não puderam ser calculados: ninguém preencheu horas reais nem datas. Isso é o resultado da avaliação da medição, e a decisão vai para a Ata 03.
+- A medição também achou uma falha no painel automático, que mostrava valores fixos (issue #106).
+-->
+
+| Indicador | Sprint 3 | Decisão |
+| :--- | :--- | :--- |
+| N1 Comprometido × concluído | 1 de 17 no critério de Pronto (5,9%) | Redistribuição dos Sprints 4 a 6, uma issue por pessoa |
+| N2 Burndown da E2 | 32 de 40 abertos; variância de 18 p.p. | Cortar a #80 se passar de 10% em 11/11 |
+| N3, N4 e N5 | Sem dado: horas reais e datas em branco | Campos obrigatórios ao fechar a issue |
+| N6 Revisão por pares | 11,1% das integrações | PR obrigatório na `main` (#43) |
+
+Fonte: [Gestão, Seção 12](../gestao.md#12-medicao-do-sprint-3).
+
+---
+
+## 3. Fases 1 e 2 Revisadas
 
 <p class="apresentador">Mateus Vinícius Vieira</p>
 
@@ -35,7 +59,7 @@ NOTA PARA APRESENTAÇÃO (Mateus):
 - Antes da revisão, nenhuma das 12 tabelas de conteúdo e 3 figuras tinha legenda numerada nem fonte, e as páginas não tinham referências.
 - Algumas métricas tinham até três nomes diferentes dentro da Fase 2. Agora cada uma tem um nome só, o mesmo usado na Fase 3.
 - Termos sem métrica correspondente (Content Security Policy, acoplamento, planejamento de infraestrutura) saíram da Fase 1.
-- Fórmulas, níveis e critérios não mudaram: os pontos de dúvida estão no slide 7.
+- Fórmulas, níveis e critérios não mudaram: os pontos de dúvida estão no slide 8.
 -->
 
 - **Legendas e fontes (F2-C8, AG-C2)**: 12 tabelas e 3 figuras numeradas, com fonte e citadas no texto
@@ -44,7 +68,7 @@ NOTA PARA APRESENTAÇÃO (Mateus):
 
 ---
 
-## 3. Fase 3: Método, Plano e Ambiente
+## 4. Fase 3: Método, Plano e Ambiente
 
 <p class="apresentador">José Vinícius Alvares Soares de Queiroz</p>
 
@@ -63,7 +87,7 @@ NOTA PARA APRESENTAÇÃO (José):
 
 ---
 
-## 4. Fase 3: Cronograma e Consistência com a Fase 2
+## 5. Fase 3: Cronograma e Consistência com a Fase 2
 
 <p class="apresentador">José Vinícius Alvares Soares de Queiroz</p>
 
@@ -88,7 +112,7 @@ Fonte: cronograma da coleta (issue #65), que entra na Seção 5 da Fase 3.
 
 ---
 
-## 5. Primeiros Dados: Segurança
+## 6. Primeiros Dados: Segurança
 
 <p class="apresentador">José Vinícius Alvares Soares de Queiroz</p>
 
@@ -111,7 +135,7 @@ Fonte: [Dados da Coleta: Segurança](../dados/seguranca/index.md).
 
 ---
 
-## 6. Melhoria Técnica: Candidatos
+## 7. Melhoria Técnica: Candidatos
 
 <p class="apresentador">Lucca Medeiros Silva</p>
 
@@ -129,7 +153,7 @@ NOTA PARA APRESENTAÇÃO (Lucca):
 
 ---
 
-## 7. Riscos e Perguntas para a Professora
+## 8. Riscos e Perguntas para a Professora
 
 <p class="apresentador">Mateus Vinícius Vieira</p>
 
@@ -148,23 +172,7 @@ NOTA PARA APRESENTAÇÃO (Mateus):
 
 ---
 
-## A1. Apêndice: Sprint 3 no Quadro
-
-<p class="apresentador">Miguel Arthur Oliveira de Lima</p>
-
-<!--
-NOTA PARA APRESENTAÇÃO (Miguel):
-- Usar só se a professora perguntar pela gestão em execução.
-- Em 04/11 o quadro ainda mostrava quase tudo em Backlog, embora já houvesse trabalho em branches. A primeira medição (#46) depende de atualizar status, datas e horas reais.
--->
-
-- **Quadro em 04/11**: 19 itens no Sprint 3, 35 h estimadas, 2 concluídos (#41 e #42)
-- **Revisão por pares (N6)**: linha de base de 0% em 26/10; o trabalho do Sprint 3 entra por PR
-- **Pendências**: PR obrigatório na `main` (#43) e primeira medição de N1 a N6 (#46)
-
----
-
-## A2. Apêndice: Sessões com Usuários
+## A1. Apêndice: Sessões com Usuários
 
 <p class="apresentador">João Victor da Silva Batista de Farias</p>
 
@@ -187,3 +195,4 @@ NOTA PARA APRESENTAÇÃO (João):
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 04/11/2026 | Slides do Ponto de Controle 2 com notas de apresentação | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `1.1` | 04/11/2026 | Sete slides principais e dois de apêndice, slide de melhoria técnica e critérios da Fase 3 nas notas | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `1.2` | 04/11/2026 | Slide da medição do Sprint 3 (N1 a N6) no lugar do apêndice do quadro | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |

@@ -1,0 +1,562 @@
+{
+  "sprint": "Sprint 3",
+  "periodo": {
+    "inicio": "2026-10-27",
+    "fim": "2026-11-04"
+  },
+  "medido_em": "2026-11-04T03:06-03:00",
+  "indicadores": {
+    "N1": {
+      "comprometidas": 17,
+      "fechadas": 6,
+      "prontas": 1,
+      "pct_concluido": 5.9,
+      "pct_fechado": 35.3,
+      "itens_prontos": [
+        62
+      ],
+      "itens_fechados": [
+        59,
+        60,
+        69,
+        70,
+        62,
+        66
+      ],
+      "desvio": 94.1
+    },
+    "N2": [
+      {
+        "dia": "2026-10-27",
+        "planejados": 33,
+        "concluidos": 2,
+        "abertos": 31
+      },
+      {
+        "dia": "2026-10-28",
+        "planejados": 33,
+        "concluidos": 2,
+        "abertos": 31
+      },
+      {
+        "dia": "2026-10-29",
+        "planejados": 33,
+        "concluidos": 2,
+        "abertos": 31
+      },
+      {
+        "dia": "2026-10-30",
+        "planejados": 35,
+        "concluidos": 2,
+        "abertos": 33
+      },
+      {
+        "dia": "2026-10-31",
+        "planejados": 35,
+        "concluidos": 2,
+        "abertos": 33
+      },
+      {
+        "dia": "2026-11-01",
+        "planejados": 35,
+        "concluidos": 2,
+        "abertos": 33
+      },
+      {
+        "dia": "2026-11-02",
+        "planejados": 35,
+        "concluidos": 2,
+        "abertos": 33
+      },
+      {
+        "dia": "2026-11-03",
+        "planejados": 35,
+        "concluidos": 2,
+        "abertos": 33
+      },
+      {
+        "dia": "2026-11-04",
+        "planejados": 40,
+        "concluidos": 8,
+        "abertos": 32
+      }
+    ],
+    "N3": {
+      "issues_com_esforco_real": 0,
+      "issues_comprometidas": 17,
+      "horas_reais_por_pessoa": {}
+    },
+    "N4": {
+      "issues_com_esforco_real": 0,
+      "estimado_h": 0,
+      "real_h": 0,
+      "precisao_pct": null
+    },
+    "N5": {
+      "fechadas": 6,
+      "com_inicio_e_conclusao": 0,
+      "tempo_medio_dias": null
+    },
+    "N6": {
+      "integracoes": 9,
+      "por_pr": 7,
+      "revisadas_por_outra_dupla": 1,
+      "pct_revisado": 11.1
+    }
+  },
+  "dados_brutos": {
+    "issues_comprometidas": [
+      {
+        "numero": 59,
+        "titulo": "Revisão das Fases 1 e 2: terminologia relevante e adaptada (F2-C12)",
+        "estado": "CLOSED",
+        "criada_em": "2026-10-26T20:33:11Z",
+        "fechada_em": "2026-11-04T05:52:41Z",
+        "milestone": "E2",
+        "responsaveis": [
+          "matix0"
+        ],
+        "fechada_pelo_pr": 101,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 60,
+        "titulo": "Revisão das Fases 1 e 2: português, legendas, fontes e referências (F2-C8, AG-C2)",
+        "estado": "CLOSED",
+        "criada_em": "2026-10-26T20:33:15Z",
+        "fechada_em": "2026-11-04T05:52:42Z",
+        "milestone": "E2",
+        "responsaveis": [
+          "matix0"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 69,
+        "titulo": "Correções do Ponto de Controle 1 e registro das decisões de gestão",
+        "estado": "CLOSED",
+        "criada_em": "2026-10-26T20:34:04Z",
+        "fechada_em": "2026-11-04T05:52:38Z",
+        "milestone": "E2",
+        "responsaveis": [
+          "matix0"
+        ],
+        "fechada_pelo_pr": 100,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 1.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 70,
+        "titulo": "Apresentação do Ponto de Controle 2",
+        "estado": "CLOSED",
+        "criada_em": "2026-10-26T20:34:09Z",
+        "fechada_em": "2026-11-04T05:58:03Z",
+        "milestone": "E2",
+        "responsaveis": [
+          "matix0"
+        ],
+        "fechada_pelo_pr": 103,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 3.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 67,
+        "titulo": "Recrutar participantes para as sessões de usabilidade",
+        "estado": "OPEN",
+        "criada_em": "2026-10-26T20:33:52Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "zlimaz"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 68,
+        "titulo": "Revisão do Plano de Avaliação contra as métricas da Fase 2",
+        "estado": "OPEN",
+        "criada_em": "2026-10-26T20:33:58Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "zlimaz"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 44,
+        "titulo": "Revisar a Gestão v2.0 e fechar os pontos em validação",
+        "estado": "OPEN",
+        "criada_em": "2026-10-26T20:23:31Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "zlimaz"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 1.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 43,
+        "titulo": "Exigir PR para integrar na main",
+        "estado": "OPEN",
+        "criada_em": "2026-10-26T20:23:25Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "zlimaz"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 0.5,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 62,
+        "titulo": "Fase 3: Plano de Avaliação com método, recurso e responsável por métrica",
+        "estado": "CLOSED",
+        "criada_em": "2026-10-26T20:33:25Z",
+        "fechada_em": "2026-11-04T05:55:15Z",
+        "milestone": "E2",
+        "responsaveis": [
+          "JoseViniciusQueiroz"
+        ],
+        "fechada_pelo_pr": 92,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 66,
+        "titulo": "Análise estática do decidim-govbr: segurança (G3)",
+        "estado": "CLOSED",
+        "criada_em": "2026-10-26T20:33:47Z",
+        "fechada_em": "2026-11-04T05:56:37Z",
+        "milestone": "E2",
+        "responsaveis": [
+          "JoseViniciusQueiroz"
+        ],
+        "fechada_pelo_pr": 104,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 65,
+        "titulo": "Fase 3: cronograma da coleta alinhado à Fase 4",
+        "estado": "OPEN",
+        "criada_em": "2026-10-26T20:33:41Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "JoseViniciusQueiroz"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 1.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 90,
+        "titulo": "Coleta final de capacidade de interação com TCLE assinado",
+        "estado": "OPEN",
+        "criada_em": "2026-10-30T16:40:15Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "BeyondMagic"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 4",
+        "status": "Backlog",
+        "esforco_estimado_h": 4.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 45,
+        "titulo": "Preencher os campos pendentes do TCLE",
+        "estado": "OPEN",
+        "criada_em": "2026-10-26T20:23:38Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "BeyondMagic"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 0.5,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 63,
+        "titulo": "Fase 3: instruções passo a passo para obter cada medida",
+        "estado": "OPEN",
+        "criada_em": "2026-10-26T20:33:30Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "luccameds"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 89,
+        "titulo": "Análise estática do decidim-govbr: manutenibilidade (G2)",
+        "estado": "OPEN",
+        "criada_em": "2026-10-30T16:40:02Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "luccameds"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 4",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 64,
+        "titulo": "Fase 3: ambiente de avaliação detalhado",
+        "estado": "OPEN",
+        "criada_em": "2026-10-26T20:33:35Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "davimesquit"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      },
+      {
+        "numero": 46,
+        "titulo": "Medição do Sprint 3 (N1 a N6) e avaliação da medição",
+        "estado": "OPEN",
+        "criada_em": "2026-10-26T20:23:42Z",
+        "fechada_em": null,
+        "milestone": "E2",
+        "responsaveis": [
+          "davimesquit"
+        ],
+        "fechada_pelo_pr": null,
+        "sprint": "Sprint 3",
+        "status": "Backlog",
+        "esforco_estimado_h": 2.0,
+        "esforco_real_h": null,
+        "inicio": null,
+        "conclusao": null
+      }
+    ],
+    "integracoes_main": [
+      {
+        "commit": "44919c48165a1b47db405002ac855f7064f6109d",
+        "data": "2026-11-04",
+        "autor": "Mateus Vieira",
+        "assunto": "docs(entregas): slides do Ponto de Controle 2 (#103)",
+        "pr": 103,
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "commit": "01b2380f90dbf18b51e291a746845b3679d6cc5e",
+        "data": "2026-11-04",
+        "autor": "Mateus Vieira",
+        "assunto": "docs(uso-de-ia): registro individual de Mateus (#102)",
+        "pr": 102,
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "commit": "e27baf000a4f9a63c4b7ffdbc1d10e16f94e7440",
+        "data": "2026-11-04",
+        "autor": "Mateus Vieira",
+        "assunto": "docs: coleta das métricas de segurança M3.1 a M3.3 (#104)",
+        "pr": 104,
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "commit": "4f8d0894e28e4fb2bd5e9b138c732377dbc70e4d",
+        "data": "2026-11-04",
+        "autor": "Jose_Viniciusq",
+        "assunto": "docs: adiciona plano de avaliação da Fase 3 (#92)",
+        "pr": 92,
+        "revisado_por_outra_dupla": true
+      },
+      {
+        "commit": "874a8f0ea81e234ddd815039551d0485316b024a",
+        "data": "2026-11-04",
+        "autor": "Mateus Vieira",
+        "assunto": "docs(fases): revisão das Fases 1 e 2 (#101)",
+        "pr": 101,
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "commit": "3ca8a3255564b5c64c4833aba53dbeb238362c52",
+        "data": "2026-11-04",
+        "autor": "Mateus Vieira",
+        "assunto": "docs(gestao): correções do PC1 e situação do Sprint 3 (#100)",
+        "pr": 100,
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "commit": "501b3f76d5548f0b03797a0f83cecd7bf431a6e2",
+        "data": "2026-10-30",
+        "autor": "Mateus Vieira",
+        "assunto": "docs: Ata 02, redistribuição do Sprint 3 e identificação do usuário nos agentes (#91)",
+        "pr": 91,
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "commit": "cdce791070168c82e936dbd74002909f76a2a91a",
+        "data": "2026-10-29",
+        "autor": "João F. (BeyondMagic/koetemagie)",
+        "assunto": "feat(metrics): add resolved issues metric and mermaid chart snippet",
+        "pr": null,
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "commit": "7e3a169dd171ea27e2d3d056c20cc56c470d3851",
+        "data": "2026-10-28",
+        "autor": "João F. (BeyondMagic/koetemagie)",
+        "assunto": "docs(retrospectiva): adicionar pdf",
+        "pr": null,
+        "revisado_por_outra_dupla": false
+      }
+    ],
+    "prs": [
+      {
+        "numero": 91,
+        "autor": "matix0",
+        "dupla_autor": "Dupla 1",
+        "mesclado_em": "2026-10-30T17:06:33Z",
+        "commit": "501b3f76d5548f0b03797a0f83cecd7bf431a6e2",
+        "revisoes": [],
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "numero": 92,
+        "autor": "JoseViniciusQueiroz",
+        "dupla_autor": "Dupla 2",
+        "mesclado_em": "2026-11-04T05:55:13Z",
+        "commit": "4f8d0894e28e4fb2bd5e9b138c732377dbc70e4d",
+        "revisoes": [
+          {
+            "login": "matix0",
+            "estado": "COMMENTED",
+            "dupla": "Dupla 1"
+          }
+        ],
+        "revisado_por_outra_dupla": true
+      },
+      {
+        "numero": 100,
+        "autor": "matix0",
+        "dupla_autor": "Dupla 1",
+        "mesclado_em": "2026-11-04T05:52:36Z",
+        "commit": "3ca8a3255564b5c64c4833aba53dbeb238362c52",
+        "revisoes": [],
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "numero": 101,
+        "autor": "matix0",
+        "dupla_autor": "Dupla 1",
+        "mesclado_em": "2026-11-04T05:52:40Z",
+        "commit": "874a8f0ea81e234ddd815039551d0485316b024a",
+        "revisoes": [],
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "numero": 102,
+        "autor": "matix0",
+        "dupla_autor": "Dupla 1",
+        "mesclado_em": "2026-11-04T05:56:39Z",
+        "commit": "01b2380f90dbf18b51e291a746845b3679d6cc5e",
+        "revisoes": [],
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "numero": 103,
+        "autor": "matix0",
+        "dupla_autor": "Dupla 1",
+        "mesclado_em": "2026-11-04T05:58:02Z",
+        "commit": "44919c48165a1b47db405002ac855f7064f6109d",
+        "revisoes": [],
+        "revisado_por_outra_dupla": false
+      },
+      {
+        "numero": 104,
+        "autor": "matix0",
+        "dupla_autor": "Dupla 1",
+        "mesclado_em": "2026-11-04T05:56:34Z",
+        "commit": "e27baf000a4f9a63c4b7ffdbc1d10e16f94e7440",
+        "revisoes": [],
+        "revisado_por_outra_dupla": false
+      }
+    ]
+  }
+}
