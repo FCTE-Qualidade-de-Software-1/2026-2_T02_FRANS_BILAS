@@ -1,0 +1,4 @@
+data: 2026-11-03T23:17:34-03:00
+commit: 176b04673d956af4b1ab645e922cedd796b6a22e
+brakeman 8.1.0
+bundler-audit 0.9.3

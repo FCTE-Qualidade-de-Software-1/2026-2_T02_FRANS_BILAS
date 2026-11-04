@@ -1,0 +1,319 @@
+{
+  "scan_info": {
+    "app_path": "/home/jose-vinicius/decidim-govbr",
+    "rails_version": "6.1.7.2",
+    "security_warnings": 10,
+    "start_time": "2026-11-03 23:17:35 -0300",
+    "end_time": "2026-11-03 23:17:46 -0300",
+    "duration": 10.175773293,
+    "checks_performed": [
+      "BasicAuth",
+      "BasicAuthTimingAttack",
+      "CSRFTokenForgeryCVE",
+      "ContentTag",
+      "CookieSerialization",
+      "CreateWith",
+      "CrossSiteScripting",
+      "DefaultRoutes",
+      "Deserialize",
+      "DetailedExceptions",
+      "DigestDoS",
+      "DynamicFinders",
+      "EOLRails",
+      "EOLRuby",
+      "EscapeFunction",
+      "Evaluation",
+      "Execute",
+      "FileAccess",
+      "FileDisclosure",
+      "FilterSkipping",
+      "ForgerySetting",
+      "HeaderDoS",
+      "I18nXSS",
+      "JRubyXML",
+      "JSONEncoding",
+      "JSONEntityEscape",
+      "JSONParsing",
+      "LinkTo",
+      "LinkToHref",
+      "MailTo",
+      "MassAssignment",
+      "MimeTypeDoS",
+      "ModelAttrAccessible",
+      "ModelAttributes",
+      "ModelSerialize",
+      "NestedAttributes",
+      "NestedAttributesBypass",
+      "NumberToCurrency",
+      "PageCachingCVE",
+      "Pathname",
+      "PermitAttributes",
+      "QuoteTableName",
+      "Ransack",
+      "Redirect",
+      "RegexDoS",
+      "Render",
+      "RenderDoS",
+      "RenderInline",
+      "RenderRCE",
+      "ResponseSplitting",
+      "RouteDoS",
+      "SQL",
+      "SQLCVEs",
+      "SSLVerify",
+      "SafeBufferManipulation",
+      "SanitizeConfigCve",
+      "SanitizeMethods",
+      "SelectTag",
+      "SelectVulnerability",
+      "Send",
+      "SendFile",
+      "SessionManipulation",
+      "SessionSettings",
+      "SimpleFormat",
+      "SingleQuotes",
+      "SkipBeforeFilter",
+      "SprocketsPathTraversal",
+      "StripTags",
+      "SymbolDoSCVE",
+      "TemplateInjection",
+      "TranslateBug",
+      "UnsafeReflection",
+      "UnsafeReflectionMethods",
+      "ValidationRegex",
+      "VerbConfusion",
+      "WeakRSAKey",
+      "WithoutProtection",
+      "XMLDoS",
+      "YAMLParsing"
+    ],
+    "number_of_controllers": 52,
+    "number_of_models": 26,
+    "number_of_templates": 354,
+    "ruby_version": "3.2.3",
+    "brakeman_version": "8.1.0"
+  },
+  "warnings": [
+    {
+      "warning_type": "SQL Injection",
+      "warning_code": 0,
+      "fingerprint": "1decb12a0cf5518542ffaa6013b44294308e5f0381adc4371d0431b57b4feb92",
+      "check_name": "SQL",
+      "message": "Possible SQL injection",
+      "file": "app/models/decidim/govbr/user_proposals_statistic_setting.rb",
+      "line": 92,
+      "link": "https://brakemanscanner.org/docs/warning_types/sql_injection/",
+      "code": "ActiveRecord::Base.connection.execute(\"SELECT du.id as decidim_user_id, du.name as decidim_user_name, COUNT(dpp.id) as proposals_done, SUM(dpp.proposal_votes_count) as votes_received, SUM(dpp.comments_count) as comments_received, SUM(dpp.follows_count) as follows_received\\n  FROM decidim_components as dc\\n  INNER JOIN decidim_proposals_proposals as dpp\\n    ON dc.id = dpp.decidim_component_id\\n  INNER JOIN decidim_coauthorships as coauth\\n    ON coauth.coauthorable_type = 'Decidim::Proposals::Proposal' AND coauth.coauthorable_id = dpp.id\\n  INNER JOIN decidim_users as du\\n    ON du.id = coauth.decidim_author_id\\n  WHERE dc.participatory_space_type = '#{decidim_participatory_space_type}'\\n    AND dc.participatory_space_id = '#{decidim_participatory_space_id}'\\nGROUP BY du.id\\n\".squish)",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Decidim::Govbr::UserProposalsStatisticSetting",
+        "method": "get_user_proposals_data"
+      },
+      "user_input": "decidim_participatory_space_type",
+      "confidence": "Medium",
+      "cwe_id": [
+        89
+      ]
+    },
+    {
+      "warning_type": "SQL Injection",
+      "warning_code": 0,
+      "fingerprint": "482756685af4144aefd4446e717fb91b5a43827303a9fec7e60154d105e13651",
+      "check_name": "SQL",
+      "message": "Possible SQL injection",
+      "file": "app/models/decidim/govbr/user_proposals_statistic_setting.rb",
+      "line": 111,
+      "link": "https://brakemanscanner.org/docs/warning_types/sql_injection/",
+      "code": "ActiveRecord::Base.connection.execute(\"SELECT du.id as decidim_user_id, du.name as decidim_user_name, COUNT(dcc.id) as comments_done\\n  FROM decidim_components as dc\\n  INNER JOIN decidim_proposals_proposals as dpp\\n    ON dc.id = dpp.decidim_component_id\\n  INNER JOIN decidim_comments_comments as dcc\\n    ON dcc.decidim_commentable_id = dpp.id\\n  INNER JOIN decidim_users as du\\n    ON du.id = dcc.decidim_author_id\\n  WHERE dcc.decidim_commentable_type = 'Decidim::Proposals::Proposal'\\n    AND dc.participatory_space_type = '#{decidim_participatory_space_type}'\\n    AND dc.participatory_space_id = '#{decidim_participatory_space_id}'\\nGROUP BY du.id\\n\".squish)",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Decidim::Govbr::UserProposalsStatisticSetting",
+        "method": "get_user_comments_data"
+      },
+      "user_input": "decidim_participatory_space_type",
+      "confidence": "Medium",
+      "cwe_id": [
+        89
+      ]
+    },
+    {
+      "warning_type": "Mass Assignment",
+      "warning_code": 70,
+      "fingerprint": "49df33d46564415ca3850f901ec494fa40f4e69b28e62a951d5f3dd1aa68dada",
+      "check_name": "MassAssignment",
+      "message": "Specify exact keys allowed for mass assignment instead of using `permit!` which allows any keys",
+      "file": "app/controllers/decidim/proposals/admin/proposals_controller.rb",
+      "line": 157,
+      "link": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
+      "code": "params.require(:proposal).permit!",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Decidim::Proposals::Admin::ProposalsController",
+        "method": "update"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "cwe_id": [
+        915
+      ]
+    },
+    {
+      "warning_type": "Mass Assignment",
+      "warning_code": 70,
+      "fingerprint": "699f4c81d452fb04843f59870463bc1fc7cc94a37801a83efd654966b51e7674",
+      "check_name": "MassAssignment",
+      "message": "Specify exact keys allowed for mass assignment instead of using `permit!` which allows any keys",
+      "file": "app/controllers/decidim/admin/components_controller.rb",
+      "line": 143,
+      "link": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
+      "code": "params[:component].permit!",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Decidim::Admin::ComponentsController",
+        "method": "component_params"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "cwe_id": [
+        915
+      ]
+    },
+    {
+      "warning_type": "Mass Assignment",
+      "warning_code": 70,
+      "fingerprint": "6ac19398aad84324ba07b92d9bc11aa3c340ce14b31821453f4cd5677592bc0d",
+      "check_name": "MassAssignment",
+      "message": "Specify exact keys allowed for mass assignment instead of using `permit!` which allows any keys",
+      "file": "app/controllers/decidim/proposals/admin/participatory_texts_controller.rb",
+      "line": 95,
+      "link": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
+      "code": "params.require(:preview_participatory_text).permit!",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Decidim::Proposals::Admin::ParticipatoryTextsController",
+        "method": "update_as_preview"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "cwe_id": [
+        915
+      ]
+    },
+    {
+      "warning_type": "SQL Injection",
+      "warning_code": 0,
+      "fingerprint": "7547cfb6da11bf12f008625cdcf56e0cb81c564056422331b35ee461f68d3ab7",
+      "check_name": "SQL",
+      "message": "Possible SQL injection",
+      "file": "app/models/decidim/govbr/user_proposals_statistic_setting.rb",
+      "line": 148,
+      "link": "https://brakemanscanner.org/docs/warning_types/sql_injection/",
+      "code": "ActiveRecord::Base.connection.execute(\"SELECT du.id as decidim_user_id, du.name as decidim_user_name, COUNT(df.id) as follows_done\\n  FROM decidim_components as dc\\n  INNER JOIN decidim_proposals_proposals as dpp\\n    ON dc.id = dpp.decidim_component_id\\n  INNER JOIN decidim_follows as df\\n    ON df.decidim_followable_id = dpp.id\\n  INNER JOIN decidim_users as du\\n    ON du.id = df.decidim_user_id\\n  WHERE df.decidim_followable_type = 'Decidim::Proposals::Proposal'\\n    AND dc.participatory_space_type = '#{decidim_participatory_space_type}'\\n    AND dc.participatory_space_id = '#{decidim_participatory_space_id}'\\nGROUP BY du.id\\n\".squish)",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Decidim::Govbr::UserProposalsStatisticSetting",
+        "method": "get_user_follows_data"
+      },
+      "user_input": "decidim_participatory_space_type",
+      "confidence": "Medium",
+      "cwe_id": [
+        89
+      ]
+    },
+    {
+      "warning_type": "Mass Assignment",
+      "warning_code": 70,
+      "fingerprint": "8eeee9ad33162a80c7cf7a87d597f4cc108b0874d40ddabd1f5241f460a9519a",
+      "check_name": "MassAssignment",
+      "message": "Specify exact keys allowed for mass assignment instead of using `permit!` which allows any keys",
+      "file": "app/controllers/decidim/proposals/admin/participatory_texts_controller.rb",
+      "line": 64,
+      "link": "https://brakemanscanner.org/docs/warning_types/mass_assignment/",
+      "code": "params.require(:preview_participatory_text).permit!",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Decidim::Proposals::Admin::ParticipatoryTextsController",
+        "method": "update"
+      },
+      "user_input": null,
+      "confidence": "Medium",
+      "cwe_id": [
+        915
+      ]
+    },
+    {
+      "warning_type": "SQL Injection",
+      "warning_code": 0,
+      "fingerprint": "982e468b57e825376b0ec65fb45b928c389789260e1a3c08352d1ebc50abc2a2",
+      "check_name": "SQL",
+      "message": "Possible SQL injection",
+      "file": "app/models/decidim/govbr/user_proposals_statistic_setting.rb",
+      "line": 129,
+      "link": "https://brakemanscanner.org/docs/warning_types/sql_injection/",
+      "code": "ActiveRecord::Base.connection.execute(\"SELECT du.id as decidim_user_id, du.name as decidim_user_name, COUNT(dppv.id) as votes_done\\n  FROM decidim_components as dc\\n  INNER JOIN decidim_proposals_proposals as dpp\\n    ON dc.id = dpp.decidim_component_id\\n  INNER JOIN decidim_proposals_proposal_votes as dppv\\n    ON dppv.decidim_proposal_id = dpp.id\\n  INNER JOIN decidim_users as du\\n    ON du.id = dppv.decidim_author_id\\n  WHERE dc.participatory_space_type = '#{decidim_participatory_space_type}'\\n    AND dc.participatory_space_id = '#{decidim_participatory_space_id}'\\nGROUP BY du.id\\n\".squish)",
+      "render_path": null,
+      "location": {
+        "type": "method",
+        "class": "Decidim::Govbr::UserProposalsStatisticSetting",
+        "method": "get_user_votes_data"
+      },
+      "user_input": "decidim_participatory_space_type",
+      "confidence": "Medium",
+      "cwe_id": [
+        89
+      ]
+    },
+    {
+      "warning_type": "Unmaintained Dependency",
+      "warning_code": 120,
+      "fingerprint": "d84924377155b41e094acae7404ec2e521629d86f97b0ff628e3d1b263f8101c",
+      "check_name": "EOLRails",
+      "message": "Support for Rails 6.1.7.2 ended on 2024-10-01",
+      "file": "Gemfile.lock",
+      "line": 777,
+      "link": "https://brakemanscanner.org/docs/warning_types/unmaintained_dependency/",
+      "code": null,
+      "render_path": null,
+      "location": null,
+      "user_input": null,
+      "confidence": "High",
+      "cwe_id": [
+        1104
+      ]
+    },
+    {
+      "warning_type": "Unmaintained Dependency",
+      "warning_code": 121,
+      "fingerprint": "edf687f759ec9765bd5db185dbc615c80af77d6e7e19386fc42934e7a80307af",
+      "check_name": "EOLRuby",
+      "message": "Support for Ruby 3.0.4 ended on 2024-03-31",
+      "file": ".ruby-version",
+      "line": 1,
+      "link": "https://brakemanscanner.org/docs/warning_types/unmaintained_dependency/",
+      "code": null,
+      "render_path": null,
+      "location": null,
+      "user_input": null,
+      "confidence": "High",
+      "cwe_id": [
+        1104
+      ]
+    }
+  ],
+  "ignored_warnings": [
+
+  ],
+  "errors": [
+
+  ],
+  "obsolete": [
+
+  ]
+}
