@@ -25,6 +25,22 @@ A tabela compara cada elemento do PSM com o estado da página em 26/10.
 | Indicador por iteração | Comparar obtido com esperado a cada iteração (CID P2, §8.3) | Um valor por métrica no Sprint 1 | Falta |
 | Processo de medição | Comprometer, planejar, executar e avaliar (McGarry, cap. 1, §1.6) | Planejamento feito no plano de sprints; execução parcial | Parcial |
 
+### 1.1 Correções do Ponto de Controle 1
+
+A correção pedida no PC1 foi a gestão: a versão 1.0 tinha as categorias do PSM, mas não o modelo de informação nem o processo de medição. A versão 2.0 (PR #86, 26/10) trata cada item marcado como Falta ou Parcial no diagnóstico acima.
+
+| Elemento do PSM | Situação na 1.0 | O que a 2.0 fez | Onde está |
+| :--- | :---: | :--- | :--- |
+| Necessidades de informação | Falta | Seis necessidades, N1 a N6, cada uma ligada a um problema, risco ou falta de informação do projeto | [Seção 2](#2-necessidades-de-informacao) |
+| Seleção das medidas | Parcial | Cinco indicadores da tabela ICM e uma adaptação declarada (N6) | [Seção 3](#3-indicadores-selecionados) |
+| Construto de medição | Parcial | Construto completo para os seis indicadores, da entidade ao critério de decisão | [Seção 4](#4-construtos-de-medicao) |
+| Critérios de decisão | Parcial | Limites com origem citada no guia; os de N3 e N4 seguem em validação | [Seção 4](#4-construtos-de-medicao) e [Seção 10](#10-pontos-em-validacao) |
+| Coleta | Falta | GitHub Projects 33 com os campos das medidas básicas e regras de registro (issues #41 e #42) | [Seção 6](#6-coleta-de-dados) |
+| Indicador por iteração | Falta | Série medida a partir do Sprint 3, com uma medição por sprint até a E2 | [Seção 7](#7-acompanhamento-dos-sprints) |
+| Processo de medição | Parcial | As quatro atividades do PSM, cada uma com responsável e prazo | [Seção 5](#5-processo-de-medicao) |
+
+Fonte: diagnóstico da Seção 1 e PR #86.
+
 ---
 
 ## 2. Necessidades de informação
@@ -200,13 +216,15 @@ Regras de registro:
 | Sprint | Período | Foco temático e entregáveis | Status | Medição |
 | :---: | :---: | :--- | :---: | :--- |
 | **Sprint 1** | 14/10 a 19/10 | Fase 1 completa, estruturação da GitPage, slides e apresentação do PC1. | **Concluído** | Linha de base (estimativa): 100% dos itens do plano concluídos |
-| **Sprint 2** | 20/10 a 25/10 | Fase 2 (GQM), Gestão PSM/CID, artigo científico v1 e Release E1. | **Em andamento** | Linha de base (estimativa) |
-| **Sprint 3** | 27/10 a 04/11 | Fase 3: Plano de Avaliação, recursos de teste e Ponto de Controle 2. | Planejado | 1ª medição de N1 a N6 |
+| **Sprint 2** | 20/10 a 25/10 | Fase 2 (GQM), Gestão PSM/CID, artigo científico v1 e Release E1. | **Concluído** | Linha de base (estimativa) |
+| **Sprint 3** | 27/10 a 04/11 | Fase 3: Plano de Avaliação, recursos de teste e Ponto de Controle 2. | **Em andamento** | 1ª medição de N1 a N6 (issue #46) |
 | **Sprint 4** | 05/11 a 11/11 | Execução da coleta, consolidação de dados brutos e primeira melhoria técnica. | Planejado | 2ª medição de N1 a N6 |
 | **Sprint 5** | 12/11 a 17/11 | Fase 4: Julgamento, segunda melhoria técnica, artigo v2 e Release E2. | Planejado | 3ª medição de N1 a N6 |
 | **Sprint 6** | 19/11 a 30/11 | Preparação para a apresentação final e encerramento do projeto. | Planejado | Continuação da série |
 
 Linha de base de N6, tirada do histórico da `main` em 26/10: 42 integrações, das quais 3 vieram de PR (#1, #2 e #3). Nenhum dos três PRs tem revisão registrada no GitHub, então \(V = 0\) e \(\%_{\text{rev}} = \frac{0}{42} \times 100 = 0\%\).
+
+O planejamento do Sprint 3 foi feito na reunião de 29/10 ([Ata 02](atas/index.md)). Em 30/10, o backlog foi redistribuído por pessoa: 18 issues e 31 horas estimadas, uma issue por responsável, como pede a regra 1 da coleta. A carga de Mateus (8 h) passa do teto de 25% proposto para N3, por decisão dele como líder, registrada na mesma ata.
 
 ---
 
@@ -281,20 +299,26 @@ Três decisões desta versão dependem de acordo da equipe:
 2. **Faixa de precisão de estimativa (N4).** A faixa de 80% a 120% foi adaptada de uma figura de exemplo da Parte 2 (Fig. 26).
 3. **Responsáveis e datas.** As tarefas de coleta ficaram com a Dupla 3, com coordenação de Mateus, a partir de 28/10. A divisão pode mudar na próxima reunião.
 
+A reunião de 29/10 ([Ata 02](atas/index.md)) não votou esses três pontos, e eles seguem para a próxima reunião (issue #44). A mesma ata deixou mais dois pontos em aberto:
+
+4. **Apresentação do PC2.** Quem apresenta cada parte.
+5. **Data da Entrega 2.** Esta página usa a release em 17/11, e o calendário da disciplina marca a Entrega 2 em 18/11.
+
 ---
 
 ## 11. Cronograma da adequação
 
 A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints medidos na release da E2, em 17/11.
 
-| Prazo | Ação | Responsável |
-| :---: | :--- | :--- |
-| 28/10 | Criar o GitHub Projects com os campos da coleta, as iterações dos Sprints e o milestone E2; cadastrar o backlog do Sprint 3 como issues. Concluído em 26/10 (issues #41 e #42) | Mateus |
-| 28/10 | Exigir PR para integrar na `main` | Dupla 3 |
-| 29/10 | Revisar esta página com a equipe e fechar os [pontos em validação](#10-pontos-em-validacao) | Dupla 3 com Mateus |
-| 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar ao Ponto de Controle 2 | Equipe |
-| 11/11 | Fim do Sprint 4: segunda medição; ajustar indicadores pouco usados, com motivo em ata | Equipe |
-| 17/11 | Fim do Sprint 5: série dos Sprints 3 a 5, decisões registradas e tabela de contribuição calculada pelas horas reais, na release E2 | Dupla 3; revisão: Mateus |
+| Prazo | Ação | Responsável | Situação em 04/11 |
+| :---: | :--- | :--- | :--- |
+| 28/10 | Criar o GitHub Projects com os campos da coleta, as iterações dos Sprints e o milestone E2; cadastrar o backlog do Sprint 3 como issues | Mateus | Concluído em 26/10 (issues #41 e #42) |
+| 28/10 | Exigir PR para integrar na `main` | Dupla 3 | Pendente (issue #43); commits diretos continuaram a entrar na `main` depois de 26/10 |
+| 29/10 | Revisar esta página com a equipe e fechar os [pontos em validação](#10-pontos-em-validacao) | Dupla 3 com Mateus | Não votado em 29/10; segue para a próxima reunião (issue #44) |
+| 30/10 | Revisar as horas estimadas e redistribuir o Sprint 3 por pessoa | Mateus | Concluído ([Ata 02](atas/index.md), seção 3.6) |
+| 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar ao Ponto de Controle 2 | Equipe | Em andamento (issue #46) |
+| 11/11 | Fim do Sprint 4: segunda medição; ajustar indicadores pouco usados, com motivo em ata | Equipe | Planejado |
+| 17/11 | Fim do Sprint 5: série dos Sprints 3 a 5, decisões registradas e tabela de contribuição calculada pelas horas reais, na release E2 | Dupla 3; revisão: Mateus | Planejado |
 
 A adequação está pronta quando os seis indicadores tiverem valor nos três sprints, cada valor fora do critério tiver uma decisão em ata e a tabela de contribuição sair do indicador de esforço.
 
@@ -319,3 +343,4 @@ A Parte 3 do guia (garantia de software e dívida técnica) não entra na gestã
 | `2.0` | 26/10/2026 | Adequação ao PSM/CID: diagnóstico, necessidades N1 a N6, indicadores da tabela ICM, construtos completos, processo de medição, regras de coleta e cronograma até a E2 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `2.1` | 26/10/2026 | Inclusão dos nomes e usuários GitHub dos integrantes, e painel automatizado de métricas com gráficos e tabelas de processo | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `2.2` | 29/10/2026 | Inclusão do gráfico de tarefas resolvidas por integrante no painel automatizado | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+| `2.3` | 04/11/2026 | Registro das correções do PC1, situação dos sprints e do cronograma da adequação, e pontos em aberto da Ata 02 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
