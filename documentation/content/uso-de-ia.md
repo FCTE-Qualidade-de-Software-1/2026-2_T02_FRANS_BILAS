@@ -57,12 +57,11 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
   - Ata 02 e redistribuição do Sprint 3 (PR #91), além da identificação do usuário em `AGENTS.md` e `CLAUDE.md`.
   - Sprint 3: registro das correções do PC1 na Gestão, revisão das Fases 1 e 2 (legendas, fontes, referências e terminologia) e slides do PC2.
 - **Procedimento de Revisão Humana**:
-  - Na gestão, conferi cada indicador e cada critério de decisão contra o guia CID (Partes 1 e 2), o livro de McGarry et al. e a Aula 09, e só mantive o que tinha seção ou figura citável.
-  - Tirei a linha de base de N6 do histórico da `main` e dos PRs no GitHub, e não de estimativa.
-  - Na Ata 02, comparei o texto com as anotações da reunião de 29/10 e com o quadro do Projects depois da redistribuição de 30/10.
-  - Na revisão das Fases 1 e 2, li a lista de apontamentos gerada com apoio da IA e decidi o que entrava. Ficaram de fora mudanças em fórmulas, níveis e critérios das métricas, que vão para discussão com a Dupla 2 e com a professora.
-  - Nos slides, conferi cada número com a página de origem ou com o quadro do Projects.
-  - Os commits feitos com apoio da IA levam a linha `Co-Authored-By` do Claude.
+  - Todo trabalho feito com apoio da IA entrou por PR (#86, #91, #100 a #103), e cada PR declara a ferramenta, a tarefa e quem revisou.
+  - Os commits feitos com apoio da IA levam a linha `Co-Authored-By` do Claude, o que deixa visível no histórico o que teve participação da ferramenta.
+  - A linha de base de N6 na Gestão foi calculada pelo histórico da `main` e pelos PRs no GitHub, e não por estimativa.
+  - Na revisão das Fases 1 e 2, as mudanças de forma entraram; as que alterariam fórmulas, níveis ou critérios das métricas ficaram de fora e foram listadas no PR #101 para a Dupla 2 e a professora.
+  - Nos slides do PC2, cada tabela de números cita a página de origem como fonte.
 
 ---
 
