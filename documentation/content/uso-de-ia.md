@@ -57,7 +57,7 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
   - Ata 02 e redistribuição do Sprint 3 (PR #91), além da identificação do usuário em `AGENTS.md` e `CLAUDE.md`.
   - Sprint 3: registro das correções do PC1 na Gestão, revisão das Fases 1 e 2 (legendas, fontes, referências e terminologia) e slides do PC2.
 - **Procedimento de Revisão Humana**:
-  - Todo trabalho feito com apoio da IA entrou por PR (#86, #91, #100 a #103), e cada PR declara a ferramenta, a tarefa e quem revisou.
+  - As contribuições feitas com apoio da IA entraram no repositório por PR (#86, #91 e #100 a #103), e cada PR declara a ferramenta, a tarefa e quem revisou.
   - Os commits feitos com apoio da IA levam a linha `Co-Authored-By` do Claude, o que deixa visível no histórico o que teve participação da ferramenta.
   - A linha de base de N6 na Gestão foi calculada pelo histórico da `main` e pelos PRs no GitHub, e não por estimativa.
   - Na revisão das Fases 1 e 2, as mudanças de forma entraram; as que alterariam fórmulas, níveis ou critérios das métricas ficaram de fora e foram listadas no PR #101 para a Dupla 2 e a professora.
