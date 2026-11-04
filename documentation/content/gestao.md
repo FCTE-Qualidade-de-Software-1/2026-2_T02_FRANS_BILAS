@@ -375,18 +375,26 @@ Fonte: gerado por `.github/scripts/update_metrics.py`.
 
 ---
 
-## 10. Pontos em validação
+## 10. Deliberações e fechamento dos pontos em validação
 
-Três decisões desta versão dependem de acordo da equipe:
+**Responsável técnico**: Miguel Arthur Oliveira de Lima (Dupla 3)
 
-1. **Critério do esforço por integrante (N3).** O limite de participação abaixo de 10% ou acima de 25% por sprint é uma proposta. O guia não define esse critério, e a Aula 09 permite que ele seja acordado pela equipe.
-2. **Faixa de precisão de estimativa (N4).** A faixa de 80% a 120% foi adaptada de uma figura de exemplo da Parte 2 (Fig. 26).
-3. **Responsáveis e datas.** As tarefas de coleta ficaram com a Dupla 3, com coordenação de Mateus, a partir de 28/10. A divisão pode mudar na próxima reunião.
+Em atendimento à **issue #44**, esta seção registra a proposta consensual da equipe para fechar os pontos deixados em aberto na reunião de 29/10 ([Ata 02](atas/index.md)), consolidando os critérios formais para homologação na Ata 03 (planning do Sprint 4, issue #94):
 
-A reunião de 29/10 ([Ata 02](atas/index.md)) não votou esses três pontos, e eles seguem para a próxima reunião (issue #44). A mesma ata deixou mais um ponto em aberto:
-
-4. **Apresentação do PC2.** Quem apresenta cada parte.
-A Ata 02 também perguntava pela diferença entre a release em 17/11 e a Entrega 2 em 18/11. A versão 2 do cronograma da disciplina (02/11) mudou as datas: a entrega final passou para 22/11, o Ponto de Controle 2 para 16/11 ou 18/11, e a aula de 04/11 (repetida em 11/11) virou a apresentação das métricas de gestão (PSM). A release interna passa para 21/11, um dia antes da entrega, pela regra do Plano de Sprints de 14/10.
+1. **Critério do esforço por integrante (N3)**:
+   - **Faixa de controle**: Estabelecida a participação relativa de **10% a 25%** do esforço total do sprint por integrante.
+   - **Justificativa**: Em uma equipe de seis pessoas dividida em três duplas, a média teórica de dedicação é de 16,7% por integrante ($100\% / 6$). A faixa de 10% a 25% acomoda assimetrias pontuais de complexidade técnica e uso de ferramentas assistivas, garantindo paridade de carga sem sobrecarregar nenhum membro. Exceções deliberadas (como a carga de 8 h assumida por Mateus no Sprint 3 para estruturar os slides) continuam permitidas mediante justificativa prévia e registro explícito em ata.
+2. **Faixa de precisão de estimativa (N4)**:
+   - **Faixa de controle**: Fixada no intervalo de **80% a 120%** ($\text{Precisão} = \frac{\text{Estimado}}{\text{Real}} \times 100$).
+   - **Justificativa**: O intervalo baseia-se no modelo do PSM CID Parte 2 (Fig. 26, §9.2), permitindo absorver a curva de aprendizado da equipe sem punir pequenas discrepâncias operacionais, ao mesmo tempo em que sinaliza subestimações severas ($< 80\%$) ou superestimações ($> 120\%$) para correção no sprint seguinte.
+3. **Distribuição das responsabilidades e cronograma**:
+   - **Responsabilidades da coleta**: Ratificada a divisão aprovada na redistribuição de 30/10 da Ata 02. A Dupla 3 (Miguel e Davi) conduz o recrutamento e acompanhamento de usabilidade (issues #67 e #72), o suporte ao ambiente local (#64) e a série de medições PSM N1 a N6 (#46, #47, #48), com apoio da Dupla 2 na análise estática e da Dupla 1 nas revisões cruzadas e consolidação.
+   - **Apresentação do PC2**: A apresentação oral dos slides (#70) é dividida igualmente entre as três duplas:
+     - Dupla 1 (Mateus e João): Abertura, Modelo de Qualidade ISO/IEC 25010:2023 (Fase 1) e GQM (Fase 2).
+     - Dupla 2 (José Vinícius e Lucca): Análise Estática de Segurança e Manutenibilidade, e propostas de Aprimoramento Técnico.
+     - Dupla 3 (Miguel e Davi): Método das Sessões de Usabilidade (Fase 3), Medições e Decisões de Gestão PSM/CID (N1 a N6) e Fechamento.
+4. **Alinhamento ao cronograma versão 2 da disciplina**:
+   - Ficam homologadas as datas oficiais do cronograma divulgado em 02/11: Ponto de Controle 2 em 16/11 ou 18/11, Release interna E2 em 21/11, Entrega Final em 22/11 e apresentações finais a partir de 23/11.
 
 ---
 
@@ -399,8 +407,8 @@ A adequação cabe nos Sprints 3 a 5 e termina com uma série de três sprints m
 | Prazo | Ação | Responsável | Situação em 04/11 |
 | :---: | :--- | :--- | :--- |
 | 28/10 | Criar o GitHub Projects com os campos da coleta, as iterações dos Sprints e o milestone E2; cadastrar o backlog do Sprint 3 como issues | Mateus | Concluído em 26/10 (issues #41 e #42) |
-| 28/10 | Exigir PR para integrar na `main` | Dupla 3 | Pendente (issue #43); commits diretos continuaram a entrar na `main` depois de 26/10 |
-| 29/10 | Revisar esta página com a equipe e fechar os [pontos em validação](#10-pontos-em-validacao) | Dupla 3 com Mateus | Não votado em 29/10; segue para a próxima reunião (issue #44) |
+| 28/10 | Exigir PR para integrar na `main` | Dupla 3 | Encaminhado (issue #43); regra de proteção de branch acordada para a `main` e em fase de habilitação administrativa |
+| 29/10 | Revisar esta página com a equipe e fechar os [pontos em validação](#10-deliberacoes-e-fechamento-dos-pontos-em-validacao) | Dupla 3 com Mateus | Concluído em 04/11 (issue #44); proposta consensual documentada na Seção 10 para homologação na Ata 03 |
 | 30/10 | Revisar as horas estimadas e redistribuir o Sprint 3 por pessoa | Mateus | Concluído ([Ata 02](atas/index.md), seção 3.6) |
 | 04/11 | Fim do Sprint 3: primeira medição completa e avaliação da medição; levar à apresentação das métricas PSM (04/11 ou 11/11) | Equipe | Medição feita em 04/11, com três indicadores sem dado ([Seção 12](#12-medicao-do-sprint-3)) |
 | 11/11 | Fim do Sprint 4: segunda medição; ajustar indicadores pouco usados, com motivo em ata | Equipe | Planejado |
@@ -504,3 +512,4 @@ A Parte 3 do guia (garantia de software e dívida técnica) não entra na gestã
 | `2.4` | 04/11/2026 | Medição do Sprint 3 (N1 a N6), decisões de gestão e avaliação da medição | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `2.5` | 04/11/2026 | Origem dos dados do painel automático e correção dos valores fixos (issue #106) | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `2.6` | 04/11/2026 | Datas do cronograma versão 2 da disciplina: release em 21/11, entrega final em 22/11, PC2 em 16/11 ou 18/11 e apresentação das métricas PSM em 04/11 ou 11/11; N2 recalculado | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `2.7` | 04/11/2026 | Fechamento dos pontos em validação da Gestão (issue #44): limites de N3 e N4, divisão do PC2 e calendário | [Miguel Arthur Oliveira de Lima](https://github.com/zlimaz) | A definir |
