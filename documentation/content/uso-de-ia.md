@@ -49,10 +49,20 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 
 ### Mateus Vinícius Vieira
 
-- **Papel no Projeto**: Dupla 1 (Qualidade e GQM) - Responsável pelas atividades subsequentes da Fase 1 (Modelo SQuaRE, Priorização, Escopo e ODS) e coordenação geral do plano de sprints.
-- **Ferramentas Utilizadas**: Claude (Anthropic).
-- **Tarefas Realizadas com Apoio de IA**: Elaboração preliminar da proposta de sprints (`references/artificial-intelligence/claude/plano.md`) a partir da leitura dos critérios da disciplina.
-- **Procedimento de Revisão Humana**: *[Placeholder: O integrante atualizará esta seção com o detalhamento de suas revisões humanas e uso das ferramentas ao longo da execução da Fase 1 e Fase 2].*
+- **Papel no Projeto**: Líder do grupo, na Dupla 1. Coordena o backlog, os sprints e a gestão PSM/CID no GitHub Projects 33; revisa as Fases 1 e 2, cuida das correções do PC1 e monta os slides.
+- **Ferramentas Utilizadas**: Claude (Anthropic), pelo Claude Code.
+- **Tarefas Realizadas com Apoio de IA**:
+  - Proposta preliminar do plano de sprints (`references/artificial-intelligence/claude/plano.md`), a partir dos critérios da disciplina.
+  - Gestão v2.0 e TCLE da Fase 3 (PR #86): diagnóstico da versão 1.0, rascunho das necessidades N1 a N6 e dos construtos, e adaptação do modelo de TCLE da disciplina.
+  - Ata 02 e redistribuição do Sprint 3 (PR #91), além da identificação do usuário em `AGENTS.md` e `CLAUDE.md`.
+  - Sprint 3: registro das correções do PC1 na Gestão, revisão das Fases 1 e 2 (legendas, fontes, referências e terminologia) e slides do PC2.
+- **Procedimento de Revisão Humana**:
+  - Na gestão, conferi cada indicador e cada critério de decisão contra o guia CID (Partes 1 e 2), o livro de McGarry et al. e a Aula 09, e só mantive o que tinha seção ou figura citável.
+  - Tirei a linha de base de N6 do histórico da `main` e dos PRs no GitHub, e não de estimativa.
+  - Na Ata 02, comparei o texto com as anotações da reunião de 29/10 e com o quadro do Projects depois da redistribuição de 30/10.
+  - Na revisão das Fases 1 e 2, li a lista de apontamentos gerada com apoio da IA e decidi o que entrava. Ficaram de fora mudanças em fórmulas, níveis e critérios das métricas, que vão para discussão com a Dupla 2 e com a professora.
+  - Nos slides, conferi cada número com a página de origem ou com o quadro do Projects.
+  - Os commits feitos com apoio da IA levam a linha `Co-Authored-By` do Claude.
 
 ---
 
@@ -99,5 +109,6 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 | `1.0` | 17/10/2026 | Criação da política de uso ético de IA, registro individual e estrutura para a equipe | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `1.1` | 18/10/2026 | Registro de uso de IA referente à especificação das métricas, níveis de julgamento e rastreabilidade da Fase 2 | [Lucca Medeiros Silva](https://github.com/luccameds) | A definir |
 | `1.2` | 19/10/2026 | Registro individual de uso de IA de Miguel Arthur (modelagem SQuaRE, priorização e governança) | [Miguel Arthur Oliveira de Lima](https://github.com/zlimaz) | A definir |
+| `1.3` | 04/11/2026 | Registro individual de uso de IA de Mateus (gestão, atas, revisão das Fases 1 e 2 e slides do PC2) | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 
 
