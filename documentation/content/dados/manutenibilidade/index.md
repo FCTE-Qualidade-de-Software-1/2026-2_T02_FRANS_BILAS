@@ -4,7 +4,7 @@ icon: lucide/wrench
 
 # Dados de Manutenibilidade
 
-A coleta da issue #89 mede M2.1 a M2.4 no commit `176b04673d956af4b1ab645e922cedd796b6a22e` do Brasil Participativo. Os dados respondem às questões GQM da [Fase 2](../../fases/2.md). A execução ocorreu em 08/11/2026, após a janela prevista de 05 a 06/11.
+A coleta da issue #89 mede M2.1 a M2.4 no commit `176b04673d956af4b1ab645e922cedd796b6a22e` do Brasil Participativo. Os dados respondem às questões GQM da [Fase 2](../../fases/2.md); o [protocolo](../../procedimentos/coleta.md) explica como repetir os cálculos. A execução ocorreu em 08/11/2026, após a janela prevista de 05 a 06/11.
 
 ## Execução
 
