@@ -1,0 +1,25 @@
+Image: registry.gitlab.com/lappis-unb/decidimbr/dev/participa@sha256:f0ddf9c5faed72d5b49e15a56c2858c2545779576a8eb635b2f6bbd68743c953
+Network: none
+User: host UID:GID
+Source and reference mounts: read-only
+Source commit: 176b04673d956af4b1ab645e922cedd796b6a22e
+Reference commit: 67843526a7d60a5fc01ab0baa24db8ae4f4ca973
+Collected at: 2026-11-08T13:44:56-03:00
+
+Executed from the team repository root:
+bash scripts/run_maintainability.sh brasil-participativo /tmp/frans-decidim-0.27.2 /tmp/frans-g2-audit-corrected
+Exit code: 0. Collector: 0; RuboCop: 1 (expected findings with Max=0); verifier: 0.
+
+Commands inside the container:
+ruby /tools/collect_maintainability.rb /source /core /output
+rubocop --ignore-disable-comments --cache false --config /tools/maintainability.rubocop.yml --only Metrics/CyclomaticComplexity --format json --out /output/M2.2-rubocop.json /source/app/commands /source/app/controllers /source/app/permissions /source/app/services
+
+Verification on host:
+python3 scripts/verify_maintainability.py /tmp/frans-g2-audit-corrected
+
+Collector tests inside the same image, from /tmp:
+rspec --options /dev/null --format documentation /work/scripts/spec/collect_maintainability_spec.rb
+Result: 11 examples, 0 failures.
+
+The audit corrected extraction from the same unchanged product commit.
+Previous and corrected totals are recorded in corrections.json.
