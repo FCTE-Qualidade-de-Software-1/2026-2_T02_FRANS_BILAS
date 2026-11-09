@@ -23,6 +23,10 @@ nav = [
     { "Fase 3: Plano de Avaliação" = "fases/3.md" },
     { "TCLE das Sessões com Usuários" = "tcle.md" },
   ] },
+  { "Resultados da Avaliação" = [
+    { "Manutenibilidade" = "dados/manutenibilidade/index.md" },
+    { "Segurança" = "dados/seguranca/index.md" },
+  ] },
   { "Entregas" = [
     { "Entrega 1" = "entregas/1.md" },
     { "Métricas de Gestão (PSM)" = "entregas/psm.md" },

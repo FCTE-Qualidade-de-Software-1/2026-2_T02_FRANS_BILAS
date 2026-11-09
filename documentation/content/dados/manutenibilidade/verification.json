@@ -1,0 +1,27 @@
+{
+  "totals_verified": true,
+  "rubocop_offenses": 1272,
+  "methods_not_reported_by_cli": [
+    {
+      "path": "app/controllers/decidim/assemblies/assembly_members_controller.rb",
+      "line": "12",
+      "method": "enforce_permission_to",
+      "complexity": "1",
+      "empty": "true"
+    },
+    {
+      "path": "app/controllers/decidim/assemblies/assembly_members_controller.rb",
+      "line": "14",
+      "method": "redirect_to",
+      "complexity": "1",
+      "empty": "true"
+    },
+    {
+      "path": "app/controllers/decidim/meetings/meetings_controller.rb",
+      "line": "47",
+      "method": "index",
+      "complexity": "1",
+      "empty": "true"
+    }
+  ]
+}

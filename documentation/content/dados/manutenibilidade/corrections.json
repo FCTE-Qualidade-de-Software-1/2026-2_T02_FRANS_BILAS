@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-08",
+  "source_commit": "176b04673d956af4b1ab645e922cedd796b6a22e",
+  "previous_summary": {
+    "M2.1": {
+      "classes": 296,
+      "overrides": 175,
+      "percent": 59.12162162162162
+    },
+    "M2.2": {
+      "methods": 1275,
+      "sum": 2916,
+      "mean": 2.287058823529412,
+      "maximum": 47
+    },
+    "M2.3": {
+      "class_files": 273,
+      "sloc": 18298,
+      "mean": 67.02564102564102,
+      "maximum": 595
+    },
+    "M2.4": {
+      "overrides": 175,
+      "with_spec": 51,
+      "percent": 29.142857142857142
+    }
+  },
+  "corrected_summary": {
+    "M2.1": {
+      "classes": 291,
+      "overrides": 175,
+      "percent": 60.13745704467354
+    },
+    "M2.2": {
+      "methods": 1275,
+      "sum": 2916,
+      "mean": 2.287058823529412,
+      "maximum": 47
+    },
+    "M2.3": {
+      "class_files": 273,
+      "sloc": 18298,
+      "mean": 67.02564102564102,
+      "maximum": 595
+    },
+    "M2.4": {
+      "overrides": 175,
+      "with_spec": 69,
+      "percent": 39.42857142857143
+    }
+  },
+  "previous_collector_sha256": "c6670b0db77f35e746d765b8162f90c51b5ab10af5b3d5df1410926a0d53a2ef",
+  "corrected_collector_sha256": "29695343d1a369dda166069625db39b2b37ee35fd5e29479df8e8d387a8fe8bd",
+  "changes": [
+    "Excluded five classes used only by lib/decidim/dev/test/rspec_support/geocoder.rb.",
+    "Resolved described classes in lexical Ruby namespaces.",
+    "Restricted mirrored-path fallback to the class named by the file and descriptions that do not contradict it.",
+    "Distinguished genuinely empty methods from other complexity-1 methods when cross-checking RuboCop."
+  ],
+  "newly_matched_classes": [
+    "Decidim::Comments::Comment",
+    "Decidim::Comments::CommentForm",
+    "Decidim::Forms::AnswerForm",
+    "Decidim::Meetings::Admin::CopyMeeting",
+    "Decidim::Meetings::Admin::CreateMeeting",
+    "Decidim::Meetings::Admin::MeetingForm",
+    "Decidim::Meetings::Admin::UpdateMeeting",
+    "Decidim::Meetings::CreateMeeting",
+    "Decidim::Meetings::Meeting",
+    "Decidim::Meetings::MeetingForm",
+    "Decidim::Meetings::MeetingMCell",
+    "Decidim::Meetings::UpdateMeeting",
+    "Decidim::Pages::Admin::UpdatePage",
+    "Decidim::ParticipatoryProcesses::ParticipatoryProcessesController",
+    "Decidim::Proposals::ParticipatoryTextProposalCell",
+    "Decidim::Proposals::ProposalSerializer",
+    "Decidim::Proposals::ProposalsController",
+    "Decidim::StaticPage",
+    "Decidim::Surveys::SurveysController"
+  ],
+  "removed_automatic_matches": [
+    "Decidim::InvalidOauthSignature"
+  ],
+  "same_product_commit": true
+}
