@@ -30,6 +30,9 @@ nav = [
     { "Manutenibilidade" = "dados/manutenibilidade/index.md" },
     { "Segurança" = "dados/seguranca/index.md" },
   ] },
+  { "Melhorias Técnicas" = [
+    { "Testes do Serviço de Embeds" = "dados/melhoria-73/index.md" },
+  ] },
   { "Entregas" = [
     { "Entrega 1" = "entregas/1.md" },
     { "Métricas de Gestão (PSM)" = "entregas/psm.md" },

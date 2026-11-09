@@ -4,25 +4,21 @@ icon: lucide/bot
 
 # Declaração e Registro de Uso de Inteligência Artificial
 
-Esta página documenta a política, os mecanismos de controle e os relatos individuais de uso de ferramentas de Inteligência Artificial pela equipe **Frans Bilas (Turma 01)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)**.
+Esta página registra como a equipe **Frans Bilas (Turma 01)** usa ferramentas de IA na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)**.
 
 ---
 
 ## 1. Política da Equipe Contra Práticas de Meat-Proxy
 
-Em projetos acadêmicos e técnicos, o uso irrefletido de modelos de linguagem frequentemente degrada a qualidade dos entregáveis. Copiar e colar saídas de LLMs sem leitura crítica (postura conhecida como *meat-proxy*) produz textos inflados, introduções clichês, dados fictícios e adjetivações vazias.
+A equipe proíbe a cópia de saídas de IA sem leitura crítica, prática conhecida como *meat-proxy*. Os integrantes respondem pelo conteúdo que submetem.
 
-Nossa equipe estabeleceu três diretrizes inegociáveis:
-
-1. **Vedação à Invenção de Dados**: Toda informação quantitativa sobre o software avaliado provém do código-fonte real do Brasil Participativo, de ferramentas de análise estática ou de sessões documentadas de teste.
-2. **Revisão Humana Ativa**: A IA atua apenas como copiloto de ideação, estruturação ou correção gramatical. O conteúdo técnico é auditado, validado e reescrito pelos membros antes de qualquer submissão.
-3. **Fiscalização Automatizada**: Criamos o script `scripts/check_humanizer.py` acoplado a um hook de pré-commit do Git e a uma ação de integração contínua (GitHub Actions), barrando termos proibidos, artefatos de chatbot e construções prolixas.
+Toda informação quantitativa sobre o software avaliado deve vir do código-fonte do Brasil Participativo, de ferramentas de análise estática ou de sessões documentadas de teste. O script `scripts/check_humanizer.py`, executado no pré-commit e no GitHub Actions, verifica termos proibidos, artefatos de chatbot e construções prolixas.
 
 ---
 
 ## 2. Relatos Individuais de Contribuição com IA
 
-Cada integrante do grupo é responsável por declarar explicitamente como utilizou ferramentas de IA em suas atribuições, indicando a ferramenta, a tarefa realizada e o procedimento exato de revisão humana aplicada.
+Os relatos identificam a ferramenta, as tarefas apoiadas por IA e as conferências registradas por cada integrante.
 
 ---
 
@@ -85,16 +81,18 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 
 ### Lucca Medeiros Silva
 
-- **Papel no Projeto**: Dupla 1 (Qualidade e GQM) - Seleção de Métricas (F2-C4), Níveis de Julgamento (F2-C5) e Consistência entre Fases 1 e 2 (F2-C11).
-- **Ferramentas Utilizadas**: Antigravity (Gemini 3.8 Flash).
+- **Papel no Projeto**: Dupla 2. Seleção de Métricas (F2-C4), Níveis de Julgamento (F2-C5) e Consistência entre Fases 1 e 2 (F2-C11); no Sprint 3, passo a passo das medidas e análise estática de Manutenibilidade.
+- **Ferramentas Utilizadas**: Antigravity (Gemini 3.8 Flash) e Codex.
 - **Tarefas Realizadas com Apoio de IA**: Estruturação preliminar das fichas técnicas das 12 métricas de avaliação, formulação matemática das métricas, definição das faixas de pontuação da tabela de julgamento e diagrama Mermaid do GQM em três níveis.
 - **Procedimento de Revisão Humana**: Calibração dos limiares de pontuação com base nas boas práticas do ecossistema Ruby on Rails e Decidim, validação da viabilidade operacional das coletas para impedir testes intrusivos contra servidores de produção e verificação da rastreabilidade com as decisões e stakeholders da Fase 1.
+
+Em 08/11/2026, o Codex preparou os procedimentos das 12 métricas (#63), implementou e executou a coleta estática de Manutenibilidade no commit `176b046` (#89) e acrescentou testes de regressão do `MeetingIframeEmbedder` em patch separado (#73). Também apoiou a redação dessas páginas e a conferência posterior dos algoritmos, das fórmulas e da configuração dos testes. Os CSVs, hashes, relatórios de ferramentas e testes automatizados estão ligados às páginas de [G2](dados/manutenibilidade/index.md) e da [melhoria](dados/melhoria-73/index.md), junto com os limites das verificações executadas.
 
 ---
 
 ### Miguel Arthur Oliveira de Lima
 
-- **Papel no Projeto**: Dupla 3 (Gestão e Infraestrutura) — Planejamento de sprints, governança, métricas de processo (PSM/CID), consolidação da documentação da Fase 1 e apoio à Entrega 1.
+- **Papel no Projeto**: Dupla 3 (Gestão e Infraestrutura): planejamento de sprints, governança, métricas de processo (PSM/CID), consolidação da documentação da Fase 1 e apoio à Entrega 1.
 - **Ferramentas Utilizadas**: Antigravity (Gemini 3.8 Flash).
 - **Tarefas Realizadas com Apoio de IA**: Modelagem do diagrama conceitual da norma ISO/IEC 25010:2023 em Mermaid, estruturação da matriz de priorização formal com ponderação de impacto e risco para as características de qualidade, e auditoria dos critérios de entrega da Fase 1 e 2.
 - **Procedimento de Revisão Humana**: Calibração dos pesos e notas da matriz de priorização com base no contexto de software público deliberativo, validação da integridade sintática do diagrama de subcaracterísticas e adequação rigorosa à terminologia da ISO/IEC 25010:2023 e às regras da disciplina.
@@ -106,8 +104,9 @@ Cada integrante do grupo é responsável por declarar explicitamente como utiliz
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 17/10/2026 | Criação da política de uso ético de IA, registro individual e estrutura para a equipe | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
-| `1.1` | 18/10/2026 | Registro de uso de IA referente à especificação das métricas, níveis de julgamento e rastreabilidade da Fase 2 | [Lucca Medeiros Silva](https://github.com/luccameds) | A definir |
-| `1.2` | 19/10/2026 | Registro individual de uso de IA de Miguel Arthur (modelagem SQuaRE, priorização e governança) | [Miguel Arthur Oliveira de Lima](https://github.com/zlimaz) | A definir |
-| `1.3` | 04/11/2026 | Registro individual de uso de IA de Mateus (gestão, atas, revisão das Fases 1 e 2 e slides do PC2) | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `1.1` | 18/10/2026 | Registro de uso de IA referente à especificação das métricas, níveis de julgamento e rastreabilidade da Fase 2 | [Lucca Medeiros Silva](https://github.com/luccameds) | - |
+| `1.2` | 19/10/2026 | Registro individual de uso de IA de Miguel Arthur (modelagem SQuaRE, priorização e governança) | [Miguel Arthur Oliveira de Lima](https://github.com/zlimaz) | - |
+| `1.3` | 04/11/2026 | Registro individual de uso de IA de Mateus (gestão, atas, revisão das Fases 1 e 2 e slides do PC2) | [Mateus Vinícius Vieira](https://github.com/matix0) | - |
+| `1.4` | 08/11/2026 | Registro de apoio do Codex às issues #63, #89 e #73 | Lucca Medeiros Silva | - |
 
 
