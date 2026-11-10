@@ -6,6 +6,9 @@ icon: lucide/microscope
 
 Esta página apresenta as diretrizes, a estrutura e o andamento do artigo científico elaborado pela equipe **Frans Bilas (Turma 01)** na disciplina **Qualidade de Software 1 (FGA0315 - 2026.2)**, ministrada pela Profa. Dra. Cristiane Soares Ramos na Universidade de Brasília (Campus UnB Gama: Faculdade de Ciências e Tecnologias em Engenharia - Brasília / FCTE).
 
+> [!TIP] Acesso Direto ao Artigo Compilado
+> O manuscrito consolidado da avaliação pode ser visualizado e baixado em formato PDF: [Artigo Científico IEEEtran (PDF)](source/main.pdf). O código-fonte em LaTeX está versionado em [`documentation/content/article/source/main.tex`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANS_BILAS/tree/main/documentation/content/article/source/main.tex).
+
 ---
 
 ## 1. Contexto e Natureza da Publicação
@@ -52,14 +55,14 @@ O manuscrito segue a progressão lógica das normas da família SQuaRE e as exig
 | Seção do Artigo | Conteúdo Principal | Fase Correspondente |
 | :--- | :--- | :--- |
 | **Resumo e Abstract** | Síntese do objeto avaliado, método GQM, processo ISO/IEC 25040, características SQuaRE e escopo | Transversal |
-| **1. Introdução** | Contextualização do Brasil Participativo, histórico LAPPIS UnB e motivação democrática | AG-C1 |
+| **1. Introdução** | Contextualização do Brasil Participativo, histórico LAPPIS UnB e motivação democrática | [AG-C1](../fases/1.md) |
 | **2. Referencial Teórico** | Normas SQuaRE (ISO/IEC 25010 e 25040), método GQM, processo de medição PSM (ISO/IEC/IEEE 15939) e literatura clássica | AG-C2 |
-| **3. Metodologia de Desenvolvimento do Projeto** | Processo avaliativo (ISO/IEC 25040), operacionalização analítica GQM, gestão por sprints com duplas e métricas PSM/CID, salvaguardas éticas e governança anti-meat-proxy | Especificação E1 / Gestão |
-| **4. Fase 1: Planejamento da Avaliação e Modelo de Qualidade** | Propósito (C1), stakeholders (C2), arquitetura (C3), modelo SQuaRE adaptado (C4), matriz formal ponderada de priorização (C5), escopo (C6) e ODS 16 (C7) | Fase 1 |
-| **5. Fase 2: Especificação da Avaliação (GQM)** | Objetivos G1 a G3 (F2-C1), questões operacionais (F2-C2), hipóteses (F2-C3), doze métricas quantitativas com fórmulas (F2-C4), níveis de pontuação (F2-C5) e rastreabilidade vertical | Fase 2 |
-| **6. Conclusão e Próximos Passos** | Síntese do planejamento executado e encaminhamentos para as Fases 3 e 4 | Transversal |
+| **3. Metodologia de Desenvolvimento do Projeto** | Processo avaliativo (ISO/IEC 25040), operacionalização analítica GQM, gestão por sprints com duplas e métricas PSM/CID, salvaguardas éticas e governança anti-meat-proxy | [Gestão](../gestao.md) |
+| **4. Fase 1: Planejamento da Avaliação e Modelo de Qualidade** | Propósito (C1), stakeholders (C2), arquitetura (C3), modelo SQuaRE adaptado (C4), matriz formal ponderada de priorização (C5), escopo (C6) e ODS 16 (C7) | [Fase 1](../fases/1.md) |
+| **5. Fase 2: Especificação da Avaliação (GQM)** | Objetivos G1 a G3 (F2-C1), questões operacionais (F2-C2), hipóteses (F2-C3), doze métricas quantitativas com fórmulas (F2-C4), níveis de pontuação (F2-C5) e rastreabilidade vertical | [Fase 2](../fases/2.md) |
+| **6. Conclusão e Próximos Passos** | Síntese do planejamento executado e encaminhamentos para as Fases 3 e 4 | [Fase 3](../fases/3.md) |
 | **Referências Bibliográficas** | Fontes normativas, metodológicas e clássicas gerenciadas em BibTeX | AG-C2 |
-| **Apêndices** | Tabela de Contribuição paritária (AG-C5 / Premissa 13) e Declaração de Uso de IA (AG-C3) | AG-C3 e AG-C5 |
+| **Apêndices** | Tabela de Contribuição paritária (AG-C5 / Premissa 13) e Declaração de Uso de IA (AG-C3) | [Uso de IA](../uso-de-ia.md) |
 
 ---
 
@@ -79,12 +82,23 @@ Os arquivos temporários (`*.aux`, `*.log`, `*.out`, `*.bbl`, `*.blg`) são igno
 
 ---
 
+## Navegação e Rastreabilidade
+
+- [Fase 1: Planejamento da Avaliação e Modelo de Qualidade](../fases/1.md)
+- [Fase 2: Especificação da Avaliação (GQM)](../fases/2.md)
+- [Fase 3: Plano de Avaliação](../fases/3.md)
+- [Painel de Gestão e Métricas PSM/CID](../gestao.md)
+- [Declaração de Uso de Inteligência Artificial](../uso-de-ia.md)
+
+---
+
 ## Histórico de Versões
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 17/10/2026 | Documentação sobre a escolha do modelo IEEEtran, requisitos pedagógicos e estrutura do artigo | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `1.1` | 26/10/2026 | Atualização da estrutura com inclusão da seção explícita de Metodologia, conclusão dos itens da Fase 1 e apêndices | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+| `1.2` | 10/11/2026 | Inclusão de link direto para download do PDF compilado, crosslinks com as fases e painel de gestão | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 
 
 
