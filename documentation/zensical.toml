@@ -25,7 +25,7 @@ nav = [
     { "Dados Brutos de Segurança" = "dados/seguranca/index.md" },
   ] },
   { "Entregas" = [
-    { "Entrega 1" = "entregas/1.md" },
+    { "Ponto de Controle 1" = "entregas/1.md" },
     { "Métricas de Gestão (PSM)" = "entregas/psm.md" },
     { "Ponto de Controle 2" = "entregas/pc2.md" },
   ] },
