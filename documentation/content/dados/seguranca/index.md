@@ -35,7 +35,7 @@ Para repetir a coleta, siga a Seção 3 da Fase 3 com o mesmo commit. Os resulta
 | Métrica | Valor medido | Nível (Fase 2) | Hipótese |
 | :--- | :--- | :---: | :--- |
 | **M3.1** Densidade de Vulnerabilidades de Código (DVC) | 2 alertas de confiança alta, 8 de média, 0 de fraca; DVC = 3×2 + 2×8 + 0 = **22** | **Insuficiente** | H3.1 refutada |
-| **M3.2** Dependências Vulneráveis (CDV) | **156 CVEs** em 198 avisos, distribuídos em 51 gems | **Insuficiente** | H3.2 confirmada |
+| **M3.2** Dependências Vulneráveis (CDV) | **156 pares (gem, CVE)** em 198 avisos, distribuídos em 51 gems | **Insuficiente** | H3.2 confirmada |
 | **M3.3** Proteção de Endpoints Sensíveis (TPE) | 136 de 149 ações sensíveis com verificação explícita: TPE = **91,3%** | **Regular** | H3.3 refutada |
 
 Fonte: elaborado pela equipe a partir dos arquivos da Seção 1.
@@ -54,7 +54,7 @@ Os dois alertas de confiança alta tratam de versões sem suporte, e não de pad
 
 ### 2.2 M3.2: dependências com avisos
 
-O `bundler-audit` encontrou 198 avisos em 51 gems; 156 deles têm CVE. Por gravidade declarada no aviso: 3 críticos, 49 altos, 81 médios, 7 baixos e 58 sem classificação. As gems com mais avisos são `rack` (2.2.6.2), `nokogiri` (1.13.10), `net-imap` (0.3.4), `loofah` (2.3.1) e `rails-html-sanitizer` (1.4.3). Um dos avisos críticos é da `graphql` (1.12.24), com execução remota de código; o próprio aviso indica correção na versão 1.12.25, da mesma série.
+O `bundler-audit` encontrou 198 avisos em 51 gems. Há 156 pares distintos (gem, CVE), correspondentes a 147 identificadores CVE únicos. M3.2 conta os pares, conforme a soma por gem da Fase 2. Por gravidade declarada no aviso: 3 críticos, 49 altos, 81 médios, 7 baixos e 58 sem classificação. As gems com mais avisos são `rack` (2.2.6.2), `nokogiri` (1.13.10), `net-imap` (0.3.4), `loofah` (2.3.1) e `rails-html-sanitizer` (1.4.3). Um dos avisos críticos é da `graphql` (1.12.24), com execução remota de código; o próprio aviso indica correção na versão 1.12.25, da mesma série.
 
 ### 2.3 M3.3: ações sem verificação explícita
 
@@ -100,3 +100,5 @@ A escolha das melhorias dos Sprints 4 e 5 cabe à equipe, junto com os resultado
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 03/11/2026 | Coleta das métricas M3.1, M3.2 e M3.3 no commit `176b046` | [José Vinícius Alvares Soares de Queiroz](https://github.com/JoseViniciusQueiroz) | A definir |
+
+| `1.1` | 08/11/2026 | Distinção entre pares (gem, CVE) e identificadores CVE únicos, a partir do relatório existente | Lucca Medeiros Silva | - |
