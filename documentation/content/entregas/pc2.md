@@ -183,9 +183,9 @@ NOTA PARA APRESENTAÇÃO (João):
 - Premissas 5 e 6: sessão só com TCLE assinado, gravação com consentimento, termo guardado separado dos dados.
 -->
 
-- **TCLE** ([página](../tcle.md)): campos preenchidos e validados (duração de 20 a 30 min, formato híbrido, áudio opcional e guarda institucional privada) (#45)
-- **Recrutamento** (#67): meta de pelo menos cinco participantes
-- **Coleta** (#90): sessões entre 06/11 e 10/11, com TCLE assinado, na cópia local
+- **TCLE** ([página](../tcle.md)): formulário feito e validados (duração de 20 a 30 min, formato híbrido, áudio opcional e guarda institucional privada)
+- **Recrutamento**: meta de pelo menos três participantes.
+- **Coleta**: sessões entre 06/11 e 17/11, com TCLE assinado, na cópia local
 
 ---
 

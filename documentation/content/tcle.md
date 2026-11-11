@@ -6,20 +6,16 @@ icon: lucide/file-check
 
 Este termo vale para as sessões de teste com usuários da Fase 3, que respondem às questões Q1.1 a Q1.3 do objetivo G1 (Capacidade de Interação). As tarefas, os dados coletados e a gravação seguem as métricas M1.1, M1.2, M1.3 e M1.5 da [Fase 2](fases/2.md). A obrigação de colher o termo assinado antes de qualquer sessão foi decidida na [Ata 01](atas/index.md), e a especificação do trabalho final exige consentimento para gravar entrevistas (premissa 6) e proteção da identificação dos participantes (premissa 5).
 
-O texto parte do modelo de TCLE fornecido para trabalhos de disciplina e teve todos os parâmetros operacionais formalmente definidos pela equipe (issue #45).
-
 ---
 
-## 1. Parâmetros Definidos da Aplicação
-
-Os parâmetros operacionais e éticos da aplicação foram definidos pela equipe para orientar a realização das sessões de teste:
+## 1. Parâmetros
 
 | Parâmetro | Definição Adotada | Detalhamento |
 | :--- | :--- | :--- |
 | **Duração prevista** | 20 a 30 minutos | Intervalo estimado para instruções iniciais, execução das quatro tarefas na cópia local e resposta aos 10 itens da escala SUS. |
 | **Local e formato** | Híbrido (presencial ou remoto) | Presencial em laboratórios do Campus UnB Gama (FCTE) ou remoto síncrono via plataforma de videoconferência (Google Meet ou Microsoft Teams) com compartilhamento de tela. |
 | **Captação de áudio** | Opcional | A gravação padrão abrange a tela e interações. A captura do áudio do microfone para registro de comentários e dúvidas é opcional e exige autorização específica no termo. |
-| **Armazenamento seguro** | Nuvem institucional privada | Pasta restrita no Google Drive da equipe institucional da UnB, acessível unicamente aos seis pesquisadores e à professora orientadora. Nenhuma gravação identificável será enviada ao repositório público. |
+| **Armazenamento** | Nuvem institucional privada | Pasta restrita no Google Drive da equipe institucional da UnB, acessível unicamente aos seis pesquisadores e à professora orientadora. Nenhuma gravação identificável será enviada ao repositório público. |
 | **Prazo de guarda** | Até a conclusão de 2026.2 | Conservação dos registros até a homologação final das menções da disciplina no semestre letivo 2026.2, com exclusão definitiva logo após essa data. |
 | **Ponto de contato** | João Victor da Silva Batista de Farias | Aluno responsável técnico pelas sessões e esclarecimento de dúvidas (`221022604@aluno.unb.br`). |
 
