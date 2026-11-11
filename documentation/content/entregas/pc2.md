@@ -183,7 +183,7 @@ NOTA PARA APRESENTAÇÃO (João):
 - Premissas 5 e 6: sessão só com TCLE assinado, gravação com consentimento, termo guardado separado dos dados.
 -->
 
-- **TCLE** ([página](../tcle.md)): base pronta; faltam seis campos, entre eles local, tempo, gravação de áudio, contato e guarda dos dados (#45)
+- **TCLE** ([página](../tcle.md)): campos preenchidos e validados (duração de 20 a 30 min, formato híbrido, áudio opcional e guarda institucional privada) (#45)
 - **Recrutamento** (#67): meta de pelo menos cinco participantes
 - **Coleta** (#90): sessões entre 06/11 e 10/11, com TCLE assinado, na cópia local
 
@@ -197,3 +197,4 @@ NOTA PARA APRESENTAÇÃO (João):
 | `1.1` | 04/11/2026 | Sete slides principais e dois de apêndice, slide de melhoria técnica e critérios da Fase 3 nas notas | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `1.2` | 04/11/2026 | Slide da medição do Sprint 3 (N1 a N6) no lugar do apêndice do quadro | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
 | `1.3` | 04/11/2026 | Datas do cronograma versão 2 (PC2 em 16/11 ou 18/11) e N2 recalculado para a release de 21/11 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `1.4` | 10/11/2026 | Atualização do status dos campos do TCLE na nota de apresentação (#45) | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
