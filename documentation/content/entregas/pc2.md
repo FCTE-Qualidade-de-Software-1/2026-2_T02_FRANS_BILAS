@@ -1,3 +1,7 @@
+---
+icon: lucide/presentation
+---
+
 # Ponto de Controle 2: Plano de Avaliação do Brasil Participativo
 
 **Equipe Frans Bilas (Turma 01)**  

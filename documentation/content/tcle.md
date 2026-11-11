@@ -6,13 +6,9 @@ icon: lucide/file-check
 
 Este documento estabelece o Termo de Consentimento Livre e Esclarecido (TCLE) para as sessões de teste de usabilidade da [Fase 3](fases/3.md). A coleta atende aos objetivos de avaliação da Capacidade de Interação definidos na [Fase 2](fases/2.md) e cumpre as salvaguardas éticas acordadas na [Ata 01](atas/index.md), assegurando voluntariedade, anonimização dos dados e guarda restrita dos registros fora do repositório público.
 
-O texto base foi adaptado do modelo institucional para pesquisas acadêmicas e incorpora as decisões operacionais tomadas pela equipe para o fechamento da issue #45.
-
 ---
 
 ## 1. Parâmetros Operacionais da Aplicação
-
-A tabela a seguir consolida as diretrizes éticas e técnicas estabelecidas para a condução das sessões de teste:
 
 | Parâmetro | Definição Adotada | Detalhamento |
 | :--- | :--- | :--- |
@@ -71,6 +67,6 @@ Declaro que li e compreendi os objetivos e procedimentos da pesquisa, tive a opo
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
-| `1.0` | 26/10/2026 | Preenchimento do modelo de TCLE para as sessões de teste com usuários da Fase 3 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `1.0` | 26/10/2026 | Preenchimento do modelo de TCLE para as sessões de teste com usuários da Fase 3 | [Mateus Vinícius Vieira](https://github.com/matix0) | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) |
 | `1.1` | 10/11/2026 | Preenchimento definitivo de todos os campos pendentes (duração, local híbrido, áudio opcional, armazenamento institucional, prazo de guarda e contato) para a issue #45 | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
 | `1.2` | 10/11/2026 | Revisão do texto com foco em clareza, tom humanizado para os participantes e detalhamento das salvaguardas de privacidade | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |

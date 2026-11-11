@@ -1,3 +1,7 @@
+---
+icon: lucide/chart-line
+---
+
 # Métricas de Gestão do Projeto (PSM/CID)
 
 **Equipe Frans Bilas (Turma 01)**  
