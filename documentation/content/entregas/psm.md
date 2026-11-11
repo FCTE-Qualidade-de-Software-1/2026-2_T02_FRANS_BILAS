@@ -196,4 +196,4 @@ Fonte: [Gestão, Seção 4](../gestao.md#4-construtos-de-medicao).
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
-| `1.0` | 04/11/2026 | Slides da apresentação das métricas de gestão (PSM), com a medição do Sprint 3 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `1.0` | 04/11/2026 | Slides da apresentação das métricas de gestão (PSM), com a medição do Sprint 3 | [Mateus Vinícius Vieira](https://github.com/matix0) | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) |
