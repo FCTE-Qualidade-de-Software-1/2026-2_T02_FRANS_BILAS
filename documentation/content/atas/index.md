@@ -232,5 +232,5 @@ Para preservar a rastreabilidade e uniformidade da documentação da equipe, tod
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
 | `1.0` | 21/10/2026 | Criação da página de atas, registro detalhado da Reunião 01 de planejamento (16/10/2026) e template padronizado | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
-| `1.1` | 30/10/2026 | Registro da Reunião 02, planning do Sprint 3 (29/10/2026), e da redistribuição de tarefas de 30/10 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `1.1` | 30/10/2026 | Registro da Reunião 02, planning do Sprint 3 (29/10/2026), e da redistribuição de tarefas de 30/10 | [Mateus Vinícius Vieira](https://github.com/matix0) | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) |
 

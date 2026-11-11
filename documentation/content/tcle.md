@@ -4,63 +4,62 @@ icon: lucide/file-check
 
 # Termo de Consentimento Livre e Esclarecido (TCLE)
 
-Este termo vale para as sessões de teste com usuários da Fase 3, que respondem às questões Q1.1 a Q1.3 do objetivo G1 (Capacidade de Interação). As tarefas, os dados coletados e a gravação seguem as métricas M1.1, M1.2, M1.3 e M1.5 da [Fase 2](fases/2.md). A obrigação de colher o termo assinado antes de qualquer sessão foi decidida na [Ata 01](atas/index.md), e a especificação do trabalho final exige consentimento para gravar entrevistas (premissa 6) e proteção da identificação dos participantes (premissa 5).
-
-O texto parte do modelo de TCLE fornecido para trabalhos de disciplina.
+Este documento estabelece o Termo de Consentimento Livre e Esclarecido (TCLE) para as sessões de teste de usabilidade da [Fase 3](fases/3.md). A coleta atende aos objetivos de avaliação da Capacidade de Interação definidos na [Fase 2](fases/2.md) e cumpre as salvaguardas éticas acordadas na [Ata 01](atas/index.md), assegurando voluntariedade, anonimização dos dados e guarda restrita dos registros fora do repositório público.
 
 ---
 
-## 1. Campos pendentes
+## 1. Parâmetros Operacionais da Aplicação
 
-Os campos marcados em destaque no termo ainda não foram definidos pela equipe. O termo só pode ser apresentado a um participante depois que todos forem preenchidos.
-
-| Campo | O que falta decidir |
-| :--- | :--- |
-| ==[TEMPO]== | Duração prevista da sessão, incluindo as quatro tarefas e o questionário SUS |
-| ==[LOCAL]== | Onde as sessões acontecem (sala no campus, remoto por videoconferência ou outro) |
-| ==[ÁUDIO]== | Se o áudio também será gravado, além da tela |
-| ==[ARMAZENAMENTO]== | Onde as gravações ficam guardadas. O repositório do projeto é público, então gravações com rosto, voz ou nome não podem ir para ele sem anonimização |
-| ==[PRAZO]== | Por quanto tempo os registros ficam guardados antes de serem excluídos |
-| ==[CONTATO]== | Nome e e-mail do aluno responsável pelas sessões |
+| Parâmetro | Definição Adotada | Detalhamento |
+| :--- | :--- | :--- |
+| **Duração prevista** | 20 a 30 minutos | Tempo estimado para leitura e assinatura do termo, execução das quatro tarefas no ambiente local e preenchimento dos 10 itens da escala SUS. |
+| **Local e formato** | Híbrido (presencial ou remoto) | Presencial em laboratórios do Campus UnB Gama (FCTE) ou remoto síncrono via videoconferência (Google Meet ou Microsoft Teams) com compartilhamento de tela. |
+| **Captação de áudio** | Opcional | O procedimento padrão grava apenas a tela e as interações no sistema. A captura de voz via microfone para registro de dúvidas é opcional e exige autorização explícita. |
+| **Armazenamento** | Nuvem institucional privada | Pasta protegida no Google Drive institucional da equipe da UnB, acessível unicamente aos seis pesquisadores e à orientadora. Nenhuma gravação identificável será versionada no repositório público do GitHub. |
+| **Prazo de guarda** | Até a conclusão do semestre 2026.2 | Manutenção dos arquivos até a homologação final das menções da disciplina, com descarte e exclusão definitiva logo após essa etapa. |
+| **Ponto de contato** | João Victor da Silva Batista de Farias | Pesquisador responsável técnico pelas sessões e esclarecimento de dúvidas dos participantes (`221022604@aluno.unb.br`). |
 
 ---
 
-## 2. Texto do termo
+## 2. Texto do Termo
 
 **Termo de Consentimento Livre e Esclarecido**
 
-Você está sendo convidado(a) a participar do trabalho *Avaliação da Qualidade de Produto de Software da Plataforma Brasil Participativo*, desenvolvido por Davi Mesquita Sousa, João Victor da Silva Batista de Farias, José Vinícius Alvares Soares de Queiroz, Lucca Medeiros Silva, Mateus Vinícius Vieira e Miguel Arthur Oliveira de Lima, na disciplina Qualidade de Software 1 (FGA0315), do curso de Engenharia de Software, da Universidade de Brasília (Faculdade de Ciências e Tecnologias em Engenharia, FCTE), sob a orientação da Profa. Dra. Cristiane Soares Ramos. O objetivo do trabalho é avaliar a qualidade da plataforma Brasil Participativo segundo a norma ISO/IEC 25010:2023. Nesta atividade, avaliamos a facilidade de uso da plataforma pelo cidadão.
+Você está convidado a participar da pesquisa acadêmica *Avaliação da Qualidade de Produto de Software da Plataforma Brasil Participativo*, desenvolvida na disciplina Qualidade de Software 1 (FGA0315) do curso de Engenharia de Software da Universidade de Brasília (UnB Gama / FCTE), sob orientação da Profa. Dra. Cristiane Soares Ramos. O projeto é conduzido pelos estudantes Davi Mesquita Sousa, João Victor da Silva Batista de Farias, José Vinícius Alvares Soares de Queiroz, Lucca Medeiros Silva, Mateus Vinícius Vieira e Miguel Arthur Oliveira de Lima. A atividade avalia a facilidade de uso da plataforma pelo cidadão, com base no modelo de qualidade da norma ISO/IEC 25010:2023.
 
-Sua participação consistirá em realizar quatro tarefas em uma cópia da plataforma instalada pela equipe: entrar na plataforma, encontrar um processo participativo, enviar uma proposta e apoiar uma proposta já existente. Depois, você responderá a um questionário de 10 itens sobre a sua experiência. A atividade dura aproximadamente ==[TEMPO]== e acontece em ==[LOCAL]==. A entrada na plataforma usa um login de teste: você não precisará usar sua conta Gov.br nem informar senha pessoal. Você poderá fazer perguntas e esclarecer dúvidas antes e durante a atividade.
+Sua participação envolve a realização de quatro tarefas em um ambiente de testes local: entrar na plataforma com conta fictícia fornecida pela equipe, localizar uma consulta pública em andamento, submeter uma proposta e apoiar uma proposta já publicada. Em seguida, você responderá a um questionário breve com 10 afirmações sobre a experiência de uso (escala SUS). A sessão dura entre 20 e 30 minutos e ocorre de forma presencial (em laboratórios da FCTE) ou remota (por videoconferência com compartilhamento de tela). Em nenhum momento você precisará utilizar sua conta pessoal Gov.br ou informar dados pessoais sigilosos.
 
-Serão coletados o tempo gasto em cada tarefa, se a tarefa foi concluída com ou sem ajuda, os erros e mensagens de erro que aparecerem, as anotações do observador e as suas respostas ao questionário. A tela do computador será gravada durante as tarefas, para medir o tempo de cada uma e conferir as anotações do observador. ==[ÁUDIO]==
+Durante as tarefas, a equipe registrará o tempo de execução, a conclusão com ou sem auxílio, eventuais mensagens de validação e anotações do observador. Com a sua concordância, a tela do computador será gravada para conferência dos tempos e das etapas executadas. A gravação do microfone (áudio) é opcional: você pode autorizá-la ou recusá-la separadamente no campo ao final deste documento, sem prejuízo à sua participação.
 
-A atividade pode causar cansaço ou desconforto por estar sendo observado(a) e por não conseguir concluir alguma tarefa. Para reduzir isso, a equipe deixa claro que avalia a plataforma, e não você, e permite pausas ou a interrupção da atividade a qualquer momento.
+A atividade envolve riscos mínimos, limitados a eventual cansaço decorrente da atenção dedicada às tarefas. Esclarecemos que o teste avalia exclusivamente a interface e a usabilidade do software. Eventuais falhas ou dúvidas decorrem do projeto da plataforma e jamais de quem a opera. Você tem plena liberdade para fazer pausas, pedir esclarecimentos ou interromper a sessão a qualquer momento.
 
-Os dados serão utilizados para calcular as métricas de facilidade de uso do trabalho e apresentados no artigo e no site do projeto. Antes da apresentação dos resultados, os dados serão anonimizados, com remoção de nomes e de informações que permitam identificar você. O termo de consentimento será guardado separado dos dados da atividade. Terão acesso aos registros os seis integrantes da equipe e a professora da disciplina. Eles serão guardados em ==[ARMAZENAMENTO]==, durante ==[PRAZO]==, e depois excluídos. Você poderá consultar os resultados no site do projeto: <https://fcte-qualidade-de-software-1.github.io/2026-2_T02_FRANS_BILAS/>.
+As respostas e medidas obtidas serão consolidadas em relatórios acadêmicos e no site público da disciplina. Todas as informações serão anonimizadas antes da divulgação, identificando os participantes apenas por códigos sequenciais (como P1, P2). Os arquivos de vídeo e áudio brutos não serão divulgados publicamente nem incluídos no repositório de código aberto do projeto; permanecerão armazenados em pasta restrita na nuvem institucional da UnB, acessível apenas à equipe e à professora orientadora. Esses registros serão excluídos definitivamente ao término do semestre letivo 2026.2, após a homologação das notas finais. Os resultados gerais poderão ser acompanhados no portal do projeto: <https://fcte-qualidade-de-software-1.github.io/2026-2_T02_FRANS_BILAS/>.
 
-Sua participação é voluntária. Você pode recusar o convite ou interromper a atividade a qualquer momento, sem penalidade ou prejuízo. Não haverá despesas nem remuneração pela participação.
+A sua participação é inteiramente voluntária e gratuita, sem remuneração financeira e sem custos para você. A recusa em participar ou a desistência em qualquer etapa não acarreta nenhuma penalidade acadêmica ou pessoal.
 
-Para dúvidas, entre em contato com ==[CONTATO]==.
+Para esclarecer dúvidas sobre esta pesquisa ou sobre o tratamento dos dados coletados, entre em contato com o pesquisador responsável, João Victor da Silva Batista de Farias, pelo e-mail institucional `221022604@aluno.unb.br`.
 
-Declaro que compreendi o objetivo e as condições da atividade, tive oportunidade de esclarecer minhas dúvidas e aceito participar. Receberei uma cópia deste termo.
+Declaro que li e compreendi os objetivos e procedimentos da pesquisa, tive a oportunidade de esclarecer minhas dúvidas e concordo em participar voluntariamente deste estudo.
 
-Gravação para a finalidade descrita neste termo: ( ) Autorizo ( ) Não autorizo
+**Autorização para gravação durante as tarefas:**
+
+- Gravação de tela e interações do sistema: ( ) Autorizo ( ) Não autorizo
+- Gravação de voz via microfone (opcional): ( ) Autorizo ( ) Não autorizo
 
 | | |
 | :--- | :--- |
 | Local e data | |
 | Nome e assinatura do participante | |
-| Nome e assinatura do aluno responsável | |
+| Nome e assinatura do pesquisador responsável | |
 
 ---
 
-## 3. Uso do termo
+## 3. Procedimentos de Aplicação
 
-1. Imprimir duas vias: uma fica com o participante e a outra com a equipe.
-2. Colher a assinatura antes de iniciar a gravação ou qualquer tarefa.
-3. Se o participante marcar "Não autorizo" na gravação, o tempo de cada tarefa (M1.2) terá de ser medido pelo observador durante a sessão. A equipe ainda precisa definir esse procedimento no Plano de Avaliação da Fase 3.
-4. Identificar o participante nos dados apenas por código (P1, P2, ...). A relação entre código e nome fica junto dos termos assinados, fora do repositório.
+1. Disponibilizar o documento com antecedência para leitura atenta do participante: impresso em duas vias para testes presenciais ou em formulário digital seguro para testes remotos.
+2. Obter a assinatura e a opção de gravação antes de iniciar o cronômetro ou qualquer tarefa na plataforma.
+3. Se o participante não autorizar a gravação de tela, o observador utilizará cronômetro manual para registrar os tempos de cada tarefa (métrica M1.2) e anotará os erros diretamente na ficha de observação. Caso autorize apenas a gravação de tela, a sessão será realizada com o microfone desativado.
+4. Atribuir a cada participante um código alfanumérico (P1, P2, ...) logo após a coleta. A planilha que relaciona nomes reais aos códigos identificadores fica arquivada na pasta protegida da equipe, completamente isolada do repositório público.
 
 ---
 
@@ -68,4 +67,6 @@ Gravação para a finalidade descrita neste termo: ( ) Autorizo ( ) Não autoriz
 
 | Versão | Data | Descrição | Autor | Revisor |
 | :---: | :---: | :--- | :--- | :--- |
-| `1.0` | 26/10/2026 | Preenchimento do modelo de TCLE para as sessões de teste com usuários da Fase 3 | [Mateus Vinícius Vieira](https://github.com/matix0) | A definir |
+| `1.0` | 26/10/2026 | Preenchimento do modelo de TCLE para as sessões de teste com usuários da Fase 3 | [Mateus Vinícius Vieira](https://github.com/matix0) | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) |
+| `1.1` | 10/11/2026 | Preenchimento definitivo de todos os campos pendentes (duração, local híbrido, áudio opcional, armazenamento institucional, prazo de guarda e contato) para a issue #45 | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
+| `1.2` | 10/11/2026 | Revisão do texto com foco em clareza, tom humanizado para os participantes e detalhamento das salvaguardas de privacidade | [João Victor da Silva Batista de Farias](https://github.com/beyondmagic) | [Mateus Vinícius Vieira](https://github.com/matix0) |
