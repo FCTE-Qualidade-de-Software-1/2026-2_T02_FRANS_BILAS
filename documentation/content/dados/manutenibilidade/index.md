@@ -62,7 +62,7 @@ Fonte: execução dos scripts de coleta e conferência do repositório da equipe
 
 **Q2.2:** a média 2,29 convive com métodos de maior complexidade. Em `app/permissions/decidim/admin/permissions.rb`, o método `permissions`, linha 6, tem complexidade 47. Em `app/permissions/decidim/proposals/admin/permissions.rb`, o método homônimo, linha 7, tem 25. São pontos para inspeção e testes antes de uma refatoração. O arquivo `app/lib/decidim/form_builder.rb` contém 595 linhas efetivas, o maior valor da amostra. Os inventários sustentam a parte descritiva de H2.2; não houve estudo do tempo gasto por desenvolvedores para entender o código.
 
-**Q2.3:** os 69 casos com correspondência e os 106 sem correspondência sustentam H2.3 dentro do critério de busca adotado. A classe `Decidim::Meetings::MeetingIframeEmbedder` está entre os casos sem correspondência e é candidata a receber testes na issue #73.
+**Q2.3:** os 69 casos com correspondência e os 106 sem correspondência sustentam H2.3 dentro do critério de busca adotado. A [melhoria #73](../melhoria-73/index.md) acrescenta testes de regressão a uma dessas classes, `Decidim::Meetings::MeetingIframeEmbedder`. Os testes ficam separados desta coleta, sem recalcular os indicadores da amostra original.
 
 ## Limites e verificações
 
